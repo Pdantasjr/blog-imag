@@ -47,7 +47,7 @@ export default {
                 whatsApp: 'https://wa.me/558194630900?text=Olá,%20estou%20vindo%20do%20site,%20preciso%20de%20mais%20informações',
                 phone: 'tel:8130409999'
             },
-            toggle: '',
+            toggle: 'teste',
         }
     },
     methods: {
