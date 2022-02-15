@@ -3,6 +3,8 @@
     <img v-else-if="name === 'search'" class="w-6 h-6" src="@/Pages/Blog/Images/search-icon.svg" alt="icone para busca">
     <img v-else-if="name === 'whatsapp'" class="w-6 h-6" src="@/Pages/Blog/Images/whatsapp-icon.svg" alt="icone para whatsapp">
     <img v-else-if="name === 'phone'" class="w-6 h-6" src="@/Pages/Blog/Images/phone-icon.svg" alt="icone para telefone">
+    <img v-else-if="name === 'mobilePacient'" class="w-6 h-6" src="@/Pages/Blog/Images/pacient-icon-white.svg" alt="icone para pacient">
+    <img v-else-if="name === 'mobileMedic'" class="w-6 h-6" src="@/Pages/Blog/Images/medic-icon-white.svg" alt="icone para medico">
     <span v-else></span>
 </template>
 

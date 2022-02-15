@@ -21421,8 +21421,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _Pages_Blog_Components_Icons__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Pages/Blog/Components/Icons */ "./resources/js/Pages/Blog/Components/Icons.vue");
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: "Footer"
+  name: "Footer",
+  components: {
+    Icons: _Pages_Blog_Components_Icons__WEBPACK_IMPORTED_MODULE_0__["default"]
+  }
 });
 
 /***/ }),
@@ -25713,6 +25718,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Pages_Blog_Images_search_icon_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Pages/Blog/Images/search-icon.svg */ "./resources/js/Pages/Blog/Images/search-icon.svg");
 /* harmony import */ var _Pages_Blog_Images_whatsapp_icon_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/Pages/Blog/Images/whatsapp-icon.svg */ "./resources/js/Pages/Blog/Images/whatsapp-icon.svg");
 /* harmony import */ var _Pages_Blog_Images_phone_icon_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/Pages/Blog/Images/phone-icon.svg */ "./resources/js/Pages/Blog/Images/phone-icon.svg");
+/* harmony import */ var _Pages_Blog_Images_pacient_icon_white_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/Pages/Blog/Images/pacient-icon-white.svg */ "./resources/js/Pages/Blog/Images/pacient-icon-white.svg");
+/* harmony import */ var _Pages_Blog_Images_medic_icon_white_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/Pages/Blog/Images/medic-icon-white.svg */ "./resources/js/Pages/Blog/Images/medic-icon-white.svg");
+
+
 
 
 
@@ -25749,10 +25758,22 @@ var _hoisted_6 = {
   alt: "icone para telefone"
 };
 var _hoisted_7 = {
-  key: 4
+  key: 4,
+  "class": "w-6 h-6",
+  src: _Pages_Blog_Images_pacient_icon_white_svg__WEBPACK_IMPORTED_MODULE_4__["default"],
+  alt: "icone para pacient"
+};
+var _hoisted_8 = {
+  key: 5,
+  "class": "w-6 h-6",
+  src: _Pages_Blog_Images_medic_icon_white_svg__WEBPACK_IMPORTED_MODULE_5__["default"],
+  alt: "icone para medico"
+};
+var _hoisted_9 = {
+  key: 6
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return $props.name === 'cheveron-down' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", _hoisted_1, _hoisted_3)) : $props.name === 'search' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_4)) : $props.name === 'whatsapp' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_5)) : $props.name === 'phone' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_6)) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_7));
+  return $props.name === 'cheveron-down' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", _hoisted_1, _hoisted_3)) : $props.name === 'search' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_4)) : $props.name === 'whatsapp' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_5)) : $props.name === 'phone' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_6)) : $props.name === 'mobilePacient' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_7)) : $props.name === 'mobileMedic' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_8)) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_9));
 }
 
 /***/ }),
@@ -26158,22 +26179,33 @@ __webpack_require__.r(__webpack_exports__);
 var _hoisted_1 = {
   "class": "bg-primary w-screen"
 };
-
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+var _hoisted_2 = {
   "class": "flex justify-around"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  "class": "transition ease-in-out duration-200 hover:shadow-lg text-background font-light py-2 px-4 border border-2 my-2 rounded-full",
+};
+var _hoisted_3 = {
+  "class": "w-2/12 justify-around flex transition ease-in-out duration-200 hover:shadow-lg text-background font-light py-2 px-4 border border-2 my-2 rounded-full",
   href: "#"
-}, "Área do Paciente"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  "class": "transition ease-in-out duration-200 hover:shadow-lg text-background font-light py-2 px-4 border border-2 my-2 rounded-full",
-  href: "#"
-}, "Área do Médico")], -1
-/* HOISTED */
-);
+};
 
-var _hoisted_3 = [_hoisted_2];
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Área do Paciente");
+
+var _hoisted_5 = {
+  "class": "w-2/12 justify-around flex transition ease-in-out duration-200 hover:shadow-lg text-background font-light py-2 px-4 border border-2 my-2 rounded-full",
+  href: "#"
+};
+
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Área do Médico");
+
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, _hoisted_3);
+  var _component_Icons = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Icons");
+
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Icons, {
+    name: "mobilePacient",
+    "class": "px-4 text-primary min-w-fit"
+  }), _hoisted_4]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Icons, {
+    name: "mobileMedic",
+    "class": "px-4 text-primary min-w-fit"
+  }), _hoisted_6])])]);
 }
 
 /***/ }),
@@ -33379,6 +33411,36 @@ var deepmerge_1 = deepmerge;
 
 module.exports = deepmerge_1;
 
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Blog/Images/medic-icon-white.svg":
+/*!*************************************************************!*\
+  !*** ./resources/js/Pages/Blog/Images/medic-icon-white.svg ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/medic-icon-white.svg?3eb724d008fc6b1a74d6a7a90508c31b");
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Blog/Images/pacient-icon-white.svg":
+/*!***************************************************************!*\
+  !*** ./resources/js/Pages/Blog/Images/pacient-icon-white.svg ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/pacient-icon-white.svg?516181adb544249e3646e0be556b8f0a");
 
 /***/ }),
 
