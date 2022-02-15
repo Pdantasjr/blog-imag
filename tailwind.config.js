@@ -12,10 +12,12 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+                sans: ['ubuntu', ...defaultTheme.fontFamily.sans],
             },
             colors: {
                 'primary': '#214654',
+                'secondary': '#3D7B93',
+                'neutral': '#9C9B9B',
                 'background': '#f8fafc',
             },
         },
