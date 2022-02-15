@@ -19,6 +19,7 @@ mix.js('resources/js/app.js', 'public/js').vue()
     .browserSync({
         proxy:'localhost',
         open: true,
+        notify: false,
     })
     .webpackConfig(require('./webpack.config'))
 if (mix.inProduction()) {

@@ -15,7 +15,7 @@ export default defineComponent({
         Head,
         Link,
         Header,
-        Footer
+        Footer,
     },
 
     props: {

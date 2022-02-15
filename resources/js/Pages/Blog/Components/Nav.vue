@@ -1,6 +1,6 @@
 <template>
     <nav>
-        <ul class="md:flex space-x-4 hidden">
+        <ul class="md:flex space-x-4 hidden z-20">
             <li><a class="relative font-light text-primary py-10 links_a" href="#" data-linkAnimate>Home</a></li>
             <li><a class="relative font-light text-primary py-10 links_a" href="#" data-linkAnimate>Nossos Exames</a></li>
             <li><a class="relative font-light text-primary py-10 links_a" href="#" data-linkAnimate>Institucional</a></li>
