@@ -26280,7 +26280,7 @@ var _hoisted_1 = {
   "class": "bg-primary w-screen py-3"
 };
 var _hoisted_2 = {
-  "class": "flex justify-around items-center h-auto mx-auto flex-wrap md:hidden"
+  "class": "flex justify-around items-center h-auto mx-auto flex-wrap"
 };
 var _hoisted_3 = {
   "class": "btnMobile",
@@ -26300,7 +26300,7 @@ var _hoisted_7 = {
   "class": "logotypeWhite"
 };
 var _hoisted_8 = {
-  "class": "flex flex-col items-center"
+  "class": "flex flex-col items-center md:hidden"
 };
 var _hoisted_9 = {
   "class": "text-background font-medium tracking-wide flex items-center flex-row"
@@ -26340,12 +26340,47 @@ var _hoisted_19 = {
   href: "https://www.linkedin.com/company/imag-diagnostico",
   target: "_blank"
 };
+var _hoisted_20 = {
+  "class": "bg-gray-500 w-screen py-3"
+};
+var _hoisted_21 = {
+  "class": "flex justify-around"
+};
+
+var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"flex flex-col\" data-v-3401d515><h3 class=\"text-background uppercase\" data-v-3401d515>Endereço</h3><address data-v-3401d515><p class=\"text-background font-light text-sm py-3\" data-v-3401d515>Vitória Park Shopping <br data-v-3401d515> Avenida Henrique de Holanda, 3000 <br data-v-3401d515> Lojas 1025 - 1027 / Redenção - <br data-v-3401d515> Vitória de Santo Antão - PE <br data-v-3401d515> CEP.: 55612-901 </p></address><p class=\"text-background font-light text-sm py-3\" data-v-3401d515>Responsável Técnico <br data-v-3401d515> Dr. Pedro Andrade <br data-v-3401d515> CRM 21.798/PE</p></div><div class=\"flex flex-col\" data-v-3401d515><h3 class=\"text-background uppercase\" data-v-3401d515>Institucional</h3><div class=\"flex flex-col py-3\" data-v-3401d515><a class=\"text-background font-medium text-sm\" href=\"\" data-v-3401d515>Missão</a><a class=\"text-background font-medium text-sm\" href=\"\" data-v-3401d515>Visão</a><a class=\"text-background font-medium text-sm\" href=\"\" data-v-3401d515>Valores</a><a class=\"text-background font-medium text-sm\" href=\"\" data-v-3401d515>Equipe Médica</a><a class=\"text-background font-medium text-sm\" href=\"\" data-v-3401d515>Tecnologia</a><a class=\"text-background font-medium text-sm\" href=\"\" data-v-3401d515>Convênios Credenciados</a></div></div><div class=\"flex flex-col\" data-v-3401d515><h3 class=\"text-background uppercase\" data-v-3401d515>Exames</h3><div class=\"flex flex-col py-3\" data-v-3401d515><a class=\"text-background font-medium text-sm\" href=\"\" data-v-3401d515>Ressonância Magnética</a><a class=\"text-background font-medium text-sm\" href=\"\" data-v-3401d515>Tomografia Computadorizada</a><a class=\"text-background font-medium text-sm\" href=\"\" data-v-3401d515>Densintometria Óssea</a><a class=\"text-background font-medium text-sm\" href=\"\" data-v-3401d515>Mamografia</a><a class=\"text-background font-medium text-sm\" href=\"\" data-v-3401d515>Ultrassonografia</a><a class=\"text-background font-medium text-sm\" href=\"\" data-v-3401d515>Raio-X</a><a class=\"text-background font-medium text-sm\" href=\"\" data-v-3401d515>Punções e Biópsias</a><a class=\"text-background font-medium text-sm\" href=\"\" data-v-3401d515>Exames Laboratóriais</a><a class=\"text-background font-medium text-sm\" href=\"\" data-v-3401d515>Outros Serviços</a></div></div>", 3);
+
+var _hoisted_25 = {
+  "class": "flex flex-col items-end"
+};
+
+var _hoisted_26 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<h3 class=\"text-background uppercase\" data-v-3401d515>Contato</h3><div class=\"flex flex-col items-end py-3\" data-v-3401d515><a class=\"text-background font-medium\" href=\"tel:8130409999\" data-v-3401d515>(81) 3040.9999</a><a class=\"text-background font-medium\" href=\"https://api.whatsapp.com/send/?phone=558194630900&amp;text=Ol%C3%A1%2C+estou+vindo+do+site%2C+preciso+de+mais+informa%C3%A7%C3%B5es&amp;app_absent=0\" data-v-3401d515>(81) 9.9463.0900</a><a class=\"text-background font-medium\" href=\"mailto:atendimento@imagdiagnostico.com.br\" data-v-3401d515>atendimento@imagdiagnostico.com.br</a></div>", 2);
+
+var _hoisted_28 = {
+  "class": "flex py-3"
+};
+var _hoisted_29 = {
+  href: "https://www.instagram.com/imagdiagnostico",
+  target: "_blank"
+};
+var _hoisted_30 = {
+  href: "https://www.facebook.com/imagdiagnostico",
+  target: "_blank"
+};
+var _hoisted_31 = {
+  href: "https://www.linkedin.com/company/imag-diagnostico",
+  target: "_blank"
+};
+
+var _hoisted_32 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"bg-gray-600 w-screen py-2 items-center flex justify-center\" data-v-3401d515><p class=\"text-background font-light text-xs\" data-v-3401d515>© 2022 IMAG - Medicina Diagnóstica - Todos os Direitos Reservados |   </p><div class=\"flex\" data-v-3401d515><a class=\"text-background font-light text-xs underline\" href=\"\" data-v-3401d515> Política de privacidade </a> <p class=\"text-background font-light text-xs\" data-v-3401d515>   Desenvolvido por   </p> <a class=\"text-background font-light text-xs underline\" href=\"https://www.solutionstec.com.br\" target=\"_blank\" data-v-3401d515>SolutionsTec</a></div></div>", 1);
+
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Icons = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Icons");
 
   var _component_LogotypeWhite = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("LogotypeWhite");
 
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Icons, {
+  var _component_icons = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("icons");
+
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Icons, {
     name: "mobilePacient",
     "class": "w-8"
   }), _hoisted_4]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Icons, {
@@ -26369,7 +26404,18 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Icons, {
     name: "linkedinFooter",
     "class": "w-6 mx-2 p-1"
-  })])])])]);
+  })])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, [_hoisted_22, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_25, [_hoisted_26, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_28, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_29, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_icons, {
+    name: "instagramFooter",
+    "class": "w-10"
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_30, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_icons, {
+    name: "facebookFooter",
+    "class": "w-10"
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_31, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_icons, {
+    name: "linkedinFooter",
+    "class": "w-10"
+  })])])])])]), _hoisted_32], 64
+  /* STABLE_FRAGMENT */
+  );
 }
 
 /***/ }),

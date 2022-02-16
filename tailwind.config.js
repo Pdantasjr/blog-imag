@@ -19,6 +19,7 @@ module.exports = {
                 'secondary': '#3D7B93',
                 'neutral': '#9C9B9B',
                 'background': '#f8fafc',
+                'footer': '#9C9B9B',
             },
         },
     },
