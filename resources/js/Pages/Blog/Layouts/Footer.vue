@@ -1,11 +1,12 @@
 <template>
     <div class="bg-primary w-screen py-3">
+        <!---->
         <div class="flex justify-around items-center h-auto mx-auto flex-wrap">
-            <a class="btnMobile" href="#">
+            <a class="btnMobile w-1/4 py-1 sm:py-2" href="#">
                 <Icons name="mobilePacient" class="w-8" />
                 Área do Paciente
             </a>
-            <a class="btnMobile" href="#">
+            <a class="btnMobile w-1/4 py-1 sm:py-2" href="#">
                 <Icons name="mobileMedic" class="w-8" />
                 Área do Médico
             </a>
@@ -41,8 +42,9 @@
             </div>
         </div>
     </div>
-    <div class="bg-gray-500 w-screen py-3">
-        <div class="flex justify-around">
+    <!--Cinza-->
+    <div class="bg-gray-500 w-screen py-3 hidden md:flex">
+        <div class="flex justify-around mx-auto">
             <div class="flex flex-col">
                 <h3 class="text-background uppercase">Endereço</h3>
                 <address>
@@ -55,7 +57,7 @@
                 </address>
                 <p class="text-background font-light text-sm py-3">Responsável Técnico <br> Dr. Pedro Andrade <br> CRM 21.798/PE</p>
             </div>
-            <div class="flex flex-col">
+            <div class="flex flex-col mx-2">
                 <h3 class="text-background uppercase">Institucional</h3>
                 <div class="flex flex-col py-3">
                     <a class="text-background font-medium text-sm" href="">Missão</a>
@@ -66,7 +68,7 @@
                     <a class="text-background font-medium text-sm" href="">Convênios Credenciados</a>
                 </div>
             </div>
-            <div class="flex flex-col">
+            <div class="flex flex-col mx-2">
                 <h3 class="text-background uppercase">Exames</h3>
                 <div class="flex flex-col py-3">
                     <a class="text-background font-medium text-sm" href="">Ressonância Magnética</a>
@@ -101,12 +103,15 @@
             </div>
         </div>
     </div>
-    <div class="bg-gray-600 w-screen py-2 items-center flex justify-center">
+    <!--/Cinza-->
+    <!--Copy-->
+    <div class="bg-gray-600 w-screen py-2 items-center flex justify-center hidden md:flex">
         <p class="text-background font-light text-xs">© 2022 IMAG - Medicina Diagnóstica - Todos os Direitos Reservados | &nbsp; </p>
         <div class="flex">
             <a class="text-background font-light text-xs underline" href=""> Política de privacidade </a> <p class="text-background font-light text-xs"> &nbsp;  Desenvolvido por  &nbsp; </p> <a class="text-background font-light text-xs underline" href="https://www.solutionstec.com.br" target="_blank">SolutionsTec</a>
         </div>
     </div>
+    <!--/Copy-->
 </template>
 
 <script>
@@ -128,8 +133,6 @@ export default {
     color: #ffffff;
     border-radius: 2rem;
     border: 2px solid #ffffff;
-    background-color: var(--primary);
-    padding: 4px;
     margin: 4px auto;
     min-width: 10em;
     display: flex;
