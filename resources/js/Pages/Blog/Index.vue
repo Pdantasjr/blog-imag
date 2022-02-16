@@ -1,6 +1,7 @@
 <template>
     <Head title="Blog IMAG" />
     <Header />
+    <Content />
     <Footer />
 </template>
 
@@ -8,6 +9,7 @@
 import { defineComponent } from 'vue'
 import { Head, Link } from '@inertiajs/inertia-vue3';
 import Header from '@/Pages/Blog/Layouts/Header';
+import Content from "@/Pages/Blog/Layouts/Content";
 import Footer from "@/Pages/Blog/Layouts/Footer";
 
 export default defineComponent({
@@ -15,6 +17,7 @@ export default defineComponent({
         Head,
         Link,
         Header,
+        Content,
         Footer,
     },
 

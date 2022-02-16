@@ -21,7 +21,7 @@
         </div>
     </div>
 
-    <nav class="translate-x-full flex flex-col items-center sidebar md:hidden z-0 mt-20 bg-primary text-background w-64 absolute inset-y-0 right-0 transform transition duration-150 ease-in-out">
+    <nav class="translate-x-full flex flex-col items-center sidebar md:hidden mt-20 bg-primary text-background w-4/12 absolute inset-y-0 right-0 transform transition duration-150 ease-in-out">
         <Link class="w-full text-center py-4 text-background hover:font-bold hover:scale-105 hover:translate-x-2 transition ease-in-out duration-200 font-medium space-y-8 mt-8" href="#">Nossos Exames</Link>
         <Link class="w-full text-center py-4 text-background hover:font-bold hover:scale-105 hover:translate-x-2 transition ease-in-out duration-200 font-medium space-y-8" href="#">Institucional</Link>
         <Link class="w-full text-center py-4 text-background hover:font-bold hover:scale-105 hover:translate-x-2 transition ease-in-out duration-200 font-medium space-y-8" href="#">Convênios</Link>
