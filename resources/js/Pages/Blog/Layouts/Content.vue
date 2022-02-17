@@ -213,83 +213,8 @@
                 </radialGradient>
             </defs>
         </svg></div>
-    <div class="p-4 max-w-5xl grid gap-4 sm:grid-cols-2 lg:grid-cols-3 mx-auto">
-
-        <div class="h-auto lg:h-80 col-span-2 lg:col-span-1 self-center py-4 lg:py-0">
-            <h1 class="text-center lg:text-left text-primary text-5xl sm:text-6xl mb-3 uppercase font-extrabold">Nosso Blog</h1>
-            <p class="text-neutral lg:text-left text-center text-lg sm:text-2xl font-light">Informação com qualidade, direto de nosso time para você.</p>
-        </div>
-
-        <Link href="/single" class="h-80 col-span-2 sm:col-span-2 rounded-lg bg-gray-50 shadow-sm border border-gray-200 hover:cursor-pointer hover:shadow-lg transition duration-200">
-            <div class="max-h-fit w-full">
-                <img class="object-cover rounded-t-lg bg-center" src="https://picsum.photos/800/250?blur" alt="Cover do post">
-            </div>
-            <div class="flex flex-col p-2">
-                <h2 class="text-primary font-bold text-lg py-2">Título do post</h2>
-                <h3 class="text-neutral py-2 text-sm font-light">Subtítulo da postagem do blog</h3>
-                <span class="text-neutral text-xs font-light"><strong>Postado em:</strong> 20 de fevereiro, por Pedro Gama</span>
-            </div>
-        </Link>
-        <div class="h-80 col-span-2 sm:col-span-1 rounded-lg bg-gray-50 shadow-sm border border-gray-200 hover:cursor-pointer hover:shadow-lg transition duration-200">
-            <div class="max-h-fit w-full rounded-lg">
-                <img class=" rounded-t-lg bg-cover bg-center" src="https://picsum.photos/800/250" alt="Cover do post">
-            </div>
-            <div class="flex flex-col p-2">
-                <h2 class="text-primary font-bold text-lg py-2">Título do post</h2>
-                <h3 class="text-neutral py-2 text-sm font-light">Subtítulo da postagem do blog</h3>
-                <span class="text-neutral text-xs font-light"><strong>Postado em:</strong> 20 de fevereiro, por Pedro Gama</span>
-            </div>
-        </div>
-        <div class="h-80 col-span-2 sm:col-span-1 rounded-lg bg-gray-50 shadow-sm border border-gray-200 hover:cursor-pointer hover:shadow-lg transition duration-200">
-            <div class="max-h-fit w-full rounded-lg">
-                <img class=" rounded-t-lg bg-cover bg-center" src="https://picsum.photos/800/250" alt="Cover do post">
-            </div>
-            <div class="flex flex-col p-2">
-                <h2 class="text-primary font-bold text-lg py-2">Título do post</h2>
-                <h3 class="text-neutral py-2 text-sm font-light">Subtítulo da postagem do blog</h3>
-                <span class="text-neutral text-xs font-light"><strong>Postado em:</strong> 20 de fevereiro, por Pedro Gama</span>
-            </div>
-        </div>
-        <div class="h-80 col-span-2 sm:col-span-1 rounded-lg bg-gray-50 shadow-sm border border-gray-200 hover:cursor-pointer hover:shadow-lg transition duration-200">
-            <div class="max-h-fit w-full rounded-lg">
-                <img class=" rounded-t-lg bg-cover bg-center" src="https://picsum.photos/800/250" alt="Cover do post">
-            </div>
-            <div class="flex flex-col p-2">
-                <h2 class="text-primary font-bold text-lg py-2">Título do post</h2>
-                <h3 class="text-neutral py-2 text-sm font-light">Subtítulo da postagem do blog</h3>
-                <span class="text-neutral text-xs font-light"><strong>Postado em:</strong> 20 de fevereiro, por Pedro Gama</span>
-            </div>
-        </div>
-        <div class="h-80 col-span-2 sm:col-span-1 rounded-lg bg-gray-50 shadow-sm border border-gray-200 hover:cursor-pointer hover:shadow-lg transition duration-200">
-            <div class="max-h-fit w-full rounded-lg">
-                <img class=" rounded-t-lg bg-cover bg-center" src="https://picsum.photos/800/250" alt="Cover do post">
-            </div>
-            <div class="flex flex-col p-2">
-                <h2 class="text-primary font-bold text-lg py-2">Título do post</h2>
-                <h3 class="text-neutral py-2 text-sm font-light">Subtítulo da postagem do blog</h3>
-                <span class="text-neutral text-xs font-light"><strong>Postado em:</strong> 20 de fevereiro, por Pedro Gama</span>
-            </div>
-        </div>
-        <div class="h-80 col-span-2 sm:col-span-1 rounded-lg bg-gray-50 shadow-sm border border-gray-200 hover:cursor-pointer hover:shadow-lg transition duration-200">
-            <div class="max-h-fit w-full rounded-lg">
-                <img class=" rounded-t-lg bg-cover bg-center" src="https://picsum.photos/800/250" alt="Cover do post">
-            </div>
-            <div class="flex flex-col p-2">
-                <h2 class="text-primary font-bold text-lg py-2">Título do post</h2>
-                <h3 class="text-neutral py-2 text-sm font-light">Subtítulo da postagem do blog</h3>
-                <span class="text-neutral text-xs font-light"><strong>Postado em:</strong> 20 de fevereiro, por Pedro Gama</span>
-            </div>
-        </div>
-        <div class="h-80 col-span-2 sm:col-span-1 rounded-lg bg-gray-50 shadow-sm border border-gray-200 hover:cursor-pointer hover:shadow-lg transition duration-200">
-            <div class="max-h-fit w-full rounded-lg">
-                <img class=" rounded-t-lg bg-cover bg-center" src="https://picsum.photos/800/250" alt="Cover do post">
-            </div>
-            <div class="flex flex-col p-2">
-                <h2 class="text-primary font-bold text-lg py-2">Título do post</h2>
-                <h3 class="text-neutral py-2 text-sm font-light">Subtítulo da postagem do blog</h3>
-                <span class="text-neutral text-xs font-light"><strong>Postado em:</strong> 20 de fevereiro, por Pedro Gama</span>
-            </div>
-        </div>
+    <div class="p-4 my-10 sm:my-24 max-w-5xl grid gap-4 sm:grid-cols-2 lg:grid-cols-3 mx-auto">
+        <slot name="content"></slot>
     </div>
 </template>
 

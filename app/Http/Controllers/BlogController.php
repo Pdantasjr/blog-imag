@@ -9,15 +9,16 @@ class BlogController extends Controller
 {
     public function index()
     {
-        return Inertia::render('Blog/Index');
+        return Inertia::render('Blog/Index',[
+            'posts' => Blog::with('postCategory', 'postAuthor')->get(),
+            'url' => url('storage/'),
+            'lastPost' => Blog::with('postAuthor')->orderBy('created_at', 'desc')->first(),
+        ]);
     }
 
-    public function show($id)
+    public function show($slug)
     {
-//        return Inertia::render('Blog/Show', [
-//            'post' => Blog::findOrFail($id)->with(['postAuthor', 'postCategory'])->get(),
-//        ]);
-        $post = Blog::findOrFail($id);
+        $post = Blog::findOrFail($slug);
         return Inertia::render('Blog/Show', [
             'post' =>  [
                 'id' => $post->id,
