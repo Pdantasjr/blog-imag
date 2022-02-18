@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-primary w-screen py-3">
+    <div class="bg-primary w-screen py-3 z-0">
         <!---->
         <div class="flex justify-around items-center h-auto mx-auto flex-wrap">
             <a class="btnMobile w-1/4 py-1 sm:py-2" href="#">

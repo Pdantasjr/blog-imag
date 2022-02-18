@@ -1,5 +1,5 @@
 <template>
-    <div class="w-screen h-auto">
+    <div class="w-full h-auto">
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="none" viewBox="0 0 1440 150">
             <g mask="url(&quot;#SvgjsMask1193&quot;)" fill="none">
                 <rect width="1440" height="150" x="0" y="0" fill="url(#SvgjsLinearGradient1194)"></rect>
@@ -213,7 +213,7 @@
                 </radialGradient>
             </defs>
         </svg></div>
-    <div class="p-4 my-10 sm:my-24 max-w-5xl grid gap-4 sm:grid-cols-2 lg:grid-cols-3 mx-auto">
+    <div class="p-4 my-10 sm:my-24 max-w-5xl grid gap-4 md:gap-6 sm:grid-cols-2 lg:grid-cols-3 mx-auto">
         <slot name="content"></slot>
     </div>
 </template>

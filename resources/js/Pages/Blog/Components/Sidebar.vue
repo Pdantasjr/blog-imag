@@ -1,33 +1,39 @@
 <template>
-    <div class="flex">
-        <div class="md:flex space-x-4 justify-around items-center hover:cursor-pointer hidden">
-            <a :href="link.phone">
-                <Icons name="phone" class="text-primary min-w-fit"/>
-            </a>
-            <a :href="link.whatsApp" target="_blank">
-                <Icons name="whatsapp" class="text-primary min-w-fit" />
-            </a>
-        </div>
-        <div class="flex ml-12 justify-around items-center hover:cursor-pointer">
-            <Link href="/search">
-                <Icons name="search" class="text-primary w-8 h-8 min-w-fit"/>
-            </Link>
-        </div>
-        <div class="flex items-center ml-12 hover:cursor-pointer">
-            <button @click="toggle" class="flex flex-col items-center md:hidden hover:cursor-pointer">
-                <span class="line1 transform origin-top-center transition duration-150"></span>
-                <span class="line2 transform origin-top-center transition duration-150"></span>
-            </button>
-        </div>
-    </div>
 
-    <nav class="translate-x-full flex flex-col items-center sidebar md:hidden mt-20 bg-primary text-background w-4/12 absolute inset-y-0 right-0 transform transition duration-150 ease-in-out">
-        <Link class="w-full text-center py-4 text-background hover:font-bold hover:scale-105 hover:translate-x-2 transition ease-in-out duration-200 font-medium space-y-8 mt-8" href="#">Nossos Exames</Link>
-        <Link class="w-full text-center py-4 text-background hover:font-bold hover:scale-105 hover:translate-x-2 transition ease-in-out duration-200 font-medium space-y-8" href="#">Institucional</Link>
-        <Link class="w-full text-center py-4 text-background hover:font-bold hover:scale-105 hover:translate-x-2 transition ease-in-out duration-200 font-medium space-y-8" href="#">Convênios</Link>
-        <Link class="w-full text-center py-4 text-background hover:font-bold hover:scale-105 hover:translate-x-2 transition ease-in-out duration-200 font-medium space-y-8" href="#">Equipe Médica</Link>
-        <Link class="w-full text-center py-4 text-background hover:font-bold hover:scale-105 hover:translate-x-2 transition ease-in-out duration-200 font-medium space-y-8" href="#">Blog</Link>
-    </nav>
+
+
+    <div class="
+    bg-primary
+    text-background
+    w-64
+    space-y-6
+    py-7
+    px-2
+
+    absolute
+    top-0
+    right-0
+    inset-y-0
+
+    transform
+    translate-x-full
+
+    transition
+    duration-200
+    ease-in-out
+
+
+
+
+    ">
+        <nav class="flex flex-col">
+            <Link class="w-full text-center py-4 text-background hover:font-bold hover:scale-105 hover:translate-x-2 transition ease-in-out duration-200 font-medium space-y-8 mt-8" href="#">Nossos Exames</Link>
+            <Link class="w-full text-center py-4 text-background hover:font-bold hover:scale-105 hover:translate-x-2 transition ease-in-out duration-200 font-medium space-y-8" href="#">Institucional</Link>
+            <Link class="w-full text-center py-4 text-background hover:font-bold hover:scale-105 hover:translate-x-2 transition ease-in-out duration-200 font-medium space-y-8" href="#">Convênios</Link>
+            <Link class="w-full text-center py-4 text-background hover:font-bold hover:scale-105 hover:translate-x-2 transition ease-in-out duration-200 font-medium space-y-8" href="#">Equipe Médica</Link>
+            <Link class="w-full text-center py-4 text-background hover:font-bold hover:scale-105 hover:translate-x-2 transition ease-in-out duration-200 font-medium space-y-8" href="#">Blog</Link>
+        </nav>
+    </div>
 </template>
 
 <script>

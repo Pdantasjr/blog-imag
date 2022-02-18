@@ -3,12 +3,12 @@
     <Header />
     <content>
         <template #content>
-            <div class="h-auto col-span-2 lg:col-span-1 self-center py-4 lg:py-0 overflow-hidden">
+            <div class="h-auto col-span-2 lg:col-span-1 self-center py-4 lg:py-0">
                 <h1 class="text-center lg:text-left text-primary text-4xl md:text-5xl sm:text-6xl mb-3 uppercase font-extrabold">Nosso Blog</h1>
                 <p class="text-neutral lg:text-left text-center text-lg sm:text-2xl font-light">Informação com qualidade, direto de nosso time para você.</p>
             </div>
 
-            <div  class="h-auto col-span-2 sm:col-span-2 rounded-lg bg-gray-50 shadow-sm border border-gray-200 hover:cursor-pointer hover:shadow-lg transition duration-200">
+            <div  class="h-auto col-span-2 sm:col-span-2 rounded-lg bg-white shadow-md border border-gray-100 hover:cursor-pointer hover:shadow-2xl transition duration-200">
                 <Link :href="route('blog.show', [lastPost.slug])">
                     <div class="max-h-fit w-full">
                         <img class="object-cover rounded-t-lg bg-center" :src="url+'/'+lastPost.post_cover" alt="Cover do post">
@@ -21,7 +21,7 @@
                 </Link>
             </div>
 
-            <div v-for="post in posts" :key="post.id" class="h-80 col-span-2 sm:col-span-1 rounded-lg bg-gray-50 shadow-sm border border-gray-200 hover:cursor-pointer hover:shadow-lg transition duration-200">
+            <div v-for="post in posts" :key="post.id" class="h-auto col-span-2 sm:col-span-1 rounded-lg bg-white shadow-md border border-gray-100 hover:cursor-pointer hover:shadow-2xl transition duration-200">
                 <Link :href="route('blog.show', [post.slug])" >
                     <div class="max-h-fit w-full rounded-lg">
                         <img class="rounded-t-lg bg-cover bg-center" :src="url+'/'+post.post_cover" alt="Cover do post">
