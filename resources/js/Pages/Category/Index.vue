@@ -1,5 +1,5 @@
 <template>
-    <app-layout title="Blog">
+    <app-layout title="Categorias">
         <toast :toast="$page.props.flash.message"></toast>
         <sidebar/>
         <main-content>
@@ -167,13 +167,13 @@
                 <div class="flex-1 w-full px-4 mx-auto md:px-6 lg:px-8 max-w-7xl">
                     <div class="space-y-6">
                         <header class="space-y-2 items-start justify-between sm:flex sm:space-y-0 sm:space-x-4 sm:py-4">
-                            <h1 class="text-2xl font-bold tracking-tight md:text-3xl text-gray-900">
+                            <h1 class="text-2xl text-gray-700 font-bold tracking-tight md:text-3xl">
                                 Categorias
                             </h1>
                             <!--                            Botão-->
                             <div class="flex flex-wrap items-center gap-4 justify-start shrink-0">
                                 <Link
-                                    class="inline-flex items-center justify-center font-medium tracking-tight rounded-lg focus:outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset bg-yellow-400 hover:bg-yellow-500 focus:bg-yellow-700 focus:ring-offset-primary-700 h-9 px-4 text-white shadow focus:ring-white"
+                                    class="inline-flex items-center justify-center font-medium tracking-tight rounded-lg focus:outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset bg-primary focus:ring-offset-primary-700 h-9 px-4 text-white shadow focus:ring-white"
                                     :href="route('category.create')">
                                     <span>Nova categoria</span>
                                 </Link>
@@ -243,7 +243,7 @@
                                 </div>
                             </div>
                             <div v-else>
-                                <p>Você ainda não cadastrou nenhuma categoria.</p>
+                                <p class="text-neutral text-center text-ms font-light">Você ainda não cadastrou nenhuma categoria.</p>
                             </div>
                         </div>
                     </div>

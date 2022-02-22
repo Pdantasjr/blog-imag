@@ -3,18 +3,17 @@
         <div class="bg-background header absolute top-0 w-full py-4 shadow-lg text-gray-100 flex justify-around items-center">
             <!--LOGO-->
             <Link :href="route('blog.index')">
-                <Logotype logo_width="110" class="min-w-fit"/>
+                <Logotype logo_width="110" class="w-28 min-h-20"/>
             </Link>
             <!--/LOGO-->
-
             <!--NAV-->
             <nav class="md:flex space-x-2 md:space-x-6 hidden">
-                <Link :href="route('blog.index')" class="relative font-light text-primary py-6 links_a">Home</Link>
-                <Link :href="route('blog.index')" class="relative font-light text-primary py-6 links_a">Nossos Exames</Link>
-                <Link :href="route('blog.index')" class="relative font-light text-primary py-6 links_a">Institucional</Link>
-                <Link :href="route('blog.index')" class="relative font-light text-primary py-6 links_a">Convênios</Link>
-                <Link :href="route('blog.index')" class="relative font-light text-primary py-6 links_a">Equipe Médica</Link>
-                <Link :href="route('blog.index')" class="relative font-light text-primary py-6 links_a">Blog</Link>
+                <Link href="/blog" class="relative font-light text-primary py-6 links_a">Home</Link>
+                <a href="#" class="relative font-light text-primary py-6 links_a">Nossos Exames</a>
+                <a href="#" class="relative font-light text-primary py-6 links_a">Institucional</a>
+                <a href="#" class="relative font-light text-primary py-6 links_a">Convênios</a>
+                <a href="#" class="relative font-light text-primary py-6 links_a">Equipe Médica</a>
+                <Link href="/blog" class="relative font-light text-primary py-6 links_a">Blog</Link>
             </nav>
             <!--/NAV-->
             <!--RIGHT-->
@@ -42,7 +41,6 @@
             <!--/RIGHT-->
         </div>
     </div>
-
     <!--SIDEBAR-->
     <div class="sidebar bg-primary text-blue-100 w-64 space-y-6 py-7 px-2 fixed inset-y-0 right-0 transform translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out md:hidden">
         <nav class="flex flex-col mt-14">
@@ -62,17 +60,13 @@ import {Link} from "@inertiajs/inertia-vue3";
 import Icons from "@/Pages/Blog/Components/Icons";
 
 import Logotype from "@/Pages/Blog/Components/Logotype";
-import Nav from "@/Pages/Blog/Components/Nav";
-import Sidebar from "@/Pages/Blog/Components/Sidebar";
 
 export default {
     name: "Header",
     components: {
-        // Nav,
         Logotype,
         Link,
         Icons,
-        // Sidebar,
     },
     data () {
         return {

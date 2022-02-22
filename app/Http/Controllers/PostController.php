@@ -18,6 +18,7 @@ class PostController extends Controller
     {
         return Inertia::render('Post/Index', [
             'posts' => Post::with('postCategory', 'postAuthor')
+                ->orderBy('created_at', 'desc')
                 ->paginate(10)
                 ->through(fn($pst) => [
                     'id' => $pst->id,
@@ -135,7 +136,6 @@ class PostController extends Controller
             'subtitle' => 'required',
             'post_content' => 'required',
             'category' => 'required',
-            'post_cover' => 'required|image|mimes:jpeg,jpg,png,gif,svg|max:2048',
         ]);
 
         $cover = $post->post_cover;

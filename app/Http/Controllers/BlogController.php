@@ -10,26 +10,33 @@ class BlogController extends Controller
     public function index()
     {
         return Inertia::render('Blog/Index',[
+            'lastPost' => Blog::with('postAuthor')->latest()->first(),
             'posts' => Blog::with('postCategory', 'postAuthor')->get(),
             'url' => url('storage/'),
-            'lastPost' => Blog::with('postAuthor')->orderBy('created_at', 'desc')->first(),
         ]);
     }
 
+    /* @param \App\Models\Blog $slug
+     * @returns \Illuminate\Http\Response
+     */
+
     public function show($slug)
     {
-        $post = Blog::findOrFail($slug);
+        $slug = Blog::where('slug', $slug)->with(['postCategory', 'postAuthor'])->first();
+
         return Inertia::render('Blog/Show', [
+            'author' => Blog::with('postAuthor'),
+            'category' => Blog::with('postCategory'),
             'post' =>  [
-                'id' => $post->id,
-                'title' => $post->title,
-                'slug' => $post->slug,
-                'subtitle' => $post->subtitle,
-                'post_content' => $post->post_content,
-                'author' => $post->postAuthor->only('name'),
-                'category' => $post->postCategory ? $post->postCategory->only('name') : null,
-                'post_cover' => asset('storage/'.$post->post_cover),
-                'created_at' => $post->created_at,
+                'id' => $slug->id,
+                'title' => $slug->title,
+                'slug' => $slug->slug,
+                'subtitle' => $slug->subtitle,
+                'post_content' => $slug->post_content,
+                'author' => $slug->postAuthor->only('name'),
+                'category' => $slug->postCategory ? $slug->postCategory->only('name') : null,
+                'post_cover' => asset('storage/'.$slug->post_cover),
+                'created_at' => $slug->created_at,
             ],
         ]);
     }

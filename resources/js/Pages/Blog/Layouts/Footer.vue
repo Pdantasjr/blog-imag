@@ -1,12 +1,12 @@
 <template>
     <div class="bg-primary w-screen py-3 z-0">
-        <!---->
+        <!--Botões-->
         <div class="flex justify-around items-center h-auto mx-auto flex-wrap">
-            <a class="btnMobile w-1/4 py-1 sm:py-2" href="#">
+            <a class="btnMobile w-1/4 md:w-1/6 py-1 sm:py-2" href="#">
                 <Icons name="mobilePacient" class="w-8" />
                 Área do Paciente
             </a>
-            <a class="btnMobile w-1/4 py-1 sm:py-2" href="#">
+            <a class="btnMobile w-1/4 md:w-1/6 py-1 sm:py-2" href="#">
                 <Icons name="mobileMedic" class="w-8" />
                 Área do Médico
             </a>

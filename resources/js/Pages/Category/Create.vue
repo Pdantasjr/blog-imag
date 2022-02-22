@@ -166,7 +166,7 @@
                 <div class="flex-1 w-full px-4 mx-auto md:px-6 lg:px-8 max-w-7xl">
                     <div class="space-y-6">
                         <header class="space-y-2 items-start justify-between sm:flex sm:space-y-0 sm:space-x-4 sm:py-4">
-                            <h1 class="text-2xl font-bold tracking-tight md:text-3xl">
+                            <h1 class="text-2xl text-gray-700 font-bold tracking-tight md:text-3xl">
                                 Nova Categoria
                             </h1>
                         </header>
@@ -213,7 +213,7 @@
                                     <span>Voltar</span>
                                 </Link>
                                 <button type="submit"
-                                        class="inline-flex items-center justify-center font-medium tracking-tight rounded-lg focus:outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset bg-primary hover:bg-primary-500 focus:bg-primary-700 focus:ring-offset-primary-700 h-9 px-4 text-white shadow focus:ring-white">
+                                        class="inline-flex items-center justify-center font-medium tracking-tight rounded-lg focus:outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset bg-primary hover:bg-primary focus:ring-offset-primary-700 h-9 px-4 text-white shadow focus:ring-white">
                                     <span>Cadastrar</span>
                                 </button>
                             </div>
@@ -260,7 +260,9 @@ export default defineComponent({
     },
     methods: {
         submit() {
-            this.$inertia.post(route('category.store'), this.form);
+            this.$inertia.post(route('category.store'), this.form, {
+                forceFormData: true
+            });
         }
     },
 })

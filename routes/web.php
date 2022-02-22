@@ -1,7 +1,5 @@
 <?php
 
-use App\Models\Blog;
-use Illuminate\Foundation\Application;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\CategoryController;
@@ -25,3 +23,8 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 Route::resource('post', PostController::class)->middleware(['auth:sanctum', 'verified']);
 Route::resource('category', CategoryController::class)->middleware(['auth:sanctum', 'verified']);
+
+
+Route::get('/logout', function () {
+    return Inertia::render('Blog/Index');
+});

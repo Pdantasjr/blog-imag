@@ -166,13 +166,13 @@
                 <div class="flex-1 w-full px-4 mx-auto md:px-6 lg:px-8 max-w-7xl">
                     <div class="space-y-6">
                         <header class="space-y-2 items-start justify-between sm:flex sm:space-y-0 sm:space-x-4 sm:py-4">
-                            <h1 class="text-2xl font-bold tracking-tight md:text-3xl text-gray-900">
-                                <samll class="text-gray-700">Post:</samll> <small class="text-gray-400 mt-10">/{{ post.slug }}</small>
+                            <h1 class="text-2xl text-gray-700 font-bold tracking-tight md:text-3xl">
+                                Post: <small class="text-gray-500 font-light mt-10"> /{{ post.slug }}</small>
                             </h1>
                             <!--Botão-->
                             <div class="flex flex-wrap items-center gap-4 justify-start shrink-0">
                                 <Link
-                                    class="inline-flex items-center justify-center font-medium tracking-tight rounded-lg focus:outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset bg-yellow-400 hover:bg-yellow-500 focus:bg-yellow-700 focus:ring-offset-primary-700 h-9 px-4 text-white shadow focus:ring-white"
+                                    class="inline-flex items-center justify-center font-medium tracking-tight rounded-lg focus:outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset bg-primary focus:bg-primary focus:ring-offset-primary-700 h-9 px-4 text-white shadow focus:ring-white"
                                     :href="route('post.edit',[post.id])">
                                     <span>Editar</span>
                                 </Link>
@@ -191,7 +191,7 @@
                                         <h1 class="text-md text-gray-500 mb-4"> Categoria: <span class="text-lg text-gray-600"> {{ post.category.name }} </span></h1>
                                         <h5 class="text-sm text-gray-400 mb-6"> Slug: {{ post.slug }} </h5>
                                         <Link
-                                            class="inline-flex items-center justify-center font-medium tracking-tight rounded-lg focus:outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset bg-yellow-400 hover:bg-yellow-500 focus:bg-yellow-700 focus:ring-offset-primary-700 h-9 px-4 text-white shadow focus:ring-white"
+                                            class="inline-flex items-center justify-center font-medium tracking-tight rounded-lg focus:outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset bg-gray-400 hover:bg-primary-500 focus:bg-primary-700 focus:ring-offset-primary-700 h-9 px-4 text-white shadow focus:ring-white"
                                             :href="route('post.index',[post.id])">
                                             <span>Voltar</span>
                                         </Link>

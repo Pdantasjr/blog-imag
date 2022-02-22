@@ -1,9 +1,9 @@
 <template>
-    <Head title="Postagem no blog" />
+    <Head :title="title " />
     <Header />
     <content-single>
         <template #title>
-            <h1 class="text-center font-medium text-primary text-4xl md:text-5xl mt-40 mb-24 md:my-24 px-4">{{ post.title }}</h1>
+            <h1 class="text-center font-medium text-primary text-4xl md:text-5xl mt-40 md:mt-60 mb-24 md:my-24 px-4">{{ post.title }}</h1>
         </template>
         <template #cover>
             <img class="w-full h-10/12 bg-cover bg-center rounded shadow-2xl mx-auto" :src="post.post_cover" alt="Cover">
@@ -36,19 +36,12 @@ export default defineComponent({
         Footer,
     },
     props: {
-        post: Array,
+        post: Object,
+    },
+    data () {
+        return {
+            title: this.post.title,
+        }
     }
 })
 </script>
-
-<style scoped>
-
-</style>
-
-//nathalianoronhaaa
-//REC.Insta#NN22
-
-//nathalianoronhaa
-//REC.Insta#NN22
-
-//nnacademys

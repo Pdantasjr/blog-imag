@@ -141,9 +141,9 @@
 
                                             <!-- Authentication -->
                                             <form @submit.prevent="logout">
-                                                <jet-dropdown-link as="button">
-                                                    Log Out
-                                                </jet-dropdown-link>
+                                                <button class="block w-full px-4 py-2 text-sm leading-5 text-gray-700 text-left hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition">
+                                                    Sair
+                                                </button>
                                             </form>
                                         </template>
                                     </jet-dropdown>
@@ -176,10 +176,15 @@
                                                     </h2>
 
                                                     <p class="text-sm">
-                                                        <a href="https://demo.filamentadmin.com/logout"
-                                                           class="text-gray-600 hover:text-primary-500 focus:outline-none focus:underline">
-                                                            Fazer logout
-                                                        </a>
+<!--                                                        <Link href="/logout"-->
+<!--                                                           class="text-gray-600 hover:text-primary-500 focus:outline-none focus:underline">-->
+<!--                                                            Fazer logout-->
+<!--                                                        </Link>-->
+                                                    <form @submit.prevent="logout">
+                                                        <button class="text-gray-600 hover:text-primary-500 focus:outline-none focus:underline">
+                                                            <small class="text-sm">Sair</small>
+                                                        </button>
+                                                    </form>
                                                     </p>
                                                 </div>
                                             </div>
@@ -379,6 +384,8 @@ import MainContent from '@/Layouts/MainContent.vue'
 import Sidebar from '@/Layouts/Sidebar.vue'
 import JetDropdown from '@/Jetstream/Dropdown.vue'
 import JetDropdownLink from '@/Jetstream/DropdownLink.vue'
+import Logotype from '@/Jetstream/ApplicationLogo.vue'
+import {Head, Link} from '@inertiajs/inertia-vue3';
 
 export default defineComponent({
     components: {
@@ -387,6 +394,9 @@ export default defineComponent({
         Sidebar,
         JetDropdown,
         JetDropdownLink,
+        Logotype,
+        Link,
+        Head,
     },
     data() {
         return {

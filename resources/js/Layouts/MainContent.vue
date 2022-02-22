@@ -8,17 +8,17 @@
 <script>
 import {defineComponent} from 'vue'
 
-import JetDropdown from "@/Jetstream/Dropdown";
-import JetDropdownLink from "@/Jetstream/DropdownLink";
+// import JetDropdown from "@/Jetstream/Dropdown";
+// import JetDropdownLink from "@/Jetstream/DropdownLink";
 
 export default defineComponent({
     props: {
         title: String,
     },
-    components: {
-        JetDropdown,
-        JetDropdownLink,
-    },
+    // components: {
+    //     JetDropdown,
+    //     JetDropdownLink,
+    // },
     data() {
         return {
             showingNavigationDropdown: true,
