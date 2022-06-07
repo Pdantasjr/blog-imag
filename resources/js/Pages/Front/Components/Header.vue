@@ -1,30 +1,30 @@
 <template>
-    <div class="h-auto min-w-screen">
+    <div class="h-24 min-w-screen">
         <div class="bg-background header absolute top-0 w-full py-4 shadow-lg text-gray-100 flex justify-around items-center">
             <!--LOGO-->
-            <Link :href="route('blog.index')">
+            <Link :href="route('front.index')">
                 <Logotype logo_width="110" class="w-28 min-h-20"/>
             </Link>
             <!--/LOGO-->
             <!--NAV-->
             <nav class="md:flex space-x-2 md:space-x-6 hidden">
-                <Link href="/blog" class="relative font-light text-primary py-6 links_a">Home</Link>
-                <a href="#" class="relative font-light text-primary py-6 links_a">Nossos Exames</a>
-                <a href="#" class="relative font-light text-primary py-6 links_a">Institucional</a>
-                <a href="#" class="relative font-light text-primary py-6 links_a">Convênios</a>
-                <a href="#" class="relative font-light text-primary py-6 links_a">Equipe Médica</a>
-                <Link href="/blog" class="relative font-light text-primary py-6 links_a">Blog</Link>
+                <Link :href="route('front.index')" class="relative font-light text-primary py-6 links_a">Home</Link>
+                <Link href="#" class="relative font-light text-primary py-6 links_a">Nossos Exames</Link>
+                <Link href="#" class="relative font-light text-primary py-6 links_a">Institucional</Link>
+                <Link href="#" class="relative font-light text-primary py-6 links_a">Convênios</Link>
+                <Link href="#" class="relative font-light text-primary py-6 links_a">Equipe Médica</Link>
+                <Link :href="route('front.blog')" class="relative font-light text-primary py-6 links_a">Blog</Link>
             </nav>
             <!--/NAV-->
             <!--RIGHT-->
             <div class="flex">
                 <div class="md:flex space-x-4 justify-around items-center hover:cursor-pointer hidden">
-                    <a :href="link.phone">
+                    <Link :href="link.phone">
                         <Icons name="phone" class="text-primary min-w-fit"/>
-                    </a>
-                    <a :href="link.whatsApp" target="_blank">
+                    </Link>
+                    <Link href="#" @click="WhatsAppLink" target="_blank">
                         <Icons name="whatsapp" class="text-primary min-w-fit" />
-                    </a>
+                    </Link>
                 </div>
                 <div class="flex ml-12 justify-around items-center hover:cursor-pointer">
                     <Link>
@@ -44,36 +44,41 @@
     <!--SIDEBAR-->
     <div class="sidebar bg-primary text-blue-100 w-64 space-y-6 py-7 px-2 fixed inset-y-0 right-0 transform translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out md:hidden">
         <nav class="flex flex-col mt-14">
-            <Link class="w-full text-center py-4 text-background hover:font-bold hover:scale-105 hover:translate-x-2 transition ease-in-out duration-200 font-medium space-y-8 mt-8" href="/">Home</Link>
+            <Link class="w-full text-center py-4 text-background hover:font-bold hover:scale-105 hover:translate-x-2 transition ease-in-out duration-200 font-medium space-y-8 mt-8" :href="route('front.index')">Home</Link>
             <Link class="w-full text-center py-4 text-background hover:font-bold hover:scale-105 hover:translate-x-2 transition ease-in-out duration-200 font-medium space-y-8" href="#">Nossos Exames</Link>
             <Link class="w-full text-center py-4 text-background hover:font-bold hover:scale-105 hover:translate-x-2 transition ease-in-out duration-200 font-medium space-y-8" href="#">Institucional</Link>
             <Link class="w-full text-center py-4 text-background hover:font-bold hover:scale-105 hover:translate-x-2 transition ease-in-out duration-200 font-medium space-y-8" href="#">Convênios</Link>
             <Link class="w-full text-center py-4 text-background hover:font-bold hover:scale-105 hover:translate-x-2 transition ease-in-out duration-200 font-medium space-y-8" href="#">Equipe Médica</Link>
-            <Link class="w-full text-center py-4 text-background hover:font-bold hover:scale-105 hover:translate-x-2 transition ease-in-out duration-200 font-medium space-y-8" :href="route('blog.index')">Blog</Link>
+            <Link class="w-full text-center py-4 text-background hover:font-bold hover:scale-105 hover:translate-x-2 transition ease-in-out duration-200 font-medium space-y-8" :href="route('front.blog')">Blog</Link>
         </nav>
     </div>
     <!--/SIDEBAR-->
 </template>
 
 <script>
-import {Link} from "@inertiajs/inertia-vue3";
-import Icons from "@/Pages/Blog/Components/Icons";
-
-import Logotype from "@/Pages/Blog/Components/Logotype";
+import {Head, Link} from "@inertiajs/inertia-vue3";
+import Icons from "./Icons";
+import Logotype from "./Logotype";
 
 export default {
     name: "Header",
     components: {
         Logotype,
+        Head,
         Link,
         Icons,
     },
     data () {
         return {
             link: {
-                whatsApp: 'https://wa.me/558194630900?text=Olá,%20estou%20vindo%20do%20site,%20preciso%20de%20mais%20informações',
                 phone: 'tel:8130409999'
             },
+            WhatsAppLink () {
+                return window.open(
+                    'https://wa.me/558194630900?text=Olá,%20estou%20vindo%20do%20site,%20preciso%20de%20mais%20informações',
+                    '_blank'
+                )
+            }
         }
     },
     methods: {

@@ -21,10 +21,10 @@
 
 <script>
 import { defineComponent } from 'vue';
-import Header from '@/Pages/Blog/Layouts/Header';
-import ContentSingle from "@/Pages/Blog/Layouts/ContentSingle";
-import Footer from "@/Pages/Blog/Layouts/Footer";
+
 import {Head, Link} from "@inertiajs/inertia-vue3";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer"
 
 export default defineComponent({
     name: "Show",
@@ -32,7 +32,6 @@ export default defineComponent({
         Head,
         Link,
         Header,
-        ContentSingle,
         Footer,
     },
     props: {

@@ -1,21 +1,23 @@
 <?php
 
-use App\Http\Controllers\BlogController;
+use App\Http\Controllers\FrontController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 
-Route::get('/', function () {
-    return Inertia::render('Blog/Index', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-    ]);
-});
+//Route::get('/', function () {
+//    return Inertia::render('Front/Index', [
+//        'canLogin' => Route::has('login'),
+//        'canRegister' => Route::has('register'),
+//    ]);
+//});
 
-Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
-Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blog.show');
+Route::get('/', [FrontController::class, 'index'])->name('front.index');
+
+Route::get('/blog', [FrontController::class, 'blog'])->name('front.blog');
+Route::get('/artigo/{slug}', [FrontController::class, 'article'])->name('front.post');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia::render('Dashboard');
@@ -26,5 +28,5 @@ Route::resource('category', CategoryController::class)->middleware(['auth:sanctu
 
 
 Route::get('/logout', function () {
-    return Inertia::render('Blog/Index');
+    return Inertia::render('Front/Index');
 });

@@ -2,14 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use Inertia\Inertia;
 use App\Models\Blog;
+use Illuminate\Http\Request;
+use Inertia\Inertia;
 
-class BlogController extends Controller
+class FrontController extends Controller
 {
     public function index()
     {
-        return Inertia::render('Blog/Index',[
+        return Inertia::render('Front/Index');
+    }
+
+    public function blog()
+    {
+        return Inertia::render('Front/Blog',[
             'lastPost' => Blog::with('postAuthor')->latest()->first(),
             'posts' => Blog::with('postCategory', 'postAuthor')->get(),
             'url' => url('storage/'),
@@ -20,11 +26,10 @@ class BlogController extends Controller
      * @returns \Illuminate\Http\Response
      */
 
-    public function show($slug)
+    public function article($slug)
     {
         $slug = Blog::where('slug', $slug)->with(['postCategory', 'postAuthor'])->first();
-
-        return Inertia::render('Blog/Show', [
+        return Inertia::render('Front/Post', [
             'author' => Blog::with('postAuthor'),
             'category' => Blog::with('postCategory'),
             'post' =>  [

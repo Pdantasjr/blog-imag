@@ -38,7 +38,7 @@
 
 <script>
 import {Link} from "@inertiajs/inertia-vue3";
-import Icons from "@/Pages/Blog/Components/Icons";
+import Icons from "@/Pages/Front/Components/Icons";
 
 export default {
     name: "Sidebar",

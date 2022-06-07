@@ -379,12 +379,12 @@
 <script>
 import {defineComponent} from 'vue'
 
-import AppLayout from '@/Layouts/AppLayout.vue'
-import MainContent from '@/Layouts/MainContent.vue'
-import Sidebar from '@/Layouts/Sidebar.vue'
-import JetDropdown from '@/Jetstream/Dropdown.vue'
-import JetDropdownLink from '@/Jetstream/DropdownLink.vue'
-import Logotype from '@/Jetstream/ApplicationLogo.vue'
+import AppLayout from "../Layouts/AppLayout"
+import MainContent from '../Layouts/MainContent'
+import Sidebar from "../Layouts/Sidebar"
+import JetDropdown from '../Jetstream/Dropdown.vue'
+import JetDropdownLink from '../Jetstream/DropdownLink.vue'
+import Logotype from '../Jetstream/ApplicationLogo.vue'
 import {Head, Link} from '@inertiajs/inertia-vue3';
 
 export default defineComponent({
