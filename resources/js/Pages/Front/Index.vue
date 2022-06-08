@@ -3,6 +3,8 @@
         <Head title="Home"/>
         <Header/>
         <Carousel />
+        <SearchForm />
+        <SectionTitle :title="100" />
     </div>
 </template>
 
@@ -12,6 +14,8 @@ import {defineComponent} from 'vue'
 import {Head, Link} from '@inertiajs/inertia-vue3';
 import Header from "./Components/Header"
 import Carousel from "./Components/Carousel";
+import SearchForm from "./Components/SearchForm";
+import SectionTitle from "./Components/SectionTitle";
 import Footer from "./Components/Footer"
 
 export default defineComponent({
@@ -21,6 +25,8 @@ export default defineComponent({
         Link,
         Header,
         Carousel,
+        SearchForm,
+        SectionTitle,
         Footer
     }
 })

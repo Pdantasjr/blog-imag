@@ -6,6 +6,7 @@
             :grabCursor="true"
             :pagination="{
                 clickable: true,
+                dynamicBullets: true,
             }"
             :autoplay="{
               delay: 4000,
@@ -16,7 +17,7 @@
         >
             <swiper-slide>
                 <div class="static">
-                    <h5 class="absolute top-52 left-56 tracking-wide leading-tight text-white uppercase text-5xl font-bold">Todos os cuidados<br> à
+                    <h5 class="absolute top-[30%] left-56 tracking-wide leading-tight text-white uppercase text-5xl font-bold">Todos os cuidados<br> à
                         saúde em um só lugar.<br>
                         <strong class="bg-primary/75 w-auto bg-blend-multiply rounded">Imag e Só.</strong>
                     </h5>
@@ -26,7 +27,7 @@
             </swiper-slide>
             <swiper-slide>
                 <div class="static">
-                    <h5 class="absolute top-52 left-56 tracking-wide leading-tight text-white uppercase text-5xl font-bold">Todos os cuidados<br> à
+                    <h5 class="absolute top-[30%] left-56 tracking-wide leading-tight text-white uppercase text-5xl font-bold">Todos os cuidados<br> à
                         saúde em um só lugar.<br>
                         <strong class="bg-primary/75 w-auto bg-blend-multiply rounded">Imag e Só.</strong>
                     </h5>
@@ -36,7 +37,7 @@
             </swiper-slide>
             <swiper-slide>
                 <div class="static">
-                    <h5 class="absolute top-52 left-56 tracking-wide leading-tight text-white uppercase text-5xl font-bold">Todos os cuidados<br> à
+                    <h5 class="absolute top-[30%] left-56 tracking-wide leading-tight text-white uppercase text-5xl font-bold">Todos os cuidados<br> à
                         saúde em um só lugar.<br>
                         <strong class="bg-primary/75 w-auto bg-blend-multiply rounded">Imag e Só.</strong>
                     </h5>
