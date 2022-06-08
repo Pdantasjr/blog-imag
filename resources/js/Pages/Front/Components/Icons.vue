@@ -4,8 +4,8 @@
     <img v-else-if="name === 'whatsapp'" class="w-6 h-6" src="../Images/ComponentIcons/whatsapp-icon.svg" alt="ícone para whatsapp">
     <img v-else-if="name === 'whatsappFooter'" class="w-6 h-6" src="../Images/ComponentIcons/whatsapp-icon-footer.svg" alt="ícone para whatsapp">
     <img v-else-if="name === 'phone'" class="w-6 h-6" src="../Images/ComponentIcons/phone-icon.svg" alt="ícone para telefone">
-    <img v-else-if="name === 'mobilePacient'" class="w-6 h-6" src="../Images/ComponentIcons/pacient-icon-white.svg" alt="ícone para pacient">
-    <img v-else-if="name === 'mobileMedic'" class="w-6 h-6" src="../Images/ComponentIcons/medic-icon-white.svg" alt="ícone para medico">
+    <img v-else-if="name === 'pacient-w'" class="w-6 h-6" src="../Images/ComponentIcons/pacient-icon-white.svg" alt="ícone para pacient">
+    <img v-else-if="name === 'medic-w'" class="w-6 h-6" src="../Images/ComponentIcons/medic-icon-white.svg" alt="ícone para medico">
     <img v-else-if="name === 'pin'" class="w-6 h-6" src="../Images/ComponentIcons/pin-icon.svg" alt="ícone para medico">
     <img v-else-if="name === 'phoneFooter'" class="w-6 h-6" src="../Images/ComponentIcons/phone-icon-footer.svg" alt="ícone para medico">
     <img v-else-if="name === 'instagramFooter'" class="w-6 h-6" src="../Images/ComponentIcons/instagram-icon-white.svg" alt="ícone para medico">
