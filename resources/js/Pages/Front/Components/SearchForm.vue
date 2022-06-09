@@ -14,26 +14,3 @@ export default {
     name: "SearchForm",
 }
 </script>
-
-<style scoped>
-width: 70%;
-max-width: 1100px;
-z-index: 20;
-padding: 0 2em;
-margin: -12.9vh auto 0 auto;
-position: relative;
-
-width: 100%;
-max-width: 1100px;
-height: 3em;
-border-radius: 34px;
-margin: 0 auto;
-text-align: center;
-font-size: 1.4em;
-font-weight: 100;
-color: #fff;
-border: 3px solid var(--neutral-white);
-background: linear-gradient(90deg, #214654 0%, #3d7b93 100%);
-opacity: 0.9;
-
-</style>

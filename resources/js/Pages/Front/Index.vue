@@ -1,11 +1,12 @@
 <template>
     <div class="flex flex-col justify-center overflow-y-hidden">
         <Head title="Home"/>
-        <Header/>
-        <Carousel />
-        <SearchForm />
-        <OurExams />
-        <CTAareas />
+<!--        <Header/>-->
+<!--        <Carousel />-->
+<!--        <SearchForm />-->
+<!--        <OurExams />-->
+<!--        <CTAareas />-->
+        <Institutional :urlDefault="this.urlDefault" />
         <Footer />
     </div>
 </template>
@@ -19,10 +20,14 @@ import Carousel from "./Components/Carousel";
 import SearchForm from "./Components/SearchForm";
 import OurExams from "./Components/OurExams";
 import CTAareas from "./Components/CTAareas";
+import Institutional from "./Components/Institutional"
 import Footer from "./Components/Footer"
 
 export default defineComponent({
     name: "Front",
+    props: {
+        urlDefault: String,
+    },
     components: {
         Head,
         Link,
@@ -31,6 +36,7 @@ export default defineComponent({
         SearchForm,
         OurExams,
         CTAareas,
+        Institutional,
         Footer
     }
 })

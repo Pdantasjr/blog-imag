@@ -9,7 +9,9 @@ class FrontController extends Controller
 {
     public function index()
     {
-        return Inertia::render('Front/Index');
+        return Inertia::render('Front/Index', [
+            "urlDefault" => asset('storage')
+        ]);
     }
 
     public function blog()

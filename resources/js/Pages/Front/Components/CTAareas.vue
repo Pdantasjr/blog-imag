@@ -26,20 +26,3 @@ export default defineComponent({
     }
 })
 </script>
-
-<style scoped>
-font-size: 1.7em;
-font-weight: 300;
-color: var(--neutral-white);
-border-radius: 2rem;
-border: 2px solid var(--primary);
-background-color: var(--primary);
-padding: 0.2em 0em;
-margin: 3em 0;
-width: 42%;
-box-shadow: none;
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-align-items: center;
-</style>
