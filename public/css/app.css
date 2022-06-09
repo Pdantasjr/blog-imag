@@ -1212,6 +1212,21 @@ select {
 .h-7 {
   height: 1.75rem;
 }
+.h-72 {
+  height: 18rem;
+}
+.h-64 {
+  height: 16rem;
+}
+.h-full {
+  height: 100%;
+}
+.h-32 {
+  height: 8rem;
+}
+.h-28 {
+  height: 7rem;
+}
 .max-h-fit {
   max-height: -webkit-fit-content;
   max-height: -moz-fit-content;
@@ -1291,6 +1306,18 @@ select {
 }
 .w-2\/3 {
   width: 66.666667%;
+}
+.w-32 {
+  width: 8rem;
+}
+.w-44 {
+  width: 11rem;
+}
+.w-56 {
+  width: 14rem;
+}
+.w-40 {
+  width: 10rem;
 }
 .min-w-0 {
   min-width: 0px;
@@ -1625,6 +1652,10 @@ select {
   --tw-border-opacity: 1;
   border-color: rgb(236 72 153 / var(--tw-border-opacity));
 }
+.border-yellow-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(234 179 8 / var(--tw-border-opacity));
+}
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1941,6 +1972,12 @@ select {
 }
 .leading-relaxed {
   line-height: 1.625;
+}
+.leading-loose {
+  line-height: 2;
+}
+.leading-normal {
+  line-height: 1.5;
 }
 .tracking-widest {
   letter-spacing: 0.1em;
@@ -2593,6 +2630,14 @@ select {
     height: 5rem;
   }
 
+  .sm\:h-44 {
+    height: 11rem;
+  }
+
+  .sm\:h-96 {
+    height: 24rem;
+  }
+
   .sm\:w-10 {
     width: 2.5rem;
   }
@@ -2603,6 +2648,14 @@ select {
 
   .sm\:w-16 {
     width: 4rem;
+  }
+
+  .sm\:w-56 {
+    width: 14rem;
+  }
+
+  .sm\:w-44 {
+    width: 11rem;
   }
 
   .sm\:max-w-md {
@@ -2648,6 +2701,14 @@ select {
 
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .sm\:flex-col {
+    flex-direction: column;
   }
 
   .sm\:items-start {
@@ -2780,6 +2841,10 @@ select {
     font-size: 3rem;
     line-height: 1;
   }
+
+  .sm\:text-\[1\.3rem\] {
+    font-size: 1.3rem;
+  }
 }
 @media (min-width: 768px) {
 
@@ -2884,6 +2949,10 @@ select {
     display: grid;
   }
 
+  .lg\:w-64 {
+    width: 16rem;
+  }
+
   .lg\:max-w-5xl {
     max-width: 64rem;
   }
@@ -2902,6 +2971,10 @@ select {
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
   }
 
   .lg\:gap-8 {

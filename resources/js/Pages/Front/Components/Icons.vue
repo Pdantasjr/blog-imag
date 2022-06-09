@@ -27,6 +27,10 @@
     <img v-else-if="name === 'pin-b'" class="w-12 h-12" src="../Images/ComponentIcons/pin.svg" alt="ícone para vantagens de escolher IMAG">
     <img v-else-if="name === 'hour-b'" class="w-12 h-12" src="../Images/ComponentIcons/horario.svg" alt="ícone para vantagens de escolher IMAG">
     <img v-else-if="name === 'online-b'" class="w-12 h-12" src="../Images/ComponentIcons/online.svg" alt="ícone para vantagens de escolher IMAG">
+
+    <img v-else-if="name === 'target-w'" class="w-12 h-12" src="../Images/ComponentIcons/target_icon.svg" alt="ícone para Missão Visão e Valores">
+    <img v-else-if="name === 'graph-w'" class="w-12 h-12" src="../Images/ComponentIcons/graph_icon.svg" alt="ícone para Missão Visão e Valores">
+    <img v-else-if="name === 'star-w'" class="w-12 h-12" src="../Images/ComponentIcons/star_icon.svg" alt="ícone para Missão Visão e Valores">
     <span v-else></span>
 </template>
 
