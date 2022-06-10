@@ -91,7 +91,7 @@
             </div>
         </div>
         <!--        MISSION VISION AND VALUES-->
-        <div class="w-full h-auto bg-gradient-to-r from-primary to-secondary">
+        <div class="w-full h-auto py-10 bg-gradient-to-r from-primary to-secondary">
             <div class="lg:max-w-7xl w-11/12 mx-auto">
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                     <div class=" my-4 flex sm:flex-col lg:flex-row items-center justify-start">
@@ -99,26 +99,31 @@
                             <Icons name="target-w" />
                             <h3 class="uppercase tracking-wide text-white font-bold text-2xl">Missão</h3>
                         </div>
+                        <div class="w-[2px] h-full bg-white/50 sm:hidden block"></div>
                         <div class="flex items-center w-11/12 sm:w-56 lg:w-64 h-full">
-                            <p class="text-white font-light text-justify leading-tight mx-4 ">Prover uma solução em saúde com caráter integral, centrada no cuidado individualizado ao paciente, baseada na excelência de recursos humanos e robustez tecnológica.</p>
+                            <p class="text-white font-light text-justify leading-tight mx-2 ">Prover uma solução em saúde com caráter integral, centrada no cuidado individualizado ao paciente, baseada na excelência de recursos humanos e robustez tecnológica.</p>
                         </div>
+                        <div class="w-[2px] h-full bg-white/50 hidden lg:block"></div>
                     </div>
                     <div class=" my-4 flex sm:flex-col lg:flex-row items-center justify-start">
                         <div class="w-40 h-28 sm:w-44 flex flex-col items-center justify-center">
                             <Icons name="graph-w" />
                             <h3 class="uppercase tracking-wide text-white font-bold text-2xl">Visão</h3>
                         </div>
+                        <div class="w-[2px] h-full bg-white/50 sm:hidden block"></div>
                         <div class="flex items-center w-11/12 sm:w-56 lg:w-64 h-full">
-                            <p class="text-white font-light text-justify leading-tight mx-4 ">Ser uma referência locorregional no segmento da saúde, com ênfase em medicina diagnóstica e preventiva.</p>
+                            <p class="text-white font-light text-justify leading-tight mx-2 ">Ser uma referência locorregional no segmento da saúde, com ênfase em medicina diagnóstica e preventiva.</p>
                         </div>
+                        <div class="w-[2px] h-full bg-white/50 hidden lg:block"></div>
                     </div>
                     <div class=" my-4 flex sm:flex-col lg:flex-row items-center justify-start">
                         <div class="w-40 h-28 sm:w-44 flex flex-col items-center justify-center">
                             <Icons name="star-w" />
                             <h3 class="uppercase tracking-wide text-white font-bold text-2xl">Valores</h3>
                         </div>
+                        <div class="w-[2px] h-full bg-white/50 sm:hidden block"></div>
                         <div class="flex items-center w-11/12 sm:w-56 lg:w-64 h-full">
-                            <p class="text-white font-light text-justify leading-tight mx-4 ">A jornada do paciente deve ser uma experiência personalista, conduzida por definições médicas assertivas, permeada por um contexto de serenidade na percepção da assistência.</p>
+                            <p class="text-white font-light text-justify leading-tight mx-2 ">A jornada do paciente deve ser uma experiência personalista, conduzida por definições médicas assertivas, permeada por um contexto de serenidade na percepção da assistência.</p>
                         </div>
                     </div>
                 </div>

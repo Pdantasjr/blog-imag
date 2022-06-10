@@ -1,14 +1,30 @@
 <template>
     <div class="w-screen">
-        <div class="lg:max-w-5xl w-11/12 h-44 flex flex-row justify-around items-center mx-auto">
-            <div class="w-64 flex flex-row">
-                <Link class="flex justify-around items-center bg-primary w-full h-auto rounded-full py-2 px-4 text-white text-lg font-light hover:font-bold border hover:border-white border-2 drop-shadow-md hover:drop-shadow-lg transition-all hover:scale-110 duration-300 ease-in-out" href="#">
-                    <Icons name="pacient-w" />Área do Paciente</Link>
+        <div v-if="variant == 'blue'" class="lg:max-w-5xl w-11/12 h-32 xs:h-44 flex flex-col xs:flex-row justify-around items-center mx-auto">
+
+            <div class="w-full xs:w-64 flex flex-row">
+                <Link class="flex justify-center xs:justify-around items-center bg-primary w-full h-auto rounded-full py-2 px-2 drop-shadow-md hover:drop-shadow-lg group transition transform hover:scale-105 xs:hover:scale-110 duration-300 ease-in-out" href="#">
+                    <Icons name="pacient-w" /> <span class="text-white text-md xs:text-lg font-light ml-2 group-hover:font-bold">Área do Paciente</span></Link>
             </div>
-            <div class="w-64 flex flex-row">
-                <Link class="flex justify-around items-center bg-primary w-full h-auto rounded-full py-2 px-4 text-white text-lg font-light hover:font-bold border hover:border-white border-2 drop-shadow-md hover:drop-shadow-lg transition-all hover:scale-110 duration-300 ease-in-out" target="_blank" href="http://imag.najasocial.com/users/sign_in?role=4">
-                    <Icons name="medic-w" />Área do Médico</Link>
+
+            <div class="w-full xs:w-64 flex flex-row">
+                <Link class="flex justify-center xs:justify-around items-center bg-primary w-full h-auto rounded-full py-2 px-2 drop-shadow-md hover:drop-shadow-lg group transition transform hover:scale-105 xs:hover:scale-110 duration-300 ease-in-out" target="_blank" href="http://imag.najasocial.com/users/sign_in?role=4">
+                    <Icons name="medic-w" /> <span class="text-white text-md xs:text-lg font-light ml-2 group-hover:font-bold">Área do Médico</span></Link>
             </div>
+
+        </div>
+        <div v-if="variant == 'footer'" class="lg:max-w-5xl w-11/12 h-24 flex flex-col xs:flex-row justify-around items-center mx-auto">
+
+            <div class="w-full xs:w-64 flex flex-row">
+                <Link class="flex justify-center xs:justify-around items-center bg-white w-full h-auto rounded-full py-2 px-2 drop-shadow-md hover:drop-shadow-lg group transition transform hover:scale-105 xs:hover:scale-110 duration-300 ease-in-out" href="#">
+                    <Icons name="pacient-b" /> <span class="text-primary text-md xs:text-lg font-light ml-2 group-hover:font-bold">Área do Paciente</span></Link>
+            </div>
+
+            <div class="w-full xs:w-64 flex flex-row">
+                <Link class="flex justify-center xs:justify-around items-center bg-white w-full h-auto rounded-full py-2 px-2 drop-shadow-md hover:drop-shadow-lg group transition transform hover:scale-105 xs:hover:scale-110 duration-300 ease-in-out" target="_blank" href="http://imag.najasocial.com/users/sign_in?role=4">
+                    <Icons name="medic-b" /> <span class="text-primary text-md xs:text-lg font-light ml-2 group-hover:font-bold">Área do Médico</span></Link>
+            </div>
+
         </div>
     </div>
 </template>
@@ -20,6 +36,9 @@ import Icons from "./Icons";
 
 export default defineComponent({
     name: "CTAareas",
+    props: {
+        variant: String,
+    },
     components: {
         Link,
         Icons,

@@ -1,13 +1,13 @@
 <template>
     <div class="flex flex-col justify-center overflow-y-hidden">
         <Head title="Home"/>
-<!--        <Header/>-->
-<!--        <Carousel />-->
-<!--        <SearchForm />-->
-<!--        <OurExams />-->
-<!--        <CTAareas />-->
-<!--        <Institutional :urlDefault="this.urlDefault" />-->
-<!--        <Agreement :urlDefault="this.urlDefault" />-->
+        <Header/>
+        <Carousel />
+        <SearchForm />
+        <OurExams />
+        <CTAareas :variant="'blue'" />
+        <Institutional :urlDefault="this.urlDefault" />
+        <Agreement :urlDefault="this.urlDefault" />
         <Team :urlDefault="this.urlDefault" />
         <Footer />
     </div>
