@@ -6,7 +6,7 @@
         </div>
         <!--        ABOUT-->
                 <div class="lg:max-w-7xl w-11/12 mx-auto my-2">
-                    <p class="text-sm sm:text-[1.3rem] text-primary font-light text-justify leading-relaxed">A IMAG nasceu no ano de
+                    <p class="text-[1rem] sm:text-[1.3rem] text-primary font-light text-justify leading-relaxed">A IMAG nasceu no ano de
                         <strong>2018</strong>, localizada no estratégico <strong>Vitória Park Shopping</strong>, a partir de uma
                         inquietação: interiorizar a medicina de excelência. Capitaneada pela primeira <strong>Ressonância
                             Magnética</strong> da
@@ -22,7 +22,7 @@
         <!--        IMAGES-->
                 <div class="w-full h-auto flex flex-row my-4">
                     <div v-for="(img, index) in imgs" :key="index" class="pic w-full" @click.prevent.stop="() => showImg(index)">
-                        <img class="h-64 sm:h-96 w-auto cursor-pointer object-cover" :src="typeof img === 'string' ? img : img.src"/>
+                        <img class="h-64 sm:h-96 w-auto cursor-pointer object-cover hover:scale-105 transition transform duration-300 ease-in-out" :src="typeof img === 'string' ? img : img.src"/>
                     </div>
                     <vue-easy-lightbox
                         :visible="visible"
@@ -32,61 +32,61 @@
                     ></vue-easy-lightbox>
                 </div>
         <!--        ADVANTAGES-->
-        <div class="lg:max-w-7xl w-11/12 mx-auto my-4">
+        <div class="lg:max-w-7xl w-11/12 mx-auto my-6 sm:my-10">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div class="flex flex-row flex-initial items-center">
                     <div>
                         <Icons name="list-b"/>
                     </div>
-                    <h3 class="mx-4 flex-1 text-primary font-light text-lg">Personalização da jornada como você nunca
+                    <h3 class="mx-4 flex-1 text-primary font-light text-[1rem] sm:text-lg">Personalização da jornada como você nunca
                         viu.</h3>
                 </div>
                 <div class="flex flex-row flex-initial items-center">
                     <div>
                         <Icons name="medical-b"/>
                     </div>
-                    <h3 class="mx-4 flex-1 text-primary font-light text-lg">Centro de Medicina Diagnóstica mais completo
+                    <h3 class="mx-4 flex-1 text-primary font-light text-[1rem] sm:text-lg">Centro de Medicina Diagnóstica mais completo
                         da região.</h3>
                 </div>
                 <div class="flex flex-row flex-initial items-center">
                     <div>
                         <Icons name="team-b"/>
                     </div>
-                    <h3 class="mx-4 flex-1 text-primary font-light text-lg">Equipe Médica especializada nacional e
+                    <h3 class="mx-4 flex-1 text-primary font-light text-[1rem] sm:text-lg">Equipe Médica especializada nacional e
                         internacionalmente.</h3>
                 </div>
                 <div class="flex flex-row flex-initial items-center">
                     <div>
                         <Icons name="pin-b"/>
                     </div>
-                    <h3 class="mx-4 flex-1 text-primary font-light text-lg">Localização privilegiada, com segurança,
+                    <h3 class="mx-4 flex-1 text-primary font-light text-[1rem] sm:text-lg">Localização privilegiada, com segurança,
                         comodidade e conforto.</h3>
                 </div>
                 <div class="flex flex-row flex-initial items-center">
                     <div>
                         <Icons name="conv-b"/>
                     </div>
-                    <h3 class="mx-4 flex-1 text-primary font-light text-lg">Amplo portfólio de convênios.</h3>
+                    <h3 class="mx-4 flex-1 text-primary font-light text-[1rem] sm:text-lg">Amplo portfólio de convênios.</h3>
                 </div>
                 <div class="flex flex-row flex-initial items-center">
                     <div>
                         <Icons name="hour-b"/>
                     </div>
-                    <h3 class="mx-4 flex-1 text-primary font-light text-lg">Sempre disponível para você: de domingo a
+                    <h3 class="mx-4 flex-1 text-primary font-light text-[1rem] sm:text-lg">Sempre disponível para você: de domingo a
                         domingo.</h3>
                 </div>
                 <div class="flex flex-row flex-initial items-center">
                     <div>
                         <Icons name="check-b"/>
                     </div>
-                    <h3 class="mx-4 flex-1 text-primary font-light text-lg">Melhores prazos de entrega dos
+                    <h3 class="mx-4 flex-1 text-primary font-light text-[1rem] sm:text-lg">Melhores prazos de entrega dos
                         resultados.</h3>
                 </div>
                 <div class="flex flex-row flex-initial items-center">
                     <div>
                         <Icons name="online-b"/>
                     </div>
-                    <h3 class="mx-4 flex-1 text-primary font-light text-lg">Agendamento e resultados online.</h3>
+                    <h3 class="mx-4 flex-1 text-primary font-light text-[1rem] sm:text-lg">Agendamento e resultados online.</h3>
                 </div>
             </div>
         </div>

@@ -1,12 +1,13 @@
 <template>
     <div class="flex flex-col justify-center overflow-y-hidden">
         <Head title="Home"/>
-<!--        <Header/>-->
-<!--        <Carousel />-->
-<!--        <SearchForm />-->
-<!--        <OurExams />-->
-<!--        <CTAareas />-->
+        <Header/>
+        <Carousel />
+        <SearchForm />
+        <OurExams />
+        <CTAareas />
         <Institutional :urlDefault="this.urlDefault" />
+        <Agreement :urlDefault="this.urlDefault" />
         <Footer />
     </div>
 </template>
@@ -21,6 +22,7 @@ import SearchForm from "./Components/SearchForm";
 import OurExams from "./Components/OurExams";
 import CTAareas from "./Components/CTAareas";
 import Institutional from "./Components/Institutional"
+import Agreement from "./Components/Agreement";
 import Footer from "./Components/Footer"
 
 export default defineComponent({
@@ -37,6 +39,7 @@ export default defineComponent({
         OurExams,
         CTAareas,
         Institutional,
+        Agreement,
         Footer
     }
 })

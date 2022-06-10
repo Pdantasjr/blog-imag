@@ -21,6 +21,9 @@ module.exports = {
                 'background': '#f8fafc',
                 'footer': '#9C9B9B',
             },
+            backgroundImage: {
+                'agrements-bg': "url('./resources/js/Pages/Front/Images/bg-agreements.svg')"
+            }
         },
     },
 
