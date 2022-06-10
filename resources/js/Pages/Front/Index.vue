@@ -1,6 +1,7 @@
 <template>
     <div class="flex flex-col justify-center overflow-y-hidden">
         <Head title="Home"/>
+        <CTAareas :variant="'top'" />
         <Header/>
         <Carousel />
         <SearchForm />

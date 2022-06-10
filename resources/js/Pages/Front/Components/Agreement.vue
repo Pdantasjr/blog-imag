@@ -4,46 +4,46 @@
             <section-title title="Convênios Credenciados"></section-title>
         </div>
         <div class="lg:max-w-7xl w-11/12 mx-auto">
-            <div class="grid grid-cols-4 gap-4 my-6 sm:my-10">
+            <div class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 my-6 sm:my-10">
                 <div
-                    class="w-72 h-72 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out">
+                    class="w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out">
                     <img class="m-2" :src="urlDefault + '/Agreements/bradesco-saude.svg'" alt="Bradesco Saúde">
                 </div>
                 <div
-                    class="w-72 h-72 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out">
+                    class="w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out">
                     <img class="m-2" :src="urlDefault + '/Agreements/bradesco-saude.svg'" alt="Bradesco Saúde">
                 </div>
                 <div
-                    class="w-72 h-72 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out">
+                    class="w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out">
                     <img class="m-2" :src="urlDefault + '/Agreements/bradesco-saude.svg'" alt="Bradesco Saúde">
                 </div>
                 <div
-                    class="w-72 h-72 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out">
+                    class="w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out">
                     <img class="m-2" :src="urlDefault + '/Agreements/bradesco-saude.svg'" alt="Bradesco Saúde">
                 </div>
 
                 <div
-                    class="w-72 h-72 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out">
+                    class="w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out">
                     <img class="m-2" :src="urlDefault + '/Agreements/bradesco-saude.svg'" alt="Bradesco Saúde">
                 </div>
                 <div
-                    class="w-72 h-72 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out">
+                    class="w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out">
                     <img class="m-2" :src="urlDefault + '/Agreements/bradesco-saude.svg'" alt="Bradesco Saúde">
                 </div>
                 <div
-                    class="w-72 h-72 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out">
+                    class="w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out">
                     <img class="m-2" :src="urlDefault + '/Agreements/bradesco-saude.svg'" alt="Bradesco Saúde">
                 </div>
                 <div
-                    class="w-72 h-72 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out">
+                    class="w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out">
                     <img class="m-2" :src="urlDefault + '/Agreements/bradesco-saude.svg'" alt="Bradesco Saúde">
                 </div>
             </div>
 
-            <div class="grid grid-cols-4 gap-4 my-6 sm:my-10">
+            <div class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 my-6 sm:my-10">
                 <Transition name="slide-fade">
                     <div v-if="showMore"
-                        class="w-72 h-72 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out">
+                        class="w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out">
 
                         <img class="m-2" :src="urlDefault + '/Agreements/bradesco-saude.svg'"
                              alt="Bradesco Saúde">
@@ -52,7 +52,7 @@
 
                 <Transition name="slide-fade">
                     <div v-if="showMore"
-                        class="w-72 h-72 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out">
+                        class="w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out">
 
                         <img class="m-2" :src="urlDefault + '/Agreements/bradesco-saude.svg'"
                              alt="Bradesco Saúde">
@@ -61,7 +61,7 @@
 
                 <Transition name="slide-fade">
                     <div v-if="showMore"
-                        class="w-72 h-72 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out">
+                        class="w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out">
 
                         <img class="m-2" :src="urlDefault + '/Agreements/bradesco-saude.svg'"
                              alt="Bradesco Saúde">
@@ -70,7 +70,7 @@
 
                 <Transition name="slide-fade">
                     <div v-if="showMore"
-                        class="w-72 h-72 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out">
+                        class="w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out">
 
                         <img class="m-2" :src="urlDefault + '/Agreements/bradesco-saude.svg'"
                              alt="Bradesco Saúde">
@@ -79,7 +79,7 @@
 
                 <Transition name="slide-fade">
                     <div v-if="showMore"
-                        class="w-72 h-72 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out">
+                        class="w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out">
 
                         <img class="m-2" :src="urlDefault + '/Agreements/bradesco-saude.svg'"
                              alt="Bradesco Saúde">
@@ -88,7 +88,7 @@
 
                 <Transition name="slide-fade">
                     <div v-if="showMore"
-                        class="w-72 h-72 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out">
+                        class="w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out">
 
                         <img class="m-2" :src="urlDefault + '/Agreements/bradesco-saude.svg'"
                              alt="Bradesco Saúde">
@@ -97,7 +97,7 @@
 
                 <Transition name="slide-fade">
                     <div v-if="showMore"
-                        class="w-72 h-72 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out">
+                        class="w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out">
 
                         <img class="m-2" :src="urlDefault + '/Agreements/bradesco-saude.svg'"
                              alt="Bradesco Saúde">
@@ -106,7 +106,7 @@
 
                 <Transition name="slide-fade">
                     <div v-if="showMore"
-                        class="w-72 h-72 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out">
+                        class="w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out">
 
                         <img class="m-2" :src="urlDefault + '/Agreements/bradesco-saude.svg'"
                              alt="Bradesco Saúde">
@@ -115,7 +115,7 @@
 
                 <Transition name="slide-fade">
                     <div v-if="showMore"
-                        class="w-72 h-72 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out">
+                        class="w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out">
 
                         <img class="m-2" :src="urlDefault + '/Agreements/bradesco-saude.svg'"
                              alt="Bradesco Saúde">

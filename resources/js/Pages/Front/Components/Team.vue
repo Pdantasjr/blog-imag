@@ -29,7 +29,7 @@
                             },
                             '@1.00': {
                                 slidesPerView: 3,
-                                spaceBetween: 40,
+                                spaceBetween: 10,
                             },
                             '@1.50': {
                                 slidesPerView: 4,
@@ -40,7 +40,7 @@
 
                 <swiper-slide>
                     <Link class="py-6 mt-2 bg-white shadow-lg rounded-lg border hover:border-primary/50 flex flex-col items-center justify-around transition transform hover:-translate-y-1 duration-300 ease-in-out">
-                        <div  class="bg-white h-auto rounded-full">
+                        <div  class="bg-white rounded-full">
                             <img class="w-44 rounded-full h-44 p-2 border hover:border hover:border-primary/50 hover:shadow-lg bg-center object-fit transition transform hover:scale-105 duration-300 ease-in-out" :src="this.urlDefault + '/team/default/avatar.svg'" alt="Avatar do médico">
                         </div>
                         <div class="flex flex-col items-center justify-center">
@@ -53,7 +53,7 @@
 
                 <swiper-slide>
                     <Link class="py-6 mt-2 bg-white shadow-lg rounded-lg border hover:border-primary/50 flex flex-col items-center justify-around transition transform hover:-translate-y-1 duration-300 ease-in-out">
-                        <div  class="bg-white h-auto rounded-full">
+                        <div  class="bg-white rounded-full">
                             <img class="w-44 rounded-full h-44 p-2 border hover:border hover:border-primary/50 hover:shadow-lg bg-center object-fit transition transform hover:scale-105 duration-300 ease-in-out" :src="this.urlDefault + '/team/default/avatar.svg'" alt="Avatar do médico">
                         </div>
                         <div class="flex flex-col items-center justify-center">
@@ -65,7 +65,7 @@
                 </swiper-slide>
                 <swiper-slide>
                     <Link class="py-6 mt-2 bg-white shadow-lg rounded-lg border hover:border-primary/50 flex flex-col items-center justify-around transition transform hover:-translate-y-1 duration-300 ease-in-out">
-                        <div  class="bg-white h-auto rounded-full">
+                        <div  class="bg-white rounded-full">
                             <img class="w-44 rounded-full h-44 p-2 border hover:border hover:border-primary/50 hover:shadow-lg bg-center object-fit transition transform hover:scale-105 duration-300 ease-in-out" :src="this.urlDefault + '/team/default/avatar.svg'" alt="Avatar do médico">
                         </div>
                         <div class="flex flex-col items-center justify-center">
@@ -77,7 +77,7 @@
                 </swiper-slide>
                 <swiper-slide>
                     <Link class="py-6 mt-2 bg-white shadow-lg rounded-lg border hover:border-primary/50 flex flex-col items-center justify-around transition transform hover:-translate-y-1 duration-300 ease-in-out">
-                        <div  class="bg-white h-auto rounded-full">
+                        <div  class="bg-white rounded-full">
                             <img class="w-44 rounded-full h-44 p-2 border hover:border hover:border-primary/50 hover:shadow-lg bg-center object-fit transition transform hover:scale-105 duration-300 ease-in-out" :src="this.urlDefault + '/team/default/avatar.svg'" alt="Avatar do médico">
                         </div>
                         <div class="flex flex-col items-center justify-center">
@@ -89,7 +89,7 @@
                 </swiper-slide>
                 <swiper-slide>
                     <Link class="py-6 mt-2 bg-white shadow-lg rounded-lg border hover:border-primary/50 flex flex-col items-center justify-around transition transform hover:-translate-y-1 duration-300 ease-in-out">
-                        <div  class="bg-white h-auto rounded-full">
+                        <div  class="bg-white rounded-full">
                             <img class="w-44 rounded-full h-44 p-2 border hover:border hover:border-primary/50 hover:shadow-lg bg-center object-fit transition transform hover:scale-105 duration-300 ease-in-out" :src="this.urlDefault + '/team/default/avatar.svg'" alt="Avatar do médico">
                         </div>
                         <div class="flex flex-col items-center justify-center">
@@ -101,7 +101,7 @@
                 </swiper-slide>
                 <swiper-slide>
                     <Link class="py-6 mt-2 bg-white shadow-lg rounded-lg border hover:border-primary/50 flex flex-col items-center justify-around transition transform hover:-translate-y-1 duration-300 ease-in-out">
-                        <div  class="bg-white h-auto rounded-full">
+                        <div  class="bg-white rounded-full">
                             <img class="w-44 rounded-full h-44 p-2 border hover:border hover:border-primary/50 hover:shadow-lg bg-center object-fit transition transform hover:scale-105 duration-300 ease-in-out" :src="this.urlDefault + '/team/default/avatar.svg'" alt="Avatar do médico">
                         </div>
                         <div class="flex flex-col items-center justify-center">
@@ -113,7 +113,7 @@
                 </swiper-slide>
                 <swiper-slide>
                     <Link class="py-6 mt-2 bg-white shadow-lg rounded-lg border hover:border-primary/50 flex flex-col items-center justify-around transition transform hover:-translate-y-1 duration-300 ease-in-out">
-                        <div  class="bg-white h-auto rounded-full">
+                        <div  class="bg-white rounded-full">
                             <img class="w-44 rounded-full h-44 p-2 border hover:border hover:border-primary/50 hover:shadow-lg bg-center object-fit transition transform hover:scale-105 duration-300 ease-in-out" :src="this.urlDefault + '/team/default/avatar.svg'" alt="Avatar do médico">
                         </div>
                         <div class="flex flex-col items-center justify-center">

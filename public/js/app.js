@@ -28490,86 +28490,86 @@ var _hoisted_3 = {
   "class": "lg:max-w-7xl w-11/12 mx-auto"
 };
 var _hoisted_4 = {
-  "class": "grid grid-cols-4 gap-4 my-6 sm:my-10"
+  "class": "grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 my-6 sm:my-10"
 };
 var _hoisted_5 = {
-  "class": "w-72 h-72 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out"
+  "class": "w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out"
 };
 var _hoisted_6 = ["src"];
 var _hoisted_7 = {
-  "class": "w-72 h-72 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out"
+  "class": "w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out"
 };
 var _hoisted_8 = ["src"];
 var _hoisted_9 = {
-  "class": "w-72 h-72 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out"
+  "class": "w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out"
 };
 var _hoisted_10 = ["src"];
 var _hoisted_11 = {
-  "class": "w-72 h-72 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out"
+  "class": "w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out"
 };
 var _hoisted_12 = ["src"];
 var _hoisted_13 = {
-  "class": "w-72 h-72 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out"
+  "class": "w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out"
 };
 var _hoisted_14 = ["src"];
 var _hoisted_15 = {
-  "class": "w-72 h-72 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out"
+  "class": "w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out"
 };
 var _hoisted_16 = ["src"];
 var _hoisted_17 = {
-  "class": "w-72 h-72 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out"
+  "class": "w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out"
 };
 var _hoisted_18 = ["src"];
 var _hoisted_19 = {
-  "class": "w-72 h-72 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out"
+  "class": "w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out"
 };
 var _hoisted_20 = ["src"];
 var _hoisted_21 = {
-  "class": "grid grid-cols-4 gap-4 my-6 sm:my-10"
+  "class": "grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 my-6 sm:my-10"
 };
 var _hoisted_22 = {
   key: 0,
-  "class": "w-72 h-72 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out"
+  "class": "w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out"
 };
 var _hoisted_23 = ["src"];
 var _hoisted_24 = {
   key: 0,
-  "class": "w-72 h-72 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out"
+  "class": "w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out"
 };
 var _hoisted_25 = ["src"];
 var _hoisted_26 = {
   key: 0,
-  "class": "w-72 h-72 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out"
+  "class": "w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out"
 };
 var _hoisted_27 = ["src"];
 var _hoisted_28 = {
   key: 0,
-  "class": "w-72 h-72 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out"
+  "class": "w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out"
 };
 var _hoisted_29 = ["src"];
 var _hoisted_30 = {
   key: 0,
-  "class": "w-72 h-72 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out"
+  "class": "w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out"
 };
 var _hoisted_31 = ["src"];
 var _hoisted_32 = {
   key: 0,
-  "class": "w-72 h-72 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out"
+  "class": "w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out"
 };
 var _hoisted_33 = ["src"];
 var _hoisted_34 = {
   key: 0,
-  "class": "w-72 h-72 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out"
+  "class": "w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out"
 };
 var _hoisted_35 = ["src"];
 var _hoisted_36 = {
   key: 0,
-  "class": "w-72 h-72 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out"
+  "class": "w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out"
 };
 var _hoisted_37 = ["src"];
 var _hoisted_38 = {
   key: 0,
-  "class": "w-72 h-72 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out"
+  "class": "w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-gray-50 rounded-md drop-shadow-lg hover:scale-110 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-300 ease-in-out"
 };
 var _hoisted_39 = ["src"];
 var _hoisted_40 = {
@@ -28858,41 +28858,52 @@ var _hoisted_1 = {
 };
 var _hoisted_2 = {
   key: 0,
+  "class": "sm:hidden w-full h-auto flex flex-row justify-center items-center mx-auto bg-primary"
+};
+
+var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "text-white text-[.8rem] xs:text-lg font-light ml-2 group-hover:font-bold"
+}, "Área do Paciente", -1
+/* HOISTED */
+);
+
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  "class": "text-white text-[.8rem] xs:text-lg font-light ml-2 group-hover:font-bold"
+}, "Área do Médico", -1
+/* HOISTED */
+);
+
+var _hoisted_5 = {
+  key: 1,
   "class": "lg:max-w-5xl w-11/12 h-32 xs:h-44 flex flex-col xs:flex-row justify-around items-center mx-auto"
 };
-var _hoisted_3 = {
+var _hoisted_6 = {
   "class": "w-full xs:w-64 flex flex-row"
 };
 
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)();
-
-var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
   "class": "text-white text-md xs:text-lg font-light ml-2 group-hover:font-bold"
 }, "Área do Paciente", -1
 /* HOISTED */
 );
 
-var _hoisted_6 = {
+var _hoisted_8 = {
   "class": "w-full xs:w-64 flex flex-row"
 };
 
-var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)();
-
-var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
   "class": "text-white text-md xs:text-lg font-light ml-2 group-hover:font-bold"
 }, "Área do Médico", -1
 /* HOISTED */
 );
 
-var _hoisted_9 = {
-  key: 1,
+var _hoisted_10 = {
+  key: 2,
   "class": "lg:max-w-5xl w-11/12 h-24 flex flex-col xs:flex-row justify-around items-center mx-auto"
 };
-var _hoisted_10 = {
+var _hoisted_11 = {
   "class": "w-full xs:w-64 flex flex-row"
 };
-
-var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)();
 
 var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
   "class": "text-primary text-md xs:text-lg font-light ml-2 group-hover:font-bold"
@@ -28904,9 +28915,7 @@ var _hoisted_13 = {
   "class": "w-full xs:w-64 flex flex-row"
 };
 
-var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)();
-
-var _hoisted_15 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
   "class": "text-primary text-md xs:text-lg font-light ml-2 group-hover:font-bold"
 }, "Área do Médico", -1
 /* HOISTED */
@@ -28917,19 +28926,44 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   var _component_Link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Link");
 
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [_ctx.variant == 'blue' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("TOP"), _ctx.variant == 'top' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
+    "class": "flex justify-center items-center bg-primary w-3/4 h-8 rounded-full border border-white my-2 mx-2 xs:mx-4 py-1 px-1 drop-shadow-md hover:drop-shadow-lg group",
+    href: "#"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Icons, {
+        name: "pacient-top-w"
+      }), _hoisted_3];
+    }),
+    _: 1
+    /* STABLE */
+
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
+    "class": "flex justify-center items-center bg-primary w-3/4 h-8 rounded-full border border-white my-2 mx-2 xs:mx-4 py-1 px-1 drop-shadow-md hover:drop-shadow-lg group",
+    target: "_blank",
+    href: "http://imag.najasocial.com/users/sign_in?role=4"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Icons, {
+        name: "medic-top-w"
+      }), _hoisted_4];
+    }),
+    _: 1
+    /* STABLE */
+
+  })])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("BLUE"), _ctx.variant == 'blue' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
     "class": "flex justify-center xs:justify-around items-center bg-primary w-full h-auto rounded-full py-2 px-2 drop-shadow-md hover:drop-shadow-lg group transition transform hover:scale-105 xs:hover:scale-110 duration-300 ease-in-out",
     href: "#"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Icons, {
         name: "pacient-w"
-      }), _hoisted_4, _hoisted_5];
+      }), _hoisted_7];
     }),
     _: 1
     /* STABLE */
 
-  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
+  })]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
     "class": "flex justify-center xs:justify-around items-center bg-primary w-full h-auto rounded-full py-2 px-2 drop-shadow-md hover:drop-shadow-lg group transition transform hover:scale-105 xs:hover:scale-110 duration-300 ease-in-out",
     target: "_blank",
     href: "http://imag.najasocial.com/users/sign_in?role=4"
@@ -28937,19 +28971,19 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Icons, {
         name: "medic-w"
-      }), _hoisted_7, _hoisted_8];
+      }), _hoisted_9];
     }),
     _: 1
     /* STABLE */
 
-  })])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _ctx.variant == 'footer' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
+  })])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("FOOTER"), _ctx.variant == 'footer' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
     "class": "flex justify-center xs:justify-around items-center bg-white w-full h-auto rounded-full py-2 px-2 drop-shadow-md hover:drop-shadow-lg group transition transform hover:scale-105 xs:hover:scale-110 duration-300 ease-in-out",
     href: "#"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Icons, {
         name: "pacient-b"
-      }), _hoisted_11, _hoisted_12];
+      }), _hoisted_12];
     }),
     _: 1
     /* STABLE */
@@ -28962,7 +28996,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Icons, {
         name: "medic-b"
-      }), _hoisted_14, _hoisted_15];
+      }), _hoisted_14];
     }),
     _: 1
     /* STABLE */
@@ -29995,171 +30029,183 @@ var _hoisted_8 = {
 };
 var _hoisted_9 = {
   key: 6,
-  "class": "w-6 h-6",
-  src: _Images_ComponentIcons_pacient_icon_blue_svg__WEBPACK_IMPORTED_MODULE_6__["default"],
+  "class": "w-4 h-4 xs:w-6 xs:h-6",
+  src: _Images_ComponentIcons_pacient_icon_white_svg__WEBPACK_IMPORTED_MODULE_5__["default"],
   alt: "ícone para pacient"
 };
 var _hoisted_10 = {
   key: 7,
   "class": "w-6 h-6",
-  src: _Images_ComponentIcons_medic_icon_white_svg__WEBPACK_IMPORTED_MODULE_7__["default"],
-  alt: "ícone para medico"
+  src: _Images_ComponentIcons_pacient_icon_blue_svg__WEBPACK_IMPORTED_MODULE_6__["default"],
+  alt: "ícone para pacient"
 };
 var _hoisted_11 = {
   key: 8,
   "class": "w-6 h-6",
-  src: _Images_ComponentIcons_medic_icon_blue_svg__WEBPACK_IMPORTED_MODULE_8__["default"],
+  src: _Images_ComponentIcons_medic_icon_white_svg__WEBPACK_IMPORTED_MODULE_7__["default"],
   alt: "ícone para medico"
 };
 var _hoisted_12 = {
   key: 9,
-  "class": "w-6 h-6",
-  src: _Images_ComponentIcons_pin_icon_svg__WEBPACK_IMPORTED_MODULE_9__["default"],
+  "class": "w-4 h-4 xs:w-6 xs:h-6",
+  src: _Images_ComponentIcons_medic_icon_white_svg__WEBPACK_IMPORTED_MODULE_7__["default"],
   alt: "ícone para medico"
 };
 var _hoisted_13 = {
   key: 10,
   "class": "w-6 h-6",
-  src: _Images_ComponentIcons_phone_icon_footer_svg__WEBPACK_IMPORTED_MODULE_10__["default"],
+  src: _Images_ComponentIcons_medic_icon_blue_svg__WEBPACK_IMPORTED_MODULE_8__["default"],
   alt: "ícone para medico"
 };
 var _hoisted_14 = {
   key: 11,
   "class": "w-6 h-6",
-  src: _Images_ComponentIcons_instagram_icon_white_svg__WEBPACK_IMPORTED_MODULE_11__["default"],
+  src: _Images_ComponentIcons_pin_icon_svg__WEBPACK_IMPORTED_MODULE_9__["default"],
   alt: "ícone para medico"
 };
 var _hoisted_15 = {
   key: 12,
   "class": "w-6 h-6",
-  src: _Images_ComponentIcons_facebook_icon_white_svg__WEBPACK_IMPORTED_MODULE_12__["default"],
+  src: _Images_ComponentIcons_phone_icon_footer_svg__WEBPACK_IMPORTED_MODULE_10__["default"],
   alt: "ícone para medico"
 };
 var _hoisted_16 = {
   key: 13,
   "class": "w-6 h-6",
-  src: _Images_ComponentIcons_linkedin_icon_white_svg__WEBPACK_IMPORTED_MODULE_13__["default"],
+  src: _Images_ComponentIcons_instagram_icon_white_svg__WEBPACK_IMPORTED_MODULE_11__["default"],
   alt: "ícone para medico"
 };
 var _hoisted_17 = {
   key: 14,
-  "class": "w-12 h-12 sm:w-16 sm:h-16",
-  src: _Images_ComponentIcons_rm_svg__WEBPACK_IMPORTED_MODULE_14__["default"],
-  alt: "ícone para Ressonância Magnética"
+  "class": "w-6 h-6",
+  src: _Images_ComponentIcons_facebook_icon_white_svg__WEBPACK_IMPORTED_MODULE_12__["default"],
+  alt: "ícone para medico"
 };
 var _hoisted_18 = {
   key: 15,
-  "class": "w-12 h-12 sm:w-16 sm:h-16",
-  src: _Images_ComponentIcons_tc_svg__WEBPACK_IMPORTED_MODULE_15__["default"],
-  alt: "ícone para Tomografia Computadorizada"
+  "class": "w-6 h-6",
+  src: _Images_ComponentIcons_linkedin_icon_white_svg__WEBPACK_IMPORTED_MODULE_13__["default"],
+  alt: "ícone para medico"
 };
 var _hoisted_19 = {
   key: 16,
   "class": "w-12 h-12 sm:w-16 sm:h-16",
-  src: _Images_ComponentIcons_do_svg__WEBPACK_IMPORTED_MODULE_16__["default"],
-  alt: "ícone para Densiometria Óssea"
+  src: _Images_ComponentIcons_rm_svg__WEBPACK_IMPORTED_MODULE_14__["default"],
+  alt: "ícone para Ressonância Magnética"
 };
 var _hoisted_20 = {
   key: 17,
   "class": "w-12 h-12 sm:w-16 sm:h-16",
-  src: _Images_ComponentIcons_mm_svg__WEBPACK_IMPORTED_MODULE_17__["default"],
-  alt: "ícone para Mamografia"
+  src: _Images_ComponentIcons_tc_svg__WEBPACK_IMPORTED_MODULE_15__["default"],
+  alt: "ícone para Tomografia Computadorizada"
 };
 var _hoisted_21 = {
   key: 18,
   "class": "w-12 h-12 sm:w-16 sm:h-16",
-  src: _Images_ComponentIcons_ut_svg__WEBPACK_IMPORTED_MODULE_18__["default"],
-  alt: "ícone para Ultrassonografia"
+  src: _Images_ComponentIcons_do_svg__WEBPACK_IMPORTED_MODULE_16__["default"],
+  alt: "ícone para Densiometria Óssea"
 };
 var _hoisted_22 = {
   key: 19,
   "class": "w-12 h-12 sm:w-16 sm:h-16",
-  src: _Images_ComponentIcons_rx_svg__WEBPACK_IMPORTED_MODULE_19__["default"],
-  alt: "ícone para Raio-X"
+  src: _Images_ComponentIcons_mm_svg__WEBPACK_IMPORTED_MODULE_17__["default"],
+  alt: "ícone para Mamografia"
 };
 var _hoisted_23 = {
   key: 20,
   "class": "w-12 h-12 sm:w-16 sm:h-16",
-  src: _Images_ComponentIcons_pb_svg__WEBPACK_IMPORTED_MODULE_20__["default"],
-  alt: "ícone para Punções e Biópsias"
+  src: _Images_ComponentIcons_ut_svg__WEBPACK_IMPORTED_MODULE_18__["default"],
+  alt: "ícone para Ultrassonografia"
 };
 var _hoisted_24 = {
   key: 21,
   "class": "w-12 h-12 sm:w-16 sm:h-16",
-  src: _Images_ComponentIcons_el_svg__WEBPACK_IMPORTED_MODULE_21__["default"],
-  alt: "ícone para Exames Laboratoriais"
+  src: _Images_ComponentIcons_rx_svg__WEBPACK_IMPORTED_MODULE_19__["default"],
+  alt: "ícone para Raio-X"
 };
 var _hoisted_25 = {
   key: 22,
-  "class": "w-12 h-12",
-  src: _Images_ComponentIcons_list_checked_svg__WEBPACK_IMPORTED_MODULE_22__["default"],
-  alt: "ícone para vantagens de escolher IMAG"
+  "class": "w-12 h-12 sm:w-16 sm:h-16",
+  src: _Images_ComponentIcons_pb_svg__WEBPACK_IMPORTED_MODULE_20__["default"],
+  alt: "ícone para Punções e Biópsias"
 };
 var _hoisted_26 = {
   key: 23,
-  "class": "w-12 h-12",
-  src: _Images_ComponentIcons_team_svg__WEBPACK_IMPORTED_MODULE_23__["default"],
-  alt: "ícone para vantagens de escolher IMAG"
+  "class": "w-12 h-12 sm:w-16 sm:h-16",
+  src: _Images_ComponentIcons_el_svg__WEBPACK_IMPORTED_MODULE_21__["default"],
+  alt: "ícone para Exames Laboratoriais"
 };
 var _hoisted_27 = {
   key: 24,
   "class": "w-12 h-12",
-  src: _Images_ComponentIcons_convenio_svg__WEBPACK_IMPORTED_MODULE_24__["default"],
+  src: _Images_ComponentIcons_list_checked_svg__WEBPACK_IMPORTED_MODULE_22__["default"],
   alt: "ícone para vantagens de escolher IMAG"
 };
 var _hoisted_28 = {
   key: 25,
   "class": "w-12 h-12",
-  src: _Images_ComponentIcons_check_svg__WEBPACK_IMPORTED_MODULE_25__["default"],
+  src: _Images_ComponentIcons_team_svg__WEBPACK_IMPORTED_MODULE_23__["default"],
   alt: "ícone para vantagens de escolher IMAG"
 };
 var _hoisted_29 = {
   key: 26,
   "class": "w-12 h-12",
-  src: _Images_ComponentIcons_medical_center_svg__WEBPACK_IMPORTED_MODULE_26__["default"],
+  src: _Images_ComponentIcons_convenio_svg__WEBPACK_IMPORTED_MODULE_24__["default"],
   alt: "ícone para vantagens de escolher IMAG"
 };
 var _hoisted_30 = {
   key: 27,
   "class": "w-12 h-12",
-  src: _Images_ComponentIcons_pin_svg__WEBPACK_IMPORTED_MODULE_27__["default"],
+  src: _Images_ComponentIcons_check_svg__WEBPACK_IMPORTED_MODULE_25__["default"],
   alt: "ícone para vantagens de escolher IMAG"
 };
 var _hoisted_31 = {
   key: 28,
   "class": "w-12 h-12",
-  src: _Images_ComponentIcons_horario_svg__WEBPACK_IMPORTED_MODULE_28__["default"],
+  src: _Images_ComponentIcons_medical_center_svg__WEBPACK_IMPORTED_MODULE_26__["default"],
   alt: "ícone para vantagens de escolher IMAG"
 };
 var _hoisted_32 = {
   key: 29,
   "class": "w-12 h-12",
-  src: _Images_ComponentIcons_online_svg__WEBPACK_IMPORTED_MODULE_29__["default"],
+  src: _Images_ComponentIcons_pin_svg__WEBPACK_IMPORTED_MODULE_27__["default"],
   alt: "ícone para vantagens de escolher IMAG"
 };
 var _hoisted_33 = {
   key: 30,
   "class": "w-12 h-12",
-  src: _Images_ComponentIcons_target_icon_svg__WEBPACK_IMPORTED_MODULE_30__["default"],
-  alt: "ícone para Missão Visão e Valores"
+  src: _Images_ComponentIcons_horario_svg__WEBPACK_IMPORTED_MODULE_28__["default"],
+  alt: "ícone para vantagens de escolher IMAG"
 };
 var _hoisted_34 = {
   key: 31,
   "class": "w-12 h-12",
-  src: _Images_ComponentIcons_graph_icon_svg__WEBPACK_IMPORTED_MODULE_31__["default"],
-  alt: "ícone para Missão Visão e Valores"
+  src: _Images_ComponentIcons_online_svg__WEBPACK_IMPORTED_MODULE_29__["default"],
+  alt: "ícone para vantagens de escolher IMAG"
 };
 var _hoisted_35 = {
   key: 32,
   "class": "w-12 h-12",
-  src: _Images_ComponentIcons_star_icon_svg__WEBPACK_IMPORTED_MODULE_32__["default"],
+  src: _Images_ComponentIcons_target_icon_svg__WEBPACK_IMPORTED_MODULE_30__["default"],
   alt: "ícone para Missão Visão e Valores"
 };
 var _hoisted_36 = {
-  key: 33
+  key: 33,
+  "class": "w-12 h-12",
+  src: _Images_ComponentIcons_graph_icon_svg__WEBPACK_IMPORTED_MODULE_31__["default"],
+  alt: "ícone para Missão Visão e Valores"
+};
+var _hoisted_37 = {
+  key: 34,
+  "class": "w-12 h-12",
+  src: _Images_ComponentIcons_star_icon_svg__WEBPACK_IMPORTED_MODULE_32__["default"],
+  alt: "ícone para Missão Visão e Valores"
+};
+var _hoisted_38 = {
+  key: 35
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return $props.name === 'cheveron-down' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", _hoisted_1, _hoisted_3)) : $props.name === 'search' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_4)) : $props.name === 'whatsapp' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_5)) : $props.name === 'whatsappFooter' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_6)) : $props.name === 'phone' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_7)) : $props.name === 'pacient-w' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_8)) : $props.name === 'pacient-b' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_9)) : $props.name === 'medic-w' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_10)) : $props.name === 'medic-b' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_11)) : $props.name === 'pin' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_12)) : $props.name === 'phoneFooter' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_13)) : $props.name === 'instagramFooter' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_14)) : $props.name === 'facebookFooter' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_15)) : $props.name === 'linkedinFooter' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_16)) : $props.name === 'rm-w' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_17)) : $props.name === 'tc-w' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_18)) : $props.name === 'do-w' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_19)) : $props.name === 'mm-w' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_20)) : $props.name === 'ut-w' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_21)) : $props.name === 'rx-w' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_22)) : $props.name === 'pb-w' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_23)) : $props.name === 'el-w' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_24)) : $props.name === 'list-b' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_25)) : $props.name === 'team-b' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_26)) : $props.name === 'conv-b' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_27)) : $props.name === 'check-b' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_28)) : $props.name === 'medical-b' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_29)) : $props.name === 'pin-b' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_30)) : $props.name === 'hour-b' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_31)) : $props.name === 'online-b' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_32)) : $props.name === 'target-w' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_33)) : $props.name === 'graph-w' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_34)) : $props.name === 'star-w' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_35)) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_36));
+  return $props.name === 'cheveron-down' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", _hoisted_1, _hoisted_3)) : $props.name === 'search' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_4)) : $props.name === 'whatsapp' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_5)) : $props.name === 'whatsappFooter' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_6)) : $props.name === 'phone' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_7)) : $props.name === 'pacient-w' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_8)) : $props.name === 'pacient-top-w' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_9)) : $props.name === 'pacient-b' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_10)) : $props.name === 'medic-w' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_11)) : $props.name === 'medic-top-w' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_12)) : $props.name === 'medic-b' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_13)) : $props.name === 'pin' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_14)) : $props.name === 'phoneFooter' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_15)) : $props.name === 'instagramFooter' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_16)) : $props.name === 'facebookFooter' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_17)) : $props.name === 'linkedinFooter' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_18)) : $props.name === 'rm-w' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_19)) : $props.name === 'tc-w' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_20)) : $props.name === 'do-w' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_21)) : $props.name === 'mm-w' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_22)) : $props.name === 'ut-w' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_23)) : $props.name === 'rx-w' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_24)) : $props.name === 'pb-w' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_25)) : $props.name === 'el-w' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_26)) : $props.name === 'list-b' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_27)) : $props.name === 'team-b' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_28)) : $props.name === 'conv-b' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_29)) : $props.name === 'check-b' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_30)) : $props.name === 'medical-b' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_31)) : $props.name === 'pin-b' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_32)) : $props.name === 'hour-b' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_33)) : $props.name === 'online-b' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_34)) : $props.name === 'target-w' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_35)) : $props.name === 'graph-w' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_36)) : $props.name === 'star-w' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("img", _hoisted_37)) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_38));
 }
 
 /***/ }),
@@ -30899,7 +30945,7 @@ var _hoisted_3 = {
   "class": "flex items-center flex-wrap justify-around mx-auto my-10 max-w-screen-lg w-11/12 md:w-full"
 };
 var _hoisted_4 = {
-  "class": "bg-white h-auto rounded-full"
+  "class": "bg-white rounded-full"
 };
 var _hoisted_5 = ["src"];
 
@@ -30918,7 +30964,7 @@ var _hoisted_6 = /*#__PURE__*/_withScopeId(function () {
 });
 
 var _hoisted_7 = {
-  "class": "bg-white h-auto rounded-full"
+  "class": "bg-white rounded-full"
 };
 var _hoisted_8 = ["src"];
 
@@ -30937,7 +30983,7 @@ var _hoisted_9 = /*#__PURE__*/_withScopeId(function () {
 });
 
 var _hoisted_10 = {
-  "class": "bg-white h-auto rounded-full"
+  "class": "bg-white rounded-full"
 };
 var _hoisted_11 = ["src"];
 
@@ -30956,7 +31002,7 @@ var _hoisted_12 = /*#__PURE__*/_withScopeId(function () {
 });
 
 var _hoisted_13 = {
-  "class": "bg-white h-auto rounded-full"
+  "class": "bg-white rounded-full"
 };
 var _hoisted_14 = ["src"];
 
@@ -30975,7 +31021,7 @@ var _hoisted_15 = /*#__PURE__*/_withScopeId(function () {
 });
 
 var _hoisted_16 = {
-  "class": "bg-white h-auto rounded-full"
+  "class": "bg-white rounded-full"
 };
 var _hoisted_17 = ["src"];
 
@@ -30994,7 +31040,7 @@ var _hoisted_18 = /*#__PURE__*/_withScopeId(function () {
 });
 
 var _hoisted_19 = {
-  "class": "bg-white h-auto rounded-full"
+  "class": "bg-white rounded-full"
 };
 var _hoisted_20 = ["src"];
 
@@ -31013,7 +31059,7 @@ var _hoisted_21 = /*#__PURE__*/_withScopeId(function () {
 });
 
 var _hoisted_22 = {
-  "class": "bg-white h-auto rounded-full"
+  "class": "bg-white rounded-full"
 };
 var _hoisted_23 = ["src"];
 
@@ -31069,7 +31115,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       },
       '@1.00': {
         slidesPerView: 3,
-        spaceBetween: 40
+        spaceBetween: 10
       },
       '@1.50': {
         slidesPerView: 4,
@@ -31265,6 +31311,8 @@ var _hoisted_1 = {
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
 
+  var _component_CTAareas = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("CTAareas");
+
   var _component_Header = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Header");
 
   var _component_Carousel = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Carousel");
@@ -31272,8 +31320,6 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_SearchForm = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("SearchForm");
 
   var _component_OurExams = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("OurExams");
-
-  var _component_CTAareas = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("CTAareas");
 
   var _component_Institutional = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Institutional");
 
@@ -31285,6 +31331,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Head, {
     title: "Home"
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_CTAareas, {
+    variant: 'top'
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Header), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Carousel), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_SearchForm), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_OurExams), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_CTAareas, {
     variant: 'blue'
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Institutional, {
