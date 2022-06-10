@@ -122,21 +122,31 @@
                              alt="Bradesco Saúde">
                     </div>
                 </Transition>
-
             </div>
 
 
             <div class="lg:max-w-7xl w-11/12 mx-auto">
-                <div class="lg:max-w-5xl w-11/12 h-44 flex flex-row justify-around items-center mx-auto">
-                    <div class="w-64 flex flex-row">
+                <div class="lg:max-w-5xl w-11/12 flex flex-row justify-around items-center mx-auto">
+                    <div class="w-auto mb-6 flex flex-row items-center justify-center">
 
                         <button
-                            v-if
+                            v-if="!showMore"
                             @click="showMore = !showMore"
-                            class="flex justify-around items-center bg-primary w-full h-auto rounded-full py-2 px-4 text-white text-lg font-light hover:font-bold border hover:border-white border-2 drop-shadow-md hover:drop-shadow-lg transition-all hover:scale-110 duration-300 ease-in-out">
+                            class="flex justify-around items-center bg-primary w-32 h-auto rounded-full py-2 px-4 text-white text-lg font-light hover:font-bold border hover:border-white border-2 drop-shadow-md hover:drop-shadow-lg transition-all hover:scale-110 duration-300 ease-in-out">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                            </svg>
+                            <span class="mx-2">Ver mais</span>
+                        </button>
 
-                            Ver mais
-
+                        <button
+                            v-if="showMore"
+                            @click="showMore = !showMore"
+                            class="flex justify-around items-center bg-primary w-32 h-auto rounded-full py-2 px-4 text-white text-lg font-light hover:font-bold border hover:border-white border-2 drop-shadow-md hover:drop-shadow-lg transition-all hover:scale-110 duration-300 ease-in-out">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+                            </svg>
+                            <span class="mx-2">Ver Menos</span>
                         </button>
                     </div>
                 </div>
@@ -177,8 +187,11 @@ export default {
 
 .slide-fade-enter-from,
 .slide-fade-leave-to {
-    transform: translateX(20px);
+    transform: translateX(60px);
     opacity: 0;
+}
+.slide-move {
+    transition: transform 1s;
 }
 
 </style>
