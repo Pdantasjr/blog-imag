@@ -1,5 +1,5 @@
 <template>
-    <div class="w-screen mt-4">
+    <div class="w-screen">
         <div class="lg:max-w-7xl w-11/12 mx-auto">
             <section-title title="Nossos Exames"></section-title>
         </div>

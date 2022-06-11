@@ -1,5 +1,6 @@
 <template>
     <Head title="Blog"/>
+    <CTAareas :variant="'top'" />
     <Header/>
     <div v-if="posts.length">
         <div class="p-4 my-10 sm:my-24 max-w-5xl grid gap-4 md:gap-6 sm:grid-cols-2 lg:grid-cols-3 mx-auto">
@@ -73,7 +74,7 @@
 import {defineComponent} from 'vue'
 
 import {Head, Link} from '@inertiajs/inertia-vue3';
-
+import CTAareas from "./Components/CTAareas";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 
@@ -81,6 +82,7 @@ export default defineComponent({
     components: {
         Head,
         Link,
+        CTAareas,
         Header,
         Footer,
     },

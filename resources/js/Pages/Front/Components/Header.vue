@@ -1,13 +1,17 @@
 <template>
-    <div class="h-24 min-w-screen">
-        <div class="bg-background header absolute top-0 w-full py-4 shadow-lg text-gray-100 flex justify-around items-center">
+    <div class="flex items-center bg-white md:border-b md:shadow-lg z-30 relative mb-44 sm:mb-0">
+        <div class="absolute w-full h-[73px] inset-0 bg-white bg-opacity-50 backdrop-blur-xl"></div>
+        <div class="header absolute top-0 w-full py-2 sm:py-0  text-gray-100 flex justify-around items-center">
             <!--LOGO-->
             <Link :href="route('front.index')">
-                <Logotype logo_width="110" class="w-28 min-h-20"/>
+                <img
+                    src='../Images/logotype/logotipo-imag-medicina-diagnóstica.svg'
+                    alt="Logotipo IMAG Medicia Diagnóstica"
+                    class="w-24 sm:my-2 h-auto"
+                />
             </Link>
-            <!--/LOGO-->
             <!--NAV-->
-            <nav class="md:flex space-x-2 md:space-x-6 hidden">
+            <nav class="md:flex space-x-2 md:space-x-4 hidden">
                 <Link :href="route('front.index')" class="relative font-light text-primary py-6 links_a">Home</Link>
                 <Link href="#" class="relative font-light text-primary py-6 links_a">Nossos Exames</Link>
                 <Link href="#" class="relative font-light text-primary py-6 links_a">Institucional</Link>
@@ -42,14 +46,14 @@
         </div>
     </div>
     <!--SIDEBAR-->
-    <div class="sidebar bg-primary text-blue-100 w-64 space-y-6 py-7 px-2 fixed inset-y-0 right-0 transform translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out md:hidden">
+    <div class="z-20 sidebar bg-primary text-blue-100 w-64 overflow-y-auto space-y-6 py-7 px-2 fixed inset-y-0 right-0 transform translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out md:hidden">
         <nav class="flex flex-col mt-14">
-            <Link class="w-full text-center py-4 text-background hover:font-bold hover:scale-105 hover:translate-x-2 transition ease-in-out duration-200 font-medium space-y-8 mt-8" :href="route('front.index')">Home</Link>
-            <Link class="w-full text-center py-4 text-background hover:font-bold hover:scale-105 hover:translate-x-2 transition ease-in-out duration-200 font-medium space-y-8" href="#">Nossos Exames</Link>
-            <Link class="w-full text-center py-4 text-background hover:font-bold hover:scale-105 hover:translate-x-2 transition ease-in-out duration-200 font-medium space-y-8" href="#">Institucional</Link>
-            <Link class="w-full text-center py-4 text-background hover:font-bold hover:scale-105 hover:translate-x-2 transition ease-in-out duration-200 font-medium space-y-8" href="#">Convênios</Link>
-            <Link class="w-full text-center py-4 text-background hover:font-bold hover:scale-105 hover:translate-x-2 transition ease-in-out duration-200 font-medium space-y-8" href="#">Equipe Médica</Link>
-            <Link class="w-full text-center py-4 text-background hover:font-bold hover:scale-105 hover:translate-x-2 transition ease-in-out duration-200 font-medium space-y-8" :href="route('front.blog')">Blog</Link>
+            <Link class="w-auto text-center py-2 text-white font-light rounded hover:border-b-2 hover:border-white hover:font-bold hover:-translate-y-2 hover:shadow-lg hover:bg-white/25 transition ease-in-out duration-300 space-y-8 mt-10" :href="route('front.index')">Home</Link>
+            <Link class="w-auto text-center py-2 text-white font-light rounded hover:border-b-2 hover:border-white hover:font-bold hover:-translate-y-2 hover:shadow-lg hover:bg-white/25 transition ease-in-out duration-300 space-y-8" href="#">Nossos Exames</Link>
+            <Link class="w-auto text-center py-2 text-white font-light rounded hover:border-b-2 hover:border-white hover:font-bold hover:-translate-y-2 hover:shadow-lg hover:bg-white/25 transition ease-in-out duration-300 space-y-8" href="#">Institucional</Link>
+            <Link class="w-auto text-center py-2 text-white font-light rounded hover:border-b-2 hover:border-white hover:font-bold hover:-translate-y-2 hover:shadow-lg hover:bg-white/25 transition ease-in-out duration-300 space-y-8" href="#">Convênios</Link>
+            <Link class="w-auto text-center py-2 text-white font-light rounded hover:border-b-2 hover:border-white hover:font-bold hover:-translate-y-2 hover:shadow-lg hover:bg-white/25 transition ease-in-out duration-300 space-y-8" href="#">Equipe Médica</Link>
+            <Link class="w-auto text-center py-2 text-white font-light rounded hover:border-b-2 hover:border-white hover:font-bold hover:-translate-y-2 hover:shadow-lg hover:bg-white/25 transition ease-in-out duration-300 space-y-8" :href="route('front.blog')">Blog</Link>
         </nav>
     </div>
     <!--/SIDEBAR-->
@@ -58,15 +62,15 @@
 <script>
 import {Head, Link} from "@inertiajs/inertia-vue3";
 import Icons from "./Icons";
-import Logotype from "./Logotype";
+import CTAareas from "./CTAareas";
 
 export default {
     name: "Header",
     components: {
-        Logotype,
         Head,
         Link,
         Icons,
+        CTAareas,
     },
     data () {
         return {

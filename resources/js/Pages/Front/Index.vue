@@ -10,6 +10,7 @@
         <Institutional :urlDefault="this.urlDefault" />
         <Agreement :urlDefault="this.urlDefault" />
         <Team :urlDefault="this.urlDefault" />
+        <BackToTop />
         <Footer />
     </div>
 </template>
@@ -26,6 +27,7 @@ import CTAareas from "./Components/CTAareas";
 import Institutional from "./Components/Institutional"
 import Agreement from "./Components/Agreement";
 import Team from "./Components/Team";
+import BackToTop from "./Components/BackToTop";
 import Footer from "./Components/Footer"
 
 export default defineComponent({
@@ -44,6 +46,7 @@ export default defineComponent({
         Institutional,
         Agreement,
         Team,
+        BackToTop,
         Footer
     }
 })
