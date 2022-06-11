@@ -2,7 +2,7 @@
     <!--    INSTITUTIONAL-->
     <div class="w-screen mt-4 bg-neutral">
         <div class="lg:max-w-7xl w-11/12 mx-auto">
-            <section-title title="Institucional"></section-title>
+            <section-title title="Institucional" id="institucional"></section-title>
         </div>
         <!--        ABOUT-->
                 <div class="lg:max-w-7xl w-11/12 mx-auto my-2">

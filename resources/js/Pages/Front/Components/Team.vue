@@ -1,6 +1,6 @@
 <template>
     <div class="lg:max-w-7xl w-11/12 mx-auto">
-        <section-title title="Quem Faz a IMAG"></section-title>
+        <section-title title="Quem Faz a IMAG" id="team"></section-title>
     </div>
     <div class="lg:max-w-7xl w-11/12 mx-auto">
         <div class="flex items-center flex-wrap justify-around mx-auto my-10 max-w-screen-lg w-11/12 md:w-full">

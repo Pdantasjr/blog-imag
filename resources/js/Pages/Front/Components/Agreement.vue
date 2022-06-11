@@ -1,7 +1,7 @@
 <template>
     <div class="w-screen h-auto">
         <div class="lg:max-w-7xl w-11/12 mx-auto">
-            <section-title title="Convênios Credenciados"></section-title>
+            <section-title title="Convênios Credenciados" id="agreements"></section-title>
         </div>
         <div class="lg:max-w-7xl w-11/12 mx-auto">
             <div class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 my-6 sm:my-10">
@@ -171,6 +171,13 @@ export default {
             showMore: false,
         }
     },
+    watch: {
+        showMore() {
+            if (!this.showMore) {
+                document.getElementById('agreements').scrollIntoView()
+            }
+        }
+    }
 }
 </script>
 

@@ -1,7 +1,7 @@
 <template>
     <div class="w-screen">
         <div class="lg:max-w-7xl w-11/12 mx-auto">
-            <section-title title="Nossos Exames"></section-title>
+            <section-title title="Nossos Exames" id="nossosExames"></section-title>
         </div>
         <div class="w-screen bg-gradient-to-r from-primary to-secondary">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4 lg:max-w-7xl w-11/12 mx-auto py-6 sm:py-10">
