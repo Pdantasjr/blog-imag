@@ -25,6 +25,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 Route::resource('post', PostController::class)->middleware(['auth:sanctum', 'verified']);
 Route::resource('category', CategoryController::class)->middleware(['auth:sanctum', 'verified']);
+Route::resource('diagnostic', CategoryController::class)->middleware(['auth:sanctum', 'verified']);
 
 
 Route::get('/logout', function () {
