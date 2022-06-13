@@ -4,7 +4,7 @@
         <CTAareas :variant="'top'" />
         <Header/>
         <Carousel />
-        <SearchForm />
+        <SearchForm :defaultUrl="this.defaultUrl" />
         <OurExams />
         <CTAareas :variant="'blue'" />
         <Institutional :urlDefault="this.urlDefault" />
@@ -34,6 +34,7 @@ export default defineComponent({
     name: "Front",
     props: {
         urlDefault: String,
+        defaultUrl: String,
     },
     components: {
         Head,

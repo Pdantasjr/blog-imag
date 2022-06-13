@@ -14,7 +14,7 @@ class ExamsFactory extends Factory
      */
     public function definition()
     {
-        $name = $this->faker->title;
+        $name = $this->faker->jobTitle;
         return [
             'diagnostics_id' => rand('1', '9'),
             'name' => $name,

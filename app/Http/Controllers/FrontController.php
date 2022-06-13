@@ -10,7 +10,8 @@ class FrontController extends Controller
     public function index()
     {
         return Inertia::render('Front/Index', [
-            "urlDefault" => asset('storage')
+            "urlDefault" => asset('storage'),
+            'defaultUrl' => env('APP_URL'),
         ]);
     }
 

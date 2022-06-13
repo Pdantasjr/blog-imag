@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Diagnostic extends Model
 {
     use HasFactory;
+
+    public function exams() {
+        return $this->belongsTo(Exams::class, 'diagnostics_id', 'id');
+    }
+
+    public function method() {
+        return $this->hasMany(Exams::class, 'diagnostics_id', 'id');
+    }
 }
