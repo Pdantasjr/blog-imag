@@ -16,7 +16,7 @@ class ExamsController extends Controller
             ->with('methods')
             ->where('name', 'LIKE', "%{$request->term}%")
             ->orWhere('synonym', 'LIKE', "%{$request->term}%")
-            ->get();
+            ->paginate(10);
 
 
 //        if($exams === null) {
