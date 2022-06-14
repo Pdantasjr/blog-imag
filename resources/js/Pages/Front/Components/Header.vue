@@ -1,6 +1,6 @@
 <template>
     <div class="flex items-center bg-white md:border-b md:shadow-lg z-30 relative mb-44 sm:mb-0 w-screen mx-auto">
-            <div class="absolute h-[72px] inset-0 bg-white bg-opacity-50 backdrop-blur-xl border-b-1 shadow-lg border-primary"></div>
+            <div class="absolute h-[103px] inset-0 bg-white bg-opacity-50 backdrop-blur-xl border-b-1 shadow-lg border-primary"></div>
             <div class="header absolute top-0 w-full py-2 sm:py-0 text-gray-100 flex flex-row justify-around items-center">
                 <div class="w-full max-w-7xl flex flex-row justify-around items-center">
                     <!--LOGO-->
@@ -8,17 +8,17 @@
                         <img
                             src='../Images/logotype/logotipo-imag-medicina-diagnóstica.svg'
                             alt="Logotipo IMAG Medicia Diagnóstica"
-                            class="w-24 sm:my-2 h-auto"
+                            class="w-32 my-2 h-auto"
                         />
                     </Link>
                     <!--NAV-->
                     <nav class="md:flex space-x-2 md:space-x-4 hidden">
-                        <Link :href="route('front.index')" class="relative font-light text-primary py-6 links_a">Home</Link>
-                        <Link href="#nossosExames" class="relative font-light text-primary py-6 links_a">Nossos Exames</Link>
-                        <Link href="#institucional" class="relative font-light text-primary py-6 links_a">Institucional</Link>
-                        <Link href="#agreements" class="relative font-light text-primary py-6 links_a">Convênios</Link>
-                        <Link href="#team" class="relative font-light text-primary py-6 links_a">Equipe Médica</Link>
-                        <Link :href="route('front.blog')" class="relative font-light text-primary py-6 links_a">Blog</Link>
+                        <Link :href="route('front.index')" class="relative font-light hover:font-bold text-center flex justify-center items-center lg:w-[115px] sm:h-[103px] whitespace-nowrap text-primary transition-all duration-300 ease-in-out links_a">Home</Link>
+                        <Link href="#nossosExames" class="relative font-light hover:font-bold text-center flex justify-center items-center lg:w-[115px] sm:h-[103px] whitespace-nowrap text-primary transition-all duration-300 ease-in-out links_a">Nossos Exames</Link>
+                        <Link href="#institucional" class="relative font-light hover:font-bold text-center flex justify-center items-center lg:w-[115px] sm:h-[103px] whitespace-nowrap text-primary transition-all duration-300 ease-in-out links_a">Institucional</Link>
+                        <Link href="#agreements" class="relative font-light hover:font-bold text-center flex justify-center items-center lg:w-[115px] sm:h-[103px] whitespace-nowrap text-primary transition-all duration-300 ease-in-out links_a">Convênios</Link>
+                        <Link href="#team" class="relative font-light hover:font-bold text-center flex justify-center items-center lg:w-[115px] sm:h-[103px] whitespace-nowrap text-primary transition-all duration-300 ease-in-out links_a">Equipe Médica</Link>
+                        <Link :href="route('front.blog')" class="relative font-light hover:font-bold text-center flex justify-center items-center lg:w-[115px] sm:h-[103px] whitespace-nowrap text-primary transition-all duration-300 ease-in-out links_a">Blog</Link>
                     </nav>
                     <!--/NAV-->
                     <!--RIGHT-->

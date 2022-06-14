@@ -2,7 +2,7 @@
     <div class="w-screen">
         <!--TOP-->
         <div v-if="variant == 'top'"
-             class="sm:hidden w-full h-auto flex flex-row justify-center items-center mx-auto bg-primary z-30 relative">
+             class="md:hidden w-full h-auto flex flex-row justify-center items-center mx-auto bg-primary z-30 relative">
             <Link
                 class="flex justify-center items-center bg-primary w-3/4 h-8 rounded-full border border-white my-2 mx-2 xs:mx-4 py-1 px-1 drop-shadow-md hover:drop-shadow-lg group"
                 href="#">

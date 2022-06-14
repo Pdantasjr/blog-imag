@@ -33,6 +33,7 @@
     "dependencies": {
         "@tinymce/tinymce-vue": "^4.0.5",
         "swiper": "^8.2.2",
-        "vue-easy-lightbox": "^1.4.1"
+        "vue-easy-lightbox": "^1.4.1",
+        "vue3-infinite-list": "^0.2.5"
     }
 }
