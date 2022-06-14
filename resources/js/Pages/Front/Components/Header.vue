@@ -1,49 +1,52 @@
 <template>
-    <div class="flex items-center bg-white md:border-b md:shadow-lg z-30 relative mb-44 sm:mb-0">
-        <div class="absolute w-full h-[72px] inset-0 bg-white bg-opacity-50 backdrop-blur-xl border-b-1 shadow-lg border-primary"></div>
-        <div class="header absolute top-0 w-full py-2 sm:py-0 text-gray-100 flex justify-around items-center">
-            <!--LOGO-->
-            <Link :href="route('front.index')">
-                <img
-                    src='../Images/logotype/logotipo-imag-medicina-diagnóstica.svg'
-                    alt="Logotipo IMAG Medicia Diagnóstica"
-                    class="w-24 sm:my-2 h-auto"
-                />
-            </Link>
-            <!--NAV-->
-            <nav class="md:flex space-x-2 md:space-x-4 hidden">
-                <Link :href="route('front.index')" class="relative font-light text-primary py-6 links_a">Home</Link>
-                <Link href="#nossosExames" class="relative font-light text-primary py-6 links_a">Nossos Exames</Link>
-                <Link href="#institucional" class="relative font-light text-primary py-6 links_a">Institucional</Link>
-                <Link href="#agreements" class="relative font-light text-primary py-6 links_a">Convênios</Link>
-                <Link href="#team" class="relative font-light text-primary py-6 links_a">Equipe Médica</Link>
-                <Link :href="route('front.blog')" class="relative font-light text-primary py-6 links_a">Blog</Link>
-            </nav>
-            <!--/NAV-->
-            <!--RIGHT-->
-            <div class="flex">
-                <div class="md:flex space-x-4 justify-around items-center hover:cursor-pointer hidden">
-                    <Link :href="link.phone">
-                        <Icons name="phone" class="text-primary min-w-fit"/>
+    <div class="flex items-center bg-white md:border-b md:shadow-lg z-30 relative mb-44 sm:mb-0 w-screen mx-auto">
+            <div class="absolute h-[72px] inset-0 bg-white bg-opacity-50 backdrop-blur-xl border-b-1 shadow-lg border-primary"></div>
+            <div class="header absolute top-0 w-full py-2 sm:py-0 text-gray-100 flex flex-row justify-around items-center">
+                <div class="w-full max-w-7xl flex flex-row justify-around items-center">
+                    <!--LOGO-->
+                    <Link :href="route('front.index')">
+                        <img
+                            src='../Images/logotype/logotipo-imag-medicina-diagnóstica.svg'
+                            alt="Logotipo IMAG Medicia Diagnóstica"
+                            class="w-24 sm:my-2 h-auto"
+                        />
                     </Link>
-                    <Link href="#" @click="WhatsAppLink" target="_blank">
-                        <Icons name="whatsapp" class="text-primary min-w-fit" />
-                    </Link>
+                    <!--NAV-->
+                    <nav class="md:flex space-x-2 md:space-x-4 hidden">
+                        <Link :href="route('front.index')" class="relative font-light text-primary py-6 links_a">Home</Link>
+                        <Link href="#nossosExames" class="relative font-light text-primary py-6 links_a">Nossos Exames</Link>
+                        <Link href="#institucional" class="relative font-light text-primary py-6 links_a">Institucional</Link>
+                        <Link href="#agreements" class="relative font-light text-primary py-6 links_a">Convênios</Link>
+                        <Link href="#team" class="relative font-light text-primary py-6 links_a">Equipe Médica</Link>
+                        <Link :href="route('front.blog')" class="relative font-light text-primary py-6 links_a">Blog</Link>
+                    </nav>
+                    <!--/NAV-->
+                    <!--RIGHT-->
+                    <div class="flex">
+                        <div class="md:flex space-x-4 justify-around items-center hover:cursor-pointer hidden">
+                            <Link :href="link.phone">
+                                <Icons name="phone" class="text-primary min-w-fit"/>
+                            </Link>
+                            <Link href="#" @click="WhatsAppLink" target="_blank">
+                                <Icons name="whatsapp" class="text-primary min-w-fit" />
+                            </Link>
+                        </div>
+                        <div class="flex ml-12 justify-around items-center hover:cursor-pointer">
+                            <Link>
+                                <Icons name="search" class="text-primary w-8 h-8 min-w-fit"/>
+                            </Link>
+                        </div>
+                        <div class="flex items-center ml-12 hover:cursor-pointer md:hidden">
+                            <button @click="toggle" class="flex flex-col items-center hover:cursor-pointer">
+                                <span class="line1 transform origin-top-center transition duration-150"></span>
+                                <span class="line2 transform origin-top-center transition duration-150"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <!--/RIGHT-->
                 </div>
-                <div class="flex ml-12 justify-around items-center hover:cursor-pointer">
-                    <Link>
-                        <Icons name="search" class="text-primary w-8 h-8 min-w-fit"/>
-                    </Link>
-                </div>
-                <div class="flex items-center ml-12 hover:cursor-pointer md:hidden">
-                    <button @click="toggle" class="flex flex-col items-center hover:cursor-pointer">
-                        <span class="line1 transform origin-top-center transition duration-150"></span>
-                        <span class="line2 transform origin-top-center transition duration-150"></span>
-                    </button>
-                </div>
-            </div>
-            <!--/RIGHT-->
         </div>
+
     </div>
     <!--SIDEBAR-->
     <div class="z-20 sidebar bg-primary text-blue-100 w-64 overflow-y-auto space-y-6 py-7 px-2 fixed inset-y-0 right-0 transform translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out md:hidden">

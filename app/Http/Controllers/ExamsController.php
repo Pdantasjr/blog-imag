@@ -17,17 +17,5 @@ class ExamsController extends Controller
             ->where('name', 'LIKE', "%{$request->term}%")
             ->orWhere('synonym', 'LIKE', "%{$request->term}%")
             ->paginate(10);
-
-
-//        if($exams === null) {
-//            return response()->json(["erro" => "Resurso pesquisado não encontrado"], 404);
-//        } else {
-//            return response()->json(
-//                DB::table('exams')
-//                    ->where( 'name', 'LIKE', '%'.$request->term.'%')
-//                    ->get(),
-//                200);
-//
-//        }
     }
 }
