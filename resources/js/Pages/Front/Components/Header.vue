@@ -1,6 +1,6 @@
 <template>
-    <div class="flex items-center bg-white md:border-b md:shadow-lg z-30 relative mb-44 sm:mb-0 w-screen mx-auto">
-            <div class="absolute h-[103px] inset-0 bg-white bg-opacity-50 backdrop-blur-xl border-b-1 shadow-lg border-primary"></div>
+    <div class="flex items-center bg-white md:border-b md:shadow-lg z-30 relative sm:mb-0 w-screen mx-auto">
+            <div class="absolute h-[103px] inset-0 bg-white bg-opacity-30 backdrop-blur-xl border-b-1 shadow-lg border-primary"></div>
             <div class="header absolute top-0 w-full py-2 sm:py-0 text-gray-100 flex flex-row justify-around items-center">
                 <div class="w-full max-w-7xl flex flex-row justify-around items-center">
                     <!--LOGO-->
@@ -51,12 +51,12 @@
     <!--SIDEBAR-->
     <div class="z-20 sidebar bg-primary text-blue-100 w-64 overflow-y-auto space-y-6 py-7 px-2 fixed inset-y-0 right-0 transform translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out md:hidden">
         <nav class="flex flex-col mt-14">
-            <Link class="w-auto text-center py-2 text-white font-light rounded hover:border-b-2 hover:border-white hover:font-bold hover:-translate-y-2 hover:shadow-lg hover:bg-white/25 transition ease-in-out duration-300 space-y-8 mt-10" :href="route('front.index')">Home</Link>
-            <Link class="w-auto text-center py-2 text-white font-light rounded hover:border-b-2 hover:border-white hover:font-bold hover:-translate-y-2 hover:shadow-lg hover:bg-white/25 transition ease-in-out duration-300 space-y-8" href="#nossosExames">Nossos Exames</Link>
-            <Link class="w-auto text-center py-2 text-white font-light rounded hover:border-b-2 hover:border-white hover:font-bold hover:-translate-y-2 hover:shadow-lg hover:bg-white/25 transition ease-in-out duration-300 space-y-8" href="#institucional">Institucional</Link>
-            <Link class="w-auto text-center py-2 text-white font-light rounded hover:border-b-2 hover:border-white hover:font-bold hover:-translate-y-2 hover:shadow-lg hover:bg-white/25 transition ease-in-out duration-300 space-y-8" href="#agreements">Convênios</Link>
-            <Link class="w-auto text-center py-2 text-white font-light rounded hover:border-b-2 hover:border-white hover:font-bold hover:-translate-y-2 hover:shadow-lg hover:bg-white/25 transition ease-in-out duration-300 space-y-8" href="#team">Equipe Médica</Link>
-            <Link class="w-auto text-center py-2 text-white font-light rounded hover:border-b-2 hover:border-white hover:font-bold hover:-translate-y-2 hover:shadow-lg hover:bg-white/25 transition ease-in-out duration-300 space-y-8" :href="route('front.blog')">Blog</Link>
+            <Link class="w-auto text-center py-4 text-white font-light rounded hover:border-b-2 hover:border-white hover:font-bold hover:-translate-y-2 hover:shadow-lg hover:bg-white/25 transition ease-in-out duration-300 space-y-8 mt-24" :href="route('front.index')">Home</Link>
+            <Link class="w-auto text-center py-4 text-white font-light rounded hover:border-b-2 hover:border-white hover:font-bold hover:-translate-y-2 hover:shadow-lg hover:bg-white/25 transition ease-in-out duration-300 space-y-8" href="#nossosExames">Nossos Exames</Link>
+            <Link class="w-auto text-center py-4 text-white font-light rounded hover:border-b-2 hover:border-white hover:font-bold hover:-translate-y-2 hover:shadow-lg hover:bg-white/25 transition ease-in-out duration-300 space-y-8" href="#institucional">Institucional</Link>
+            <Link class="w-auto text-center py-4 text-white font-light rounded hover:border-b-2 hover:border-white hover:font-bold hover:-translate-y-2 hover:shadow-lg hover:bg-white/25 transition ease-in-out duration-300 space-y-8" href="#agreements">Convênios</Link>
+            <Link class="w-auto text-center py-4 text-white font-light rounded hover:border-b-2 hover:border-white hover:font-bold hover:-translate-y-2 hover:shadow-lg hover:bg-white/25 transition ease-in-out duration-300 space-y-8" href="#team">Equipe Médica</Link>
+            <Link class="w-auto text-center py-4 text-white font-light rounded hover:border-b-2 hover:border-white hover:font-bold hover:-translate-y-2 hover:shadow-lg hover:bg-white/25 transition ease-in-out duration-300 space-y-8" :href="route('front.blog')">Blog</Link>
         </nav>
     </div>
     <!--/SIDEBAR-->

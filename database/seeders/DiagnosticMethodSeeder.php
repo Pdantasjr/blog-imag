@@ -2,10 +2,9 @@
 
 namespace Database\Seeders;
 
-use App\Models\Diagnostic;
 use Illuminate\Database\Seeder;
 
-class DiagnosticSeeder extends Seeder
+class DiagnosticMethodSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,6 +13,6 @@ class DiagnosticSeeder extends Seeder
      */
     public function run()
     {
-        Diagnostic::factory()->count(10)->create();
+        DiagnosticMethodSeeder::factory()->count(8)->create();
     }
 }

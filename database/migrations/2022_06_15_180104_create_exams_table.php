@@ -28,7 +28,7 @@ class CreateExamsTable extends Migration
             $table->string('deadline');
             $table->timestamps();
 
-            $table->foreign('diagnostics_id')->references('id')->on('diagnostics')->onDelete('cascade');
+            $table->foreign('diagnostics_id')->references('id')->on('diagnostic_methods')->onDelete('cascade');
         });
     }
 

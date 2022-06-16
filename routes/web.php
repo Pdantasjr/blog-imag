@@ -3,16 +3,10 @@
 use App\Http\Controllers\FrontController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\DiagnosticMethodController;
+use App\Http\Controllers\ExamsController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
-
-
-//Route::get('/', function () {
-//    return Inertia::render('Front/Index', [
-//        'canLogin' => Route::has('login'),
-//        'canRegister' => Route::has('register'),
-//    ]);
-//});
 
 Route::get('/', [FrontController::class, 'index'])->name('front.index');
 
@@ -25,7 +19,8 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 Route::resource('post', PostController::class)->middleware(['auth:sanctum', 'verified']);
 Route::resource('category', CategoryController::class)->middleware(['auth:sanctum', 'verified']);
-Route::resource('diagnostic', CategoryController::class)->middleware(['auth:sanctum', 'verified']);
+Route::resource('diagnostic', DiagnosticMethodController::class)->middleware(['auth:sanctum', 'verified']);
+Route::resource('exams', ExamsController::class)->middleware(['auth:sanctum', 'verified']);
 
 
 Route::get('/logout', function () {

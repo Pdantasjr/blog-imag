@@ -36,7 +36,7 @@
         </div>
     </div>
     <!--DESKTOP-->
-    <div class="bg-stone-400 w-screen py-3 hidden md:flex">
+    <div class="bg-stone-400 w-full py-3 hidden md:flex">
         <div class="lg:max-w-7xl w-11/12 flex justify-around mx-auto">
             <!--ENDEREÇO-->
             <div class="flex flex-col">
@@ -107,7 +107,7 @@
         </div>
     </div>
     <!--COPY-->
-    <div class="bg-stone-500 w-screen py-2 items-center flex justify-center hidden md:flex">
+    <div class="bg-stone-500 w-full py-2 items-center flex justify-center hidden md:flex">
         <p class="text-stone-300 font-light text-xs">© 2022 IMAG - Medicina Diagnóstica - Todos os Direitos Reservados
             | &nbsp; </p>
         <div class="flex">

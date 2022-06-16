@@ -19,4 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/exames', [ExamsController::class, 'index'])->name('api.exams');
+Route::get('/exams', [ExamsController::class, 'exams'])->name('api.exams');
+Route::get('/exam', [ExamsController::class, 'exam'])->name('api.exam');

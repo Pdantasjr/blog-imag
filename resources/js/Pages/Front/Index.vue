@@ -5,7 +5,7 @@
         <Header/>
         <Carousel />
         <SearchForm :defaultUrl="this.defaultUrl" />
-        <OurExams />
+        <OurExams :defaultUrl="this.defaultUrl" />
         <CTAareas :variant="'blue'" />
         <Institutional :urlDefault="this.urlDefault" />
         <Agreement :urlDefault="this.urlDefault" />

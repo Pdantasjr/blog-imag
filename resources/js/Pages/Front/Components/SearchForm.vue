@@ -1,5 +1,5 @@
 <template>
-    <div class="relative w-screen h-16 -mt-20 z-10">
+    <div class="relative w-screen h-16 -mt-32 z-10">
         <form class="flex justify-center">
             <div class="w-11/12 sm:w-2/3 flex flex-col items-center justify-center">
                 <input v-model="form.searchInput"
@@ -25,18 +25,21 @@
                 </div>
                 <ul v-if="this.form.searchInput.length > 1" id="listResult"
                     class="flex flex-col items-center bg-white w-11/12 h-auto max-h-72 py-2 rounded-lg mt-2 drop-shadow-xl border-2 border-primary overflow-y-auto transition-all duration-200 ease-in-out">
-<!--                    <li v-for="exa in exams.data" :key="exa.id" class="px-4 py-2 text-gray-800 w-full transition-all duration-200 ease-in-out">-->
-<!--                        <Link v-if="exa.slug" href="#"-->
-<!--                              class="block shadow-sm w-full h-auto border-l-2 border-primary bg-gray-300 hover:bg-neutral hover:cursor-pointer hover:font-extrabold hover:text-primary hover:drop-shadow-md p-2 rounded transition transform hover:-translate-y-2 duration-200 ease-in-out">-->
-<!--                            {{ exa.name }} <br> <span-->
-<!--                            class="text-sm text-gray-400 font-light">Método do exame: {{ exa.methods[0].name }}</span>-->
-<!--                        </Link>-->
-<!--                    </li>-->
-                    <InfiniteList :data="exams" :width="'100%'" :height="500" :itemSize="50" :debug="debug" v-slot="{ item, index }">
-                        <div class="li-con">{{ index + 1 }} : {{ item }}</div>
+                    <InfiniteList :data="exams" :width="'100%'" :height="500" :itemSize="80" v-slot="{ item, index }">
+                        <li class="px-4 py-2 text-gray-800 w-full transition-all duration-200 ease-in-out">
+                            <Link :href="item.slug"
+                                  class="block shadow-sm w-full h-auto border-l-2 border-primary bg-gray-300 hover:bg-neutral hover:cursor-pointer hover:font-extrabold hover:text-primary hover:drop-shadow-md p-2 rounded transition transform hover:-translate-y-2 duration-200 ease-in-out">
+                                {{ item.name }} <br>
+                                <span class="text-sm text-gray-400 font-light">Método do exame: {{
+                                        item.methods[0].name
+                                    }}</span>
+                            </Link>
+                        </li>
                     </InfiniteList>
                     <button v-if="this.exams.next_page_url != null" @click.prevent="viewMore(exams.next_page_url)"
-                            class="w-10/12 shadow-sm bg-gray-300 hover:cursor-pointer font-light hover:text-white hover:bg-secondary hover:drop-shadow-md py-1 rounded transition-all duration-200 ease-in-out">Ver mais</button>
+                            class="w-10/12 shadow-sm bg-gray-300 hover:cursor-pointer font-light hover:text-white hover:bg-secondary hover:drop-shadow-md py-1 rounded transition-all duration-200 ease-in-out">
+                        Ver mais
+                    </button>
                 </ul>
             </div>
         </form>
@@ -85,7 +88,7 @@ export default {
         viewMore(n) {
             console.log('ver mais', n)
             this.loading = true
-            setTimeout(()=>{
+            setTimeout(() => {
                 axios.get(n)
                     .then(res => {
                         const divResult = document.getElementById('listResult')
@@ -100,7 +103,7 @@ export default {
 }
 </script>
 <style scoped>
-    html {
-        scroll-behavior: smooth;
-    }
+html {
+    scroll-behavior: smooth;
+}
 </style>

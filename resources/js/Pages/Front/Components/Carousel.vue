@@ -1,5 +1,5 @@
 <template>
-    <div class="hidden sm:block sm:h-auto w-screen mx-auto">
+    <div class="sm:block sm:h-auto w-screen mx-auto">
         <swiper
             :slidesPerView="1"
             :loopFillGroupWithBlank="true"
@@ -17,31 +17,31 @@
         >
             <swiper-slide>
                 <div class="static">
-                    <h5 class="absolute top-[30%] left-56 tracking-wide leading-tight text-white uppercase text-5xl font-bold">Todos os cuidados<br> à
+                    <h5 class="absolute top-[30%] left-[15%] md:left-[20%] tracking-wide leading-10 text-white uppercase text-[26pt] md:text-5xl font-bold">Todos os cuidados<br> à
                         saúde em um só lugar.<br>
                         <strong class="bg-primary/75 w-auto bg-blend-multiply rounded">Imag e Só.</strong>
                     </h5>
-                    <img class="hidden sm:block h-[35rem] w-screen sm:auto object-cover"
+                    <img class="block h-[550px] md:h-[35rem] lg:h-[40rem] w-full sm:auto object-cover"
                          src="../Images/banners/01-min.jpg" alt="Banner Imag - Medicina Diagnótica">
                 </div>
             </swiper-slide>
             <swiper-slide>
                 <div class="static">
-                    <h5 class="absolute top-[30%] left-56 tracking-wide leading-tight text-white uppercase text-5xl font-bold">Todos os cuidados<br> à
+                    <h5 class="absolute top-[30%] left-[15%] md:left-[20%] tracking-wide leading-10 text-white uppercase text-[26pt] md:text-5xl font-bold">Todos os cuidados<br> à
                         saúde em um só lugar.<br>
                         <strong class="bg-primary/75 w-auto bg-blend-multiply rounded">Imag e Só.</strong>
                     </h5>
-                    <img class="hidden sm:block h-[35rem] w-screen sm:auto object-cover"
+                    <img class="block h-[550px] md:h-[35rem] lg:h-[40rem] w-full sm:auto object-cover"
                          src="../Images/banners/02-min.jpg" alt="Banner Imag - Medicina Diagnótica">
                 </div>
             </swiper-slide>
             <swiper-slide>
                 <div class="static">
-                    <h5 class="absolute top-[30%] left-56 tracking-wide leading-tight text-white uppercase text-5xl font-bold">Todos os cuidados<br> à
+                    <h5 class="absolute top-[30%] left-[15%] md:left-[20%] tracking-wide leading-10 text-white uppercase text-[26pt] md:text-5xl font-bold">Todos os cuidados<br> à
                         saúde em um só lugar.<br>
                         <strong class="bg-primary/75 w-auto bg-blend-multiply rounded">Imag e Só.</strong>
                     </h5>
-                    <img class="hidden sm:block h-[35rem] w-screen sm:auto object-cover"
+                    <img class="block h-[550px] md:h-[35rem] lg:h-[40rem] w-full sm:auto object-cover"
                          src="../Images/banners/03-min.jpg" alt="Banner Imag - Medicina Diagnótica">
                 </div>
             </swiper-slide>
