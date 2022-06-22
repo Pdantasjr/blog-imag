@@ -1,5 +1,5 @@
 <template>
-    <app-layout title="Posts">
+    <app-layout title="Exames">
         <toast :toast="$page.props.flash.message"></toast>
         <sidebar/>
         <main-content>
@@ -173,75 +173,88 @@
                             <div class="flex flex-wrap items-center gap-4 justify-start shrink-0">
                                 <Link
                                     class="inline-flex items-center justify-center font-medium tracking-tight rounded-lg focus:outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset bg-primary focus:bg-primary focus:ring-offset-primary-700 h-9 px-4 text-white shadow focus:ring-white"
-                                    :href="route('post.create')">
+                                    :href="route('exams.create')">
                                     <span>Novo Exame</span>
                                 </Link>
                             </div>
                         </header>
-                        <div>
-                            <div v-if="posts.data.length > 0"  class="border border-gray-300 shadow-sm bg-white rounded-xl">
+                        <div v-if="exams.length">
+                            <div class="border border-gray-300 shadow-sm bg-white rounded-xl">
                                 <div class="overflow-y-auto relative">
                                     <table class="w-full text-left divide-y table-auto">
                                         <thead>
                                         <tr>
                                             <th class="px-4 py-2">
-                                                <span class="flex items-center whitespace-nowrap space-x-1 rtl:space-x-reverse font-medium text-sm font-bold text-gray-600">Cód.</span>
+                                                <span
+                                                    class="text-sm font-bold text-gray-600 flex flex-row items-center justify-center">Cód.</span>
                                             </th>
                                             <th class="px-4 py-2">
-                                                <span class="flex items-center whitespace-nowrap space-x-1 rtl:space-x-reverse font-medium text-sm font-bold text-gray-600">Título</span>
+                                                <span
+                                                    class="text-sm font-bold text-gray-600 flex flex-row items-center justify-center">Nome</span>
                                             </th>
                                             <th class="px-4 py-2">
-                                                <span class="flex items-center whitespace-nowrap space-x-1 rtl:space-x-reverse font-medium text-sm font-bold text-gray-600">Autor</span>
+                                                <span
+                                                    class="text-sm font-bold text-gray-600 flex flex-row items-center justify-center">Método de diagnóstico</span>
                                             </th>
                                             <th class="px-4 py-2">
-                                                <span class="flex items-center whitespace-nowrap space-x-1 rtl:space-x-reverse font-medium text-sm font-bold text-gray-600">Categoria</span>
-                                            </th>
-                                            <th class="px-4 py-2">
-                                                <span class="flex items-center justify-center whitespace-nowrap space-x-1 rtl:space-x-reverse font-medium text-sm font-bold text-gray-600">Opções</span>
+                                                <span
+                                                    class="text-sm font-bold text-gray-600 flex flex-row items-center justify-center">Opções</span>
                                             </th>
                                         </tr>
                                         </thead>
 
-                                        <tbody class="divide-y whitespace-nowrap">
-                                        <tr v-for="post in posts.data" :key="post.id">
+                                        <tbody v-for="exam in exams" :key="exam.id" class="divide-y whitespace-nowrap">
+                                        <tr>
                                             <td>
-                                                <div class="px-4 py-3justify-center ">
-                                                    <span class="text-gray-600">{{post.id}}</span>
+                                                <div class="px-4 py-3 flex items-center justify-center ">
+                                                    <span class="text-gray-600">{{ exam.id }}</span>
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="px-4 py-3justify-center ">
-                                                    <span class="text-gray-600">{{post.title}}</span>
+                                                <div class="px-4 py-3 flex items-center justify-center ">
+                                                    <span class="text-gray-600">{{ exam.name }}</span>
                                                 </div>
                                             </td>
                                             <td>
-                                                <div class="px-4 py-3justify-center ">
-                                                    <span class="text-gray-600">{{post.author.name}}</span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="px-4 py-3justify-center ">
-                                                    <span class="text-gray-600">{{post.category.name}}</span>
+                                                <div class="px-4 py-3 flex items-center justify-center">
+                                                    <img :src="this.methodImage+'/'+exam.method.image"
+                                                         :alt="exam.method.name"
+                                                         class="w-auto h-8 rounded p-1 mx-2 bg-primary/30">
+                                                    <span class="text-gray-600">{{ exam.method.name }}</span>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="px-4 py-3 justify-center flex flex-row">
-                                                    <Link :href="route('post.edit', [post.id])" class="hover:underline focus:outline-none px-2 focus:underline text-gray-500 hover:text-yellow-300 text-sm font-medium">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                                                    <Link :href="route('exams.edit', [exam.id])"
+                                                          class="hover:underline focus:outline-none px-2 focus:underline text-gray-500 hover:text-yellow-300 text-sm font-medium">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6"
+                                                             fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                                  stroke-width="2"
+                                                                  d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
                                                         </svg>
                                                     </Link>
 
-                                                    <Link :href="route('post.show', [post.id])" class="hover:underline focus:outline-none px-2 focus:underline text-gray-500 hover:text-blue-300 text-sm font-medium">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                                    <Link :href="route('exams.show', [exam.slug])"
+                                                          class="hover:underline focus:outline-none px-2 focus:underline text-gray-500 hover:text-blue-300 text-sm font-medium">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6"
+                                                             fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                                  stroke-width="2"
+                                                                  d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                                  stroke-width="2"
+                                                                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
                                                         </svg>
                                                     </Link>
 
-                                                    <button @click="submit(post.id, post.title)" class="hover:underline focus:outline-none px-2 focus:underline text-gray-500 hover:text-red-600 text-sm font-medium">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                                    <button @click="submit(exam.slug, exam.name)"
+                                                            class="hover:underline focus:outline-none px-2 focus:underline text-gray-500 hover:text-red-600 text-sm font-medium">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6"
+                                                             fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                                  stroke-width="2"
+                                                                  d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
                                                         </svg>
                                                     </button>
                                                 </div>
@@ -250,24 +263,15 @@
                                         </tbody>
                                     </table>
                                 </div>
-                                <div class="p-2 border-t">
-                                    <nav class="flex items-center justify-between">
-                                        <div class="hidden flex-1 items-center lg:grid grid-cols-3">
-                                            <div class="flex items-center">
-                                                <div class="pl-2 text-sm font-medium">
-                                                    <Pagination class="mt-6" :links="posts.links" />
-                                                </div>
-                                            </div>
-                                            <div class="flex items-center justify-end">
-                                            </div>
-                                        </div>
-                                    </nav>
-                                </div>
                             </div>
-                            <div v-else>
-                                <p class="text-neutral text-center text-ms font-light">Você ainda não postou nada no blog.</p>
-                                <p class="text-neutral text-center text-xs font-light">Lembre-se de <Link class="underline" :href="route('category.create')">criar</Link> uma categoria antes de tudo.</p>
-                            </div>
+                        </div>
+                        <div v-else>
+                            <p class="text-primary text-center text-ms font-light">Você ainda não cadastrou nenhum
+                                exame.</p>
+                            <p class="text-primary text-center text-xs font-light">Lembre-se de
+                                <Link class="underline" :href="route('diagnostic.create')">cadastrar</Link>
+                                um método de diagnóstico antes de tudo.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -289,9 +293,10 @@ import Toast from "@/Components/Toast";
 import Pagination from "@/Components/Pagination";
 
 export default defineComponent({
-    name: "Posts",
+    name: "Exams",
     props: {
-        posts: Object,
+        exams: Object,
+        methodImage: String,
     },
     components: {
         AppLayout,
@@ -305,9 +310,9 @@ export default defineComponent({
         Pagination,
     },
     methods: {
-        submit(id, title) {
-            if(confirm("Você tem certeza que deseja excluir "+title+" ?")) {
-                this.$inertia.delete(route('post.destroy', [id]), this.form)
+        submit(slug, title) {
+            if (confirm("Você tem certeza que deseja excluir " + title + " ?")) {
+                this.$inertia.delete(route('exams.destroy', [slug]), this.form)
             }
         }
     }

@@ -18,11 +18,7 @@ class DiagnosticMethod extends Model
         'image',
     ];
 
-//    public function method() {
-//        return $this->belongsTo(Exams::class, 'diagnostics_id', 'id');
-//    }
-//
-//    public function exams() {
-//        return $this->hasMany(Exams::class, 'diagnostics_id', 'id');
-//    }
+    public function exams() {
+        return $this->hasMany(Exams::class, 'diagnostics_id', 'id');
+    }
 }

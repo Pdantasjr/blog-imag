@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\DiagnosticMethod;
+use App\Models\Exams;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Storage;
@@ -91,13 +92,16 @@ class DiagnosticMethodController extends Controller
 
     }
 
-
     public function destroy($id)
     {
-        $method = DiagnosticMethod::find($id);
-        Storage::deleteDirectory('public/Method/'. $method->slug);
-        $method->delete();
-        return Redirect::route('diagnostic.index')->with(['toast' => ['message' => "Método excluído com sucesso!"]]);
+        if(DiagnosticMethod::find($id)->exams()->count() < 1) {
+            $method = DiagnosticMethod::find($id);
+            Storage::deleteDirectory('public/Method/'. $method->slug);
+            $method->delete();
+            return Redirect::route('diagnostic.index')->with(['toast' => ['message' => "Método excluído com sucesso!"]]);
+        } else {
+            return Redirect::route('diagnostic.index')->with(['toast' => ['message' => "Existem exames ligados a este método. Não é possível excluir!"]]);
+        }
     }
 
     private function setSlug($method) {

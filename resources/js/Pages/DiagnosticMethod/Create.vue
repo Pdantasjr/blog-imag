@@ -212,7 +212,7 @@
                                                             <div class="flex items-center space-x-1 group">
                                                                 <div class="flex-1">
                                                                     <div v-if="imageMethod.length" class="my-4">
-                                                                        <img :src="imageMethod" class="w-auto p-2 bg-cover object-fit bg-gray-300 bg-center h-72 rounded-lg shadow-lg" alt="Cover">
+                                                                        <img :src="imageMethod" class="w-auto p-2 bg-cover object-fit bg-primary/30 bg-center h-72 rounded-lg shadow-lg" alt="Cover">
                                                                     </div>
                                                                    <input type="file" id="diagnosticImage" name="diagnosticImage"
                                                                            @change="changeImage"

@@ -1,5 +1,5 @@
 <template>
-    <app-layout title="Editar post">
+    <app-layout title="Editar exame">
         <sidebar/>
         <main-content>
             <template #header>
@@ -167,7 +167,7 @@
                     <div class="space-y-6">
                         <header class="space-y-2 items-start justify-between sm:flex sm:space-y-0 sm:space-x-4 sm:py-4">
                             <h1 class="text-2xl text-gray-700 font-bold tracking-tight md:text-3xl">
-                                Editar Post: <span class="font-light text-gray-500">{{ form.title }}</span>
+                                Editar Exame:
                             </h1>
                         </header>
                         <form class="space-y-12" @submit.prevent="submit()">
@@ -177,15 +177,16 @@
                                         <div class="col-span-1 ">
                                             <div class="p-6 bg-white shadow rounded-xl">
                                                 <div class="grid gap-6 grid-cols-1 sm:grid-cols-2">
-                                                    <!--TÍTULO-->
+                                                    <!--NOME-->
                                                     <div class="col-span-2 ">
                                                         <div class="space-y-2">
-                                                            <div class="flex items-center justify-between space-x-2">
+                                                            <div
+                                                                class="flex items-center justify-between space-x-2">
                                                                 <label class="inline-flex items-center space-x-3"
-                                                                       for="title">
+                                                                       for="name">
                                                                         <span
                                                                             class="text-sm font-medium leading-4 text-gray-700">
-                                                                            Título
+                                                                            Nome
                                                                             <sup
                                                                                 class="font-medium text-danger-700">*</sup>
                                                                         </span>
@@ -193,25 +194,26 @@
                                                             </div>
                                                             <div class="flex items-center space-x-1 group">
                                                                 <div class="flex-1">
-                                                                    <input type="text" id="title" name="title"
-                                                                           v-model="form.title"
+                                                                    <input type="text" id="name" name="name"
+                                                                           v-model="form.name"
                                                                            class="block w-full h-10 transition duration-75 rounded-lg shadow-sm focus:border-primary-600 focus:ring-1 focus:ring-inset focus:ring-primary-600 border-gray-300">
-                                                                    <div v-if="errors.title" v-text="errors.title"
+                                                                    <div v-if="errors.name" v-text="errors.name"
                                                                          class="text-xs text-red-500 mt-1"></div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <!--/TÍTULO-->
-                                                    <!--SUBTÍTULO-->
+                                                    <!--/NOME-->
+                                                    <!--SINONIMO-->
                                                     <div class="col-span-2 ">
                                                         <div class="space-y-2">
-                                                            <div class="flex items-center justify-between space-x-2">
+                                                            <div
+                                                                class="flex items-center justify-between space-x-2">
                                                                 <label class="inline-flex items-center space-x-3"
-                                                                       for="subtitle">
+                                                                       for="synonym">
                                                                         <span
                                                                             class="text-sm font-medium leading-4 text-gray-700">
-                                                                            Subtítulo
+                                                                            Sinônimo
                                                                             <sup
                                                                                 class="font-medium text-danger-700">*</sup>
                                                                         </span>
@@ -219,25 +221,27 @@
                                                             </div>
                                                             <div class="flex items-center space-x-1 group">
                                                                 <div class="flex-1">
-                                                                    <input type="text" id="subtitle" name="subtitle"
-                                                                           v-model="form.subtitle"
+                                                                    <input type="text" id="synonym" name="synonym"
+                                                                           v-model="form.synonym"
                                                                            class="block w-full h-10 transition duration-75 rounded-lg shadow-sm focus:border-primary-600 focus:ring-1 focus:ring-inset focus:ring-primary-600 border-gray-300">
-                                                                    <div v-if="errors.subtitle" v-text="errors.subtitle"
+                                                                    <div v-if="errors.synonym"
+                                                                         v-text="errors.synonym"
                                                                          class="text-xs text-red-500 mt-1"></div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <!--/SUBTÍTULO-->
-                                                    <!--POST CONTENT-->
+                                                    <!--/SINONIMO-->
+                                                    <!--O QUE É-->
                                                     <div class="col-span-2 ">
                                                         <div class="space-y-2">
-                                                            <div class="flex items-center justify-between space-x-2">
+                                                            <div
+                                                                class="flex items-center justify-between space-x-2">
                                                                 <label class="inline-flex items-center space-x-3"
-                                                                       for="post_content">
+                                                                       for="what_is">
                                                                         <span
                                                                             class="text-sm font-medium leading-4 text-gray-700">
-                                                                            Conteúdo
+                                                                            O que é/para que serve:
                                                                             <sup
                                                                                 class="font-medium text-danger-700">*</sup>
                                                                         </span>
@@ -245,97 +249,204 @@
                                                             </div>
                                                             <div class="flex items-center space-x-1 group">
                                                                 <div class="flex-1">
-                                                                    <editor
-                                                                        v-model="form.post_content"
-                                                                        name="post_content"
-                                                                        api-key="xyagt2r6l572tfpdsrvpuwy41hqljl9v76skafjnrpsr3243"
-                                                                        :init="{
-                                                                             height: 500,
-                                                                             menubar: false,
-                                                                             language: 'pt_BR',
-                                                                             plugins: [
-                                                                               'advlist autolink lists link image charmap print preview anchor',
-                                                                               'searchreplace visualblocks code fullscreen',
-                                                                               'insertdatetime media table paste code help wordcount',
-                                                                               'fullscreen'
-                                                                             ],
-                                                                             toolbar:
-                                                                               'undo redo | fontselect fontsizeselect formatselect  | bold italic backcolor | forecolor backcolor removeformat |\
-                                                                               alignleft aligncenter alignright alignjustify | \
-                                                                               bullist numlist outdent indent | removeformat | fullscreen  preview save print | help'
-                                                                           }"
-                                                                    />
-                                                                    <div v-if="errors.post_content"
-                                                                         v-text="errors.post_content"
+                                                                    <input type="text" id="what_is" name="what_is"
+                                                                           v-model="form.what_is"
+                                                                           class="block w-full h-10 transition duration-75 rounded-lg shadow-sm focus:border-primary-600 focus:ring-1 focus:ring-inset focus:ring-primary-600 border-gray-300">
+                                                                    <div v-if="errors.what_is"
+                                                                         v-text="errors.what_is"
                                                                          class="text-xs text-red-500 mt-1"></div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <!--/POST CONTENT-->
-                                                    <!--CATEGORY-->
-                                                    <div class="col-span-1">
+                                                    <!--/O QUE É-->
+                                                    <!--COMO É REALIZADO-->
+                                                    <div class="col-span-2 ">
                                                         <div class="space-y-2">
-                                                            <div class="flex items-center justify-between space-x-1">
+                                                            <div
+                                                                class="flex items-center justify-between space-x-2">
                                                                 <label class="inline-flex items-center space-x-3"
-                                                                       for="category">
-                                                                    <span
-                                                                        class="text-sm font-medium leading-4 text-gray-700">
-                                                                        Categoria
-                                                                        <sup class="font-medium text-danger-700">*</sup>
-                                                                    </span>
+                                                                       for="how_it_is_done">
+                                                                        <span
+                                                                            class="text-sm font-medium leading-4 text-gray-700">
+                                                                            Como é realizado:
+                                                                            <sup
+                                                                                class="font-medium text-danger-700">*</sup>
+                                                                        </span>
                                                                 </label>
                                                             </div>
                                                             <div class="flex items-center space-x-1 group">
                                                                 <div class="flex-1">
-                                                                    <select @change="updateCategory(form.category)" id="category" name="category" v-model="form.category" class="block w-full h-10 transition duration-75 rounded-lg shadow-sm focus:border-primary-600 focus:ring-1 focus:ring-inset focus:ring-primary-600 border-gray-300">
-                                                                        <option v-for="category in categories" key="{{category.id}}" :value="category.id">{{category.name}}</option>
-                                                                    </select>
-                                                                    <div v-if="errors.category" v-text="errors.category" class="text-xs text-red-500 mt-1"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!--/CATEGORY-->
-                                                    <!--POST COVER-->
-                                                    <div class="col-span-1">
-                                                        <div class="space-y-2">
-                                                            <div class="flex items-center justify-between space-x-1">
-                                                                <label class="inline-flex items-center space-x-3"
-                                                                       for="post_cover">
-                                                                    <span
-                                                                        class="text-sm font-medium leading-4 text-gray-700">
-                                                                        Cover para o post
-                                                                        <sup class="font-medium text-danger-700">*</sup>
-                                                                    </span>
-                                                                </label>
-                                                            </div>
-                                                            <div class="flex items-center space-x-1 group">
-                                                                <div class="flex-1">
-                                                                    <div class="m-2">
-                                                                        <img :src="cover" class="w-full bg-cover bg-center h-auto" alt="Cover do post">
-                                                                    </div>
-                                                                    <input label="post_cover"  type="file" id="post_cover" name="post_cover"  @input="form.post_cover = $event.target.files[0]"
+                                                                    <input type="text" id="how_it_is_done"
+                                                                           name="how_it_is_done"
+                                                                           v-model="form.how_it_is_done"
                                                                            class="block w-full h-10 transition duration-75 rounded-lg shadow-sm focus:border-primary-600 focus:ring-1 focus:ring-inset focus:ring-primary-600 border-gray-300">
-
-
-                                                                    <div v-if="errors.post_cover" v-text="errors.post_cover" class="text-xs text-red-500 mt-1"></div>
-                                                                    <progress v-if="form.progress" :value="form.progress.percentage" max="100">
-                                                                        {{ form.progress.percentage }}%
-                                                                    </progress>
+                                                                    <div v-if="errors.how_it_is_done"
+                                                                         v-text="errors.how_it_is_done"
+                                                                         class="text-xs text-red-500 mt-1"></div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <!--/POST COVER-->
+                                                    <!--/COMO É REALIZADO-->
+                                                    <!--DURAÇÃO MÉDIA-->
+                                                    <div class="col-span-2 ">
+                                                        <div class="space-y-2">
+                                                            <div
+                                                                class="flex items-center justify-between space-x-2">
+                                                                <label class="inline-flex items-center space-x-3"
+                                                                       for="average_duration">
+                                                                        <span
+                                                                            class="text-sm font-medium leading-4 text-gray-700">
+                                                                            Duração média:
+                                                                            <sup
+                                                                                class="font-medium text-danger-700">*</sup>
+                                                                        </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="flex items-center space-x-1 group">
+                                                                <div class="flex-1">
+                                                                    <input type="text" id="average_duration"
+                                                                           name="average_duration"
+                                                                           v-model="form.average_duration"
+                                                                           class="block w-full h-10 transition duration-75 rounded-lg shadow-sm focus:border-primary-600 focus:ring-1 focus:ring-inset focus:ring-primary-600 border-gray-300">
+                                                                    <div v-if="errors.average_duration"
+                                                                         v-text="errors.average_duration"
+                                                                         class="text-xs text-red-500 mt-1"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--/DURAÇÃO MÉDIA-->
+                                                    <!--CONTRA-INDICAÇÕES OU RESTRIÇÕES RELATIVAS-->
+                                                    <div class="col-span-2 ">
+                                                        <div class="space-y-2">
+                                                            <div
+                                                                class="flex items-center justify-between space-x-2">
+                                                                <label class="inline-flex items-center space-x-3"
+                                                                       for="contraindications_or_relative_restrictions">
+                                                                        <span
+                                                                            class="text-sm font-medium leading-4 text-gray-700">
+                                                                            Contra-indicações ou restrições relativas:
+                                                                            <sup
+                                                                                class="font-medium text-danger-700">*</sup>
+                                                                        </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="flex items-center space-x-1 group">
+                                                                <div class="flex-1">
+                                                                    <input type="text"
+                                                                           id="contraindications_or_relative_restrictions"
+                                                                           name="contraindications_or_relative_restrictions"
+                                                                           v-model="form.contraindications_or_relative_restrictions"
+                                                                           class="block w-full h-10 transition duration-75 rounded-lg shadow-sm focus:border-primary-600 focus:ring-1 focus:ring-inset focus:ring-primary-600 border-gray-300">
+                                                                    <div
+                                                                        v-if="errors.contraindications_or_relative_restrictions"
+                                                                        v-text="errors.contraindications_or_relative_restrictions"
+                                                                        class="text-xs text-red-500 mt-1"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--/CONTRA-INDICAÇÕES OU RESTRIÇÕES RELATIVAS-->
+                                                    <!--ORIENTAÇÕES PARA A REALIZAÇÃO-->
+                                                    <div class="col-span-2 ">
+                                                        <div class="space-y-2">
+                                                            <div
+                                                                class="flex items-center justify-between space-x-2">
+                                                                <label class="inline-flex items-center space-x-3"
+                                                                       for="service_guidelines">
+                                                                        <span
+                                                                            class="text-sm font-medium leading-4 text-gray-700">
+                                                                            Orientações para a realização | prepraro:
+                                                                            <sup
+                                                                                class="font-medium text-danger-700">*</sup>
+                                                                        </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="flex items-center space-x-1 group">
+                                                                <div class="flex-1">
+                                                                    <input type="text" id="service_guidelines"
+                                                                           name="service_guidelines"
+                                                                           v-model="form.service_guidelines"
+                                                                           class="block w-full h-10 transition duration-75 rounded-lg shadow-sm focus:border-primary-600 focus:ring-1 focus:ring-inset focus:ring-primary-600 border-gray-300">
+                                                                    <div v-if="errors.service_guidelines"
+                                                                         v-text="errors.service_guidelines"
+                                                                         class="text-xs text-red-500 mt-1"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--/ORIENTAÇÕES PARA A REALIZAÇÃO-->
+                                                    <!--ORIENTAÇÕES PARA O ATENDIMENTO-->
+                                                    <div class="col-span-2 ">
+                                                        <div class="space-y-2">
+                                                            <div
+                                                                class="flex items-center justify-between space-x-2">
+                                                                <label class="inline-flex items-center space-x-3"
+                                                                       for="achievement_orientation_or_preparation">
+                                                                        <span
+                                                                            class="text-sm font-medium leading-4 text-gray-700">
+                                                                            Orientações para o atendimento:
+                                                                            <sup
+                                                                                class="font-medium text-danger-700">*</sup>
+                                                                        </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="flex items-center space-x-1 group">
+                                                                <div class="flex-1">
+                                                                    <input type="text"
+                                                                           id="achievement_orientation_or_preparation"
+                                                                           name="achievement_orientation_or_preparation"
+                                                                           v-model="form.achievement_orientation_or_preparation"
+                                                                           class="block w-full h-10 transition duration-75 rounded-lg shadow-sm focus:border-primary-600 focus:ring-1 focus:ring-inset focus:ring-primary-600 border-gray-300">
+                                                                    <div
+                                                                        v-if="errors.achievement_orientation_or_preparation"
+                                                                        v-text="errors.achievement_orientation_or_preparation"
+                                                                        class="text-xs text-red-500 mt-1"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--/ORIENTAÇÕES PARA O ATENDIMENTO-->
+                                                    <!--PRAZO PARA A ENTREGA-->
+                                                    <div class="col-span-2 ">
+                                                        <div class="space-y-2">
+                                                            <div
+                                                                class="flex items-center justify-between space-x-2">
+                                                                <label class="inline-flex items-center space-x-3"
+                                                                       for="deadline">
+                                                                        <span
+                                                                            class="text-sm font-medium leading-4 text-gray-700">
+                                                                            Prazo de entrega:
+                                                                            <sup
+                                                                                class="font-medium text-danger-700">*</sup>
+                                                                        </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="flex items-center space-x-1 group">
+                                                                <div class="flex-1">
+                                                                    <input type="text" id="deadline" name="deadline"
+                                                                           v-model="form.deadline"
+                                                                           class="block w-full h-10 transition duration-75 rounded-lg shadow-sm focus:border-primary-600 focus:ring-1 focus:ring-inset focus:ring-primary-600 border-gray-300">
+                                                                    <div v-if="errors.deadline"
+                                                                         v-text="errors.deadline"
+                                                                         class="text-xs text-red-500 mt-1"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--/PRAZO PARA A ENTREGA-->
                                                     <!--BOTÕES-->
                                                     <div class="col-span-2 ">
-                                                        <div class="flex flex-wrap items-center gap-4 justify-start">
-                                                            <Link :href="route('post.index')"
+                                                        <div
+                                                            class="flex flex-wrap items-center gap-4 justify-start">
+                                                            <Link :href="route('exams.index')"
                                                                   class="inline-flex items-center justify-center font-medium tracking-tight rounded-lg focus:outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset bg-gray-400 hover:bg-primary-500 focus:bg-primary-700 focus:ring-offset-primary-700 h-9 px-4 text-white shadow focus:ring-white">
                                                                 <span>Voltar</span>
                                                             </Link>
                                                             <button type="submit"
+                                                                    :disabled="form.processing"
                                                                     class="inline-flex items-center justify-center font-medium tracking-tight rounded-lg focus:outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset bg-primary hover:bg-primary-500 focus:bg-primary-700 focus:ring-offset-primary-700 h-9 px-4 text-white shadow focus:ring-white">
                                                                 <span>Atualizar</span>
                                                             </button>
@@ -372,9 +483,7 @@ export default defineComponent({
     name: "Post Edit",
     props: {
         errors: Object,
-        post: Object,
-        categories: Object,
-        cover: String,
+        exam: Object,
     },
     components: {
         AppLayout,
@@ -391,26 +500,24 @@ export default defineComponent({
         return {
             form: this.$inertia.form({
                 _method: 'PUT',
-                title: this.post.title,
-                slug: this.post.slug,
-                subtitle: this.post.subtitle,
-                post_content: this.post.post_content,
-                author: this.post.author,
-                category: this.post.category,
-                post_cover: null,
+                name: this.exam.name,
+                synonym: this.exam.synonym,
+                what_is: this.exam.what_is,
+                how_it_is_done: this.exam.how_it_is_done,
+                average_duration: this.exam.average_duration,
+                contraindications_or_relative_restrictions: this.exam.contraindications_or_relative_restrictions,
+                service_guidelines: this.exam.service_guidelines,
+                achievement_orientation_or_preparation: this.exam.achievement_orientation_or_preparation,
+                deadline: this.exam.deadline,
             }),
         }
     },
     methods: {
         submit() {
-            this.$inertia.post(route('post.update', [this.post.id]), this.form, {
+            this.$inertia.post(route('exams.update', [this.exam.id]), this.form, {
                 preserveScroll: true,
             });
         },
-        selectFile($event) {
-            this.form.post_cover = $event.target.files[0]
-            console.log(this.form.post_cover)
-        }
     }
 })
 </script>

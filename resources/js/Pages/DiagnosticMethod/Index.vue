@@ -181,9 +181,9 @@
                         <div>
                             <div v-if="diagnosticMethods.length">
                                 <div class="overflow-y-auto relative">
-                                    <div class="grid grid-cols-3 gap-4">
+                                    <div class="grid grid-cols-3 gap-4 my-4">
                                         <div v-for="method in diagnosticMethods" :key="method.id"
-                                             class="flex justify-between items-center bg-white w-full h-auto rounded-lg border border-gray-100 shadow-sm hover:shadow-lg">
+                                             class="flex justify-between items-center bg-white w-full h-auto rounded-lg border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 ease-in-out">
                                             <div>
                                                 <img :src="this.methodImage+'/'+method.image" :alt="method.name" class="w-auto h-28 m-4 rounded p-1 bg-primary/30">
                                             </div>

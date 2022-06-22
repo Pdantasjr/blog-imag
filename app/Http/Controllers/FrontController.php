@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Blog;
+use App\Models\DiagnosticMethod;
 use Inertia\Inertia;
 
 class FrontController extends Controller
@@ -10,8 +11,10 @@ class FrontController extends Controller
     public function index()
     {
         return Inertia::render('Front/Index', [
-            "urlDefault" => asset('storage'),
+            'urlDefault' => asset('storage'),
             'defaultUrl' => env('APP_URL'),
+            'methods' => DiagnosticMethod::all(),
+            'methodImage' => asset('storage/'),
         ]);
     }
 

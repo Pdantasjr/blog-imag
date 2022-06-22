@@ -5,7 +5,7 @@
         <Header/>
         <Carousel />
         <SearchForm :defaultUrl="this.defaultUrl" />
-        <OurExams :defaultUrl="this.defaultUrl" />
+        <OurExams :methodImage="this.methodImage" :methods="this.methods" :defaultUrl="this.defaultUrl" />
         <CTAareas :variant="'blue'" />
         <Institutional :urlDefault="this.urlDefault" />
         <Agreement :urlDefault="this.urlDefault" />
@@ -35,6 +35,8 @@ export default defineComponent({
     props: {
         urlDefault: String,
         defaultUrl: String,
+        methods: Object,
+        methodImage: String,
     },
     components: {
         Head,

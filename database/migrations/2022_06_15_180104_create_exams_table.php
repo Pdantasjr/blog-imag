@@ -22,7 +22,7 @@ class CreateExamsTable extends Migration
             $table->text('what_is');
             $table->text('how_it_is_done');
             $table->string('average_duration');
-            $table->string('contraindications_or_relative_restrictions');
+            $table->text('contraindications_or_relative_restrictions');
             $table->text('service_guidelines');
             $table->text('achievement_orientation_or_preparation');
             $table->string('deadline');

@@ -5,7 +5,7 @@
                 <input v-model="form.searchInput"
                        @input="searchExams()"
                        class="appearance-none border border-white bg-primary sm:bg-primary/90 border-4 rounded-full w-full h-14 sm:h-16 py2 sm:py-4 px-3 text-white text-center text-lg font-light leading-tight focus:outline-none focus:ring-0 focus:border-white focus:bg-primary focus:border-2 transition-all focus:scale-105 duration-200 ease-in-out"
-                       type="text"
+                       type="search"
                        placeholder="Pesquise seu exame"
                 >
                 <div v-if="loading"
@@ -23,19 +23,22 @@
                     Pesquisando...
                 </span>
                 </div>
-                <ul v-if="this.form.searchInput.length > 1" id="listResult"
+                <ul v-if="this.form.searchInput.length" id="listResult"
                     class="flex flex-col items-center bg-white w-11/12 h-auto max-h-72 py-2 rounded-lg mt-2 drop-shadow-xl border-2 border-primary overflow-y-auto transition-all duration-200 ease-in-out">
+
                     <InfiniteList :data="exams" :width="'100%'" :height="500" :itemSize="80" v-slot="{ item, index }">
                         <li class="px-4 py-2 text-gray-800 w-full transition-all duration-200 ease-in-out">
-                            <Link :href="item.slug"
+                            <Link :href="defaultUrl+'/'+item.slug"
                                   class="block shadow-sm w-full h-auto border-l-2 border-primary bg-gray-300 hover:bg-neutral hover:cursor-pointer hover:font-extrabold hover:text-primary hover:drop-shadow-md p-2 rounded transition transform hover:-translate-y-2 duration-200 ease-in-out">
                                 {{ item.name }} <br>
                                 <span class="text-sm text-gray-400 font-light">Método do exame: {{
-                                        item.methods[0].name
+                                        item.method.name
                                     }}</span>
                             </Link>
                         </li>
                     </InfiniteList>
+
+
                     <button v-if="this.exams.next_page_url != null" @click.prevent="viewMore(exams.next_page_url)"
                             class="w-10/12 shadow-sm bg-gray-300 hover:cursor-pointer font-light hover:text-white hover:bg-secondary hover:drop-shadow-md py-1 rounded transition-all duration-200 ease-in-out">
                         Ver mais
@@ -54,6 +57,7 @@ export default {
     name: "SearchForm",
     props: {
         defaultUrl: String,
+        data: Array,
     },
     components: {
         Link,
@@ -70,7 +74,7 @@ export default {
     },
     methods: {
         searchExams() {
-            const endPoint = this.defaultUrl + "/api/exames"
+            const endPoint = this.defaultUrl + "/api/exams"
             this.loading = true
             setTimeout(() => {
                 this.loading = false
@@ -85,20 +89,22 @@ export default {
                 }
             }, 1000)
         },
-        viewMore(n) {
-            console.log('ver mais', n)
-            this.loading = true
-            setTimeout(() => {
-                axios.get(n)
-                    .then(res => {
-                        const divResult = document.getElementById('listResult')
 
-                        this.loading = false
-                        this.exams = res.data
-                        divResult.scrollTop = 0
-                    })
-            }, 500)
-        }
+        /*viewMore(n) {*/
+        /*    console.log('ver mais', n)*/
+        /*    this.loading = true*/
+        /*    setTimeout(() => {*/
+        /*        axios.get(n)*/
+        //             .then(res => {
+        //                 const divResult = document.getElementById('listResult')
+        //
+        //                 this.loading = false
+        //                 this.exams = res.data
+        //                 divResult.scrollTop = 0
+        //             })
+        //     }, 500)
+        // }
+
     }
 }
 </script>

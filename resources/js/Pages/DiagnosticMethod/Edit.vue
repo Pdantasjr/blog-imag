@@ -215,6 +215,7 @@
                                                                         <img :src="methodImage" class="w-auto p-2 bg-cover object-fit bg-gray-300 bg-center h-72 rounded-lg shadow-lg" alt="Imagem do método">
                                                                     </div>
                                                                     <input type="file" id="diagnosticImage" name="diagnosticImage"
+                                                                           @change="changeImage"
                                                                            @input="form.diagnosticImage = $event.target.files[0]"
                                                                            class="block w-full h-10 transition duration-75 shadow-sm font-light text-primary focus:border-primary-600 focus:ring-1 focus:ring-inset focus:ring-primary-600 border-gray-300">
                                                                     <div v-if="errors.diagnosticImage" v-text="errors.diagnosticImage"
@@ -294,10 +295,15 @@ export default defineComponent({
                 preserveScroll: true,
             });
         },
-        selectFile($event) {
-            this.form.diagnosticImage = $event.target.files[0]
-            console.log($event)
-        }
+        changeImage(e) {
+            const file = e.target.files[0];
+            let reader = new FileReader();
+
+            reader.onload = (e) => {
+                this.diagnosticImage = e.target.result
+            }
+            reader.readAsDataURL(file);
+        },
     }
 })
 </script>

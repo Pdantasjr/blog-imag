@@ -1024,6 +1024,10 @@ select {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
@@ -1035,10 +1039,6 @@ select {
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-}
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
 }
 .my-2 {
   margin-top: 0.5rem;
@@ -1341,6 +1341,9 @@ select {
 .w-\[2px\] {
   width: 2px;
 }
+.w-14 {
+  width: 3.5rem;
+}
 .min-w-0 {
   min-width: 0px;
 }
@@ -1478,6 +1481,9 @@ select {
 }
 .items-center {
   align-items: center;
+}
+.items-stretch {
+  align-items: stretch;
 }
 .justify-start {
   justify-content: flex-start;
@@ -1750,12 +1756,12 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgb(156 163 175 / var(--tw-bg-opacity));
 }
+.bg-primary\/30 {
+  background-color: rgb(33 70 84 / 0.3);
+}
 .bg-gray-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
-}
-.bg-primary\/30 {
-  background-color: rgb(33 70 84 / 0.3);
 }
 .bg-primary\/10 {
   background-color: rgb(33 70 84 / 0.1);
@@ -3126,6 +3132,10 @@ select {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:flex-col {
+    flex-direction: column;
+  }
+
   .md\:gap-6 {
     gap: 1.5rem;
   }
@@ -3151,6 +3161,10 @@ select {
   .md\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .md\:text-center {
+    text-align: center;
   }
 
   .md\:text-3xl {
