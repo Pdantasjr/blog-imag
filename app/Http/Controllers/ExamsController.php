@@ -112,25 +112,6 @@ class ExamsController extends Controller
         return Redirect::route('exams.index')->with(['toast' => ['message' => "Exame cadastrado com sucesso!"]]);
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param \App\Models\Exams $exams
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Exams $exams)
-    {
-        return Inertia::render('Exams/Show', [
-           'exam' => $exams,
-        ]);
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param \App\Models\Exams $exams
-     * @return \Illuminate\Http\Response
-     */
     public function edit($id)
     {
         $exam = Exams::find($id);
