@@ -30,7 +30,6 @@ class FrontController extends Controller
     /* @param \App\Models\Blog $slug
      * @returns \Illuminate\Http\Response
      */
-
     public function article($slug)
     {
         $slug = Blog::where('slug', $slug)->with(['postCategory', 'postAuthor'])->first();
@@ -49,5 +48,10 @@ class FrontController extends Controller
                 'created_at' => $slug->created_at,
             ],
         ]);
+    }
+
+    public function teamMember($slug)
+    {
+        return Inertia::render('Front/TeamMember');
     }
 }

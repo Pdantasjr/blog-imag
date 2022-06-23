@@ -18,7 +18,7 @@ class TeamInvitation extends JetstreamTeamInvitation
     ];
 
     /**
-     * Get the team that the invitation belongs to.
+     * Get the staff that the invitation belongs to.
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */

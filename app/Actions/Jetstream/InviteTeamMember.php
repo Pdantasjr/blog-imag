@@ -15,7 +15,7 @@ use Laravel\Jetstream\Rules\Role;
 class InviteTeamMember implements InvitesTeamMembers
 {
     /**
-     * Invite a new team member to the given team.
+     * Invite a new staff member to the given staff.
      *
      * @param  mixed  $user
      * @param  mixed  $team
@@ -53,14 +53,14 @@ class InviteTeamMember implements InvitesTeamMembers
             'email' => $email,
             'role' => $role,
         ], $this->rules($team), [
-            'email.unique' => __('This user has already been invited to the team.'),
+            'email.unique' => __('This user has already been invited to the staff.'),
         ])->after(
             $this->ensureUserIsNotAlreadyOnTeam($team, $email)
         )->validateWithBag('addTeamMember');
     }
 
     /**
-     * Get the validation rules for inviting a team member.
+     * Get the validation rules for inviting a staff member.
      *
      * @param  mixed  $team
      * @return array
@@ -78,7 +78,7 @@ class InviteTeamMember implements InvitesTeamMembers
     }
 
     /**
-     * Ensure that the user is not already on the team.
+     * Ensure that the user is not already on the staff.
      *
      * @param  mixed  $team
      * @param  string  $email
@@ -90,7 +90,7 @@ class InviteTeamMember implements InvitesTeamMembers
             $validator->errors()->addIf(
                 $team->hasUserWithEmail($email),
                 'email',
-                __('This user already belongs to the team.')
+                __('This user already belongs to the staff.')
             );
         };
     }

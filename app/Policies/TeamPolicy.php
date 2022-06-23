@@ -57,7 +57,7 @@ class TeamPolicy
     }
 
     /**
-     * Determine whether the user can add team members.
+     * Determine whether the user can add staff members.
      *
      * @param  \App\Models\User  $user
      * @param  \App\Models\Team  $team
@@ -69,7 +69,7 @@ class TeamPolicy
     }
 
     /**
-     * Determine whether the user can update team member permissions.
+     * Determine whether the user can update staff member permissions.
      *
      * @param  \App\Models\User  $user
      * @param  \App\Models\Team  $team
@@ -81,7 +81,7 @@ class TeamPolicy
     }
 
     /**
-     * Determine whether the user can remove team members.
+     * Determine whether the user can remove staff members.
      *
      * @param  \App\Models\User  $user
      * @param  \App\Models\Team  $team

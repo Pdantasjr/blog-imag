@@ -1252,6 +1252,9 @@ select {
 .h-14 {
   height: 3.5rem;
 }
+.h-80 {
+  height: 20rem;
+}
 .max-h-fit {
   max-height: -webkit-fit-content;
   max-height: -moz-fit-content;
@@ -1343,6 +1346,9 @@ select {
 }
 .w-14 {
   width: 3.5rem;
+}
+.w-56 {
+  width: 14rem;
 }
 .min-w-0 {
   min-width: 0px;
@@ -1578,6 +1584,9 @@ select {
   border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
   border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
 }
+.self-start {
+  align-self: flex-start;
+}
 .self-center {
   align-self: center;
 }
@@ -1595,8 +1604,14 @@ select {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.text-clip {
+  text-overflow: clip;
+}
 .whitespace-nowrap {
   white-space: nowrap;
+}
+.break-all {
+  word-break: break-all;
 }
 .rounded-md {
   border-radius: 0.375rem;
@@ -1809,6 +1824,9 @@ select {
 .bg-center {
   background-position: center;
 }
+.bg-top {
+  background-position: top;
+}
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
@@ -1996,6 +2014,12 @@ select {
 .text-\[1rem\] {
   font-size: 1rem;
 }
+.text-\[8pt\] {
+  font-size: 8pt;
+}
+.text-\[10pt\] {
+  font-size: 10pt;
+}
 .font-medium {
   font-weight: 500;
 }
@@ -2153,6 +2177,9 @@ select {
 .text-background {
   --tw-text-opacity: 1;
   color: rgb(248 250 252 / var(--tw-text-opacity));
+}
+.text-primary\/25 {
+  color: rgb(33 70 84 / 0.25);
 }
 .underline {
   -webkit-text-decoration-line: underline;
@@ -2450,6 +2477,10 @@ select {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.hover\:text-gray-100:hover {
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
+}
 .hover\:underline:hover {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -2683,6 +2714,14 @@ select {
 }
 .group:hover .group-hover\:font-bold {
   font-weight: 700;
+}
+.group:hover .group-hover\:text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.group:hover .group-hover\:text-gray-100 {
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
 }
 [dir="rtl"] .rtl\:space-x-reverse > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 1;

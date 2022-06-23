@@ -306,7 +306,7 @@
 
         methods: {
             addTeamMember() {
-                this.addTeamMemberForm.post(route('team-members.store', this.team), {
+                this.addTeamMemberForm.post(route('staff-members.store', this.team), {
                     errorBag: 'addTeamMember',
                     preserveScroll: true,
                     onSuccess: () => this.addTeamMemberForm.reset(),
@@ -314,7 +314,7 @@
             },
 
             cancelTeamInvitation(invitation) {
-                this.$inertia.delete(route('team-invitations.destroy', invitation), {
+                this.$inertia.delete(route('staff-invitations.destroy', invitation), {
                     preserveScroll: true
                 });
             },
@@ -326,7 +326,7 @@
             },
 
             updateRole() {
-                this.updateRoleForm.put(route('team-members.update', [this.team, this.managingRoleFor]), {
+                this.updateRoleForm.put(route('staff-members.update', [this.team, this.managingRoleFor]), {
                     preserveScroll: true,
                     onSuccess: () => (this.currentlyManagingRole = false),
                 })
@@ -337,7 +337,7 @@
             },
 
             leaveTeam() {
-                this.leaveTeamForm.delete(route('team-members.destroy', [this.team, this.$page.props.user]))
+                this.leaveTeamForm.delete(route('staff-members.destroy', [this.team, this.$page.props.user]))
             },
 
             confirmTeamMemberRemoval(teamMember) {
@@ -345,7 +345,7 @@
             },
 
             removeTeamMember() {
-                this.removeTeamMemberForm.delete(route('team-members.destroy', [this.team, this.teamMemberBeingRemoved]), {
+                this.removeTeamMemberForm.delete(route('staff-members.destroy', [this.team, this.teamMemberBeingRemoved]), {
                     errorBag: 'removeTeamMember',
                     preserveScroll: true,
                     preserveState: true,
