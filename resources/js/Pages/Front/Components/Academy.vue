@@ -1,6 +1,6 @@
 <template>
     <div class="w-screen h-auto md:h-96 mx-auto relative">
-        <div class="absolute w-full h-64 bg-no-repeat object-cover -z-10 inset-x-0 bottom-0"
+        <div class="absolute w-full h-full bg-no-repeat object-cover -z-10 inset-x-0 bottom-0"
              :style="{'background-image': 'url('+ urlDefault +'/Academy/bg-academy.svg)'}"></div>
         <div class="lg:max-w-7xl h-full w-11/12 mx-auto flex flex-col md:flex-row items-center sm:justify-around">
             <div class="mt-4 flex flex-col items-center md:items-start md:-translate-y-10">
@@ -10,7 +10,7 @@
             <div>
                 <!--PLAYER-->
                 <div class="animate-float w-[335px] h-[230px] my-4 flex justify-center items-center relative shadow-lg rounded-lg">
-                    <div class="-z-10 absolute rounded-lg h-full inset-0 bg-secondary bg-opacity-10 backdrop-blur-xl border-b-1 shadow-lg border-primary"></div>
+                    <div class="-z-10 absolute rounded-lg h-full inset-0 bg-white/70 bg-opacity-10 backdrop-blur-sm border-b-1 shadow-lg border-primary"></div>
                     <div class="relative w-10/12 flex flex-col h-40 items-center justify-around">
                         <!--TIMELINE-->
                         <div class="relative inset-0 w-full h-auto">

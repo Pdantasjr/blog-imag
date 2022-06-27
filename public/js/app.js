@@ -33515,7 +33515,7 @@ var _hoisted_4 = {
 };
 
 var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "-z-10 absolute rounded-lg h-full inset-0 bg-secondary bg-opacity-10 backdrop-blur-xl border-b-1 shadow-lg border-primary"
+  "class": "-z-10 absolute rounded-lg h-full inset-0 bg-white/70 bg-opacity-10 backdrop-blur-sm border-b-1 shadow-lg border-primary"
 }, null, -1
 /* HOISTED */
 );
@@ -33542,7 +33542,7 @@ var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 var _hoisted_11 = ["src"];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "absolute w-full h-64 bg-no-repeat object-cover -z-10 inset-x-0 bottom-0",
+    "class": "absolute w-full h-full bg-no-repeat object-cover -z-10 inset-x-0 bottom-0",
     style: (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeStyle)({
       'background-image': 'url(' + $props.urlDefault + '/Academy/bg-academy.svg)'
     })
