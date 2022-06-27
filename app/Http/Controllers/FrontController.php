@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Blog;
+use App\Models\Staff;
 use App\Models\DiagnosticMethod;
 use Inertia\Inertia;
 
@@ -14,6 +15,7 @@ class FrontController extends Controller
             'urlDefault' => asset('storage'),
             'defaultUrl' => env('APP_URL'),
             'methods' => DiagnosticMethod::all(),
+            'staff' => Staff::all(),
             'methodImage' => asset('storage/'),
         ]);
     }
@@ -52,6 +54,7 @@ class FrontController extends Controller
 
     public function teamMember($slug)
     {
+        dd($slug);
         return Inertia::render('Front/TeamMember');
     }
 }

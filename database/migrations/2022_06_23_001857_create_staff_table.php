@@ -21,7 +21,7 @@ class CreateStaffTable extends Migration
             $table->string('office');
             $table->string('crm');
             $table->string('email');
-            $table->string('about');
+            $table->string('about')->nullable();
             $table->timestamps();
         });
     }

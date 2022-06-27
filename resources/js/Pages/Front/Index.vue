@@ -7,8 +7,9 @@
         <OurExams :methodImage="this.methodImage" :methods="this.methods" :defaultUrl="this.defaultUrl" />
         <CTAareas :variant="'blue'" />
         <Institutional :urlDefault="this.urlDefault" />
+        <Academy :urlDefault="this.urlDefault" />
         <Agreement :urlDefault="this.urlDefault" />
-        <Team :urlDefault="this.urlDefault" />
+        <Staff :urlDefault="this.urlDefault" :staff="this.staff" />
         <BackToTop />
         <Footer />
     </div>
@@ -24,8 +25,9 @@ import SearchForm from "./Components/SearchForm";
 import OurExams from "./Components/OurExams";
 import CTAareas from "./Components/CTAareas";
 import Institutional from "./Components/Institutional"
+import Academy from "./Components/Academy";
 import Agreement from "./Components/Agreement";
-import Team from "./Components/Team";
+import Staff from "./Components/Staff";
 import BackToTop from "./Components/BackToTop";
 import Footer from "./Components/Footer"
 
@@ -35,6 +37,7 @@ export default defineComponent({
         urlDefault: String,
         defaultUrl: String,
         methods: Object,
+        staff: Object,
         methodImage: String,
     },
     components: {
@@ -45,8 +48,9 @@ export default defineComponent({
         OurExams,
         CTAareas,
         Institutional,
+        Academy,
         Agreement,
-        Team,
+        Staff,
         BackToTop,
         Footer
     }
