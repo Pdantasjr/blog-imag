@@ -12,7 +12,7 @@
               delay: 4000,
               disableOnInteraction: false,
             }"
-            :navigation="true"
+            :navigation="false"
             :modules="modules"
         >
             <swiper-slide>

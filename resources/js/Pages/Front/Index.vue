@@ -9,6 +9,7 @@
         <Institutional :urlDefault="this.urlDefault" />
         <Academy :urlDefault="this.urlDefault" />
         <Agreement :urlDefault="this.urlDefault" />
+        <Locations :urlDefault="this.urlDefault" />
         <Staff :urlDefault="this.urlDefault" :staff="this.staff" />
         <BackToTop />
         <Footer />
@@ -26,6 +27,7 @@ import OurExams from "./Components/OurExams";
 import CTAareas from "./Components/CTAareas";
 import Institutional from "./Components/Institutional"
 import Academy from "./Components/Academy";
+import Locations from "./Components/Locations";
 import Agreement from "./Components/Agreement";
 import Staff from "./Components/Staff";
 import BackToTop from "./Components/BackToTop";
@@ -50,6 +52,7 @@ export default defineComponent({
         Institutional,
         Academy,
         Agreement,
+        Locations,
         Staff,
         BackToTop,
         Footer

@@ -10,8 +10,7 @@
             <div>
                 <!--PLAYER-->
                 <div class="animate-float w-[335px] h-[230px] my-4 flex justify-center items-center relative shadow-lg rounded-lg">
-                    <div
-                        class="-z-10 absolute rounded-lg h-full inset-0 bg-secondary bg-opacity-10 backdrop-blur-xl border-b-1 shadow-lg border-primary"></div>
+                    <div class="-z-10 absolute rounded-lg h-full inset-0 bg-secondary bg-opacity-10 backdrop-blur-xl border-b-1 shadow-lg border-primary"></div>
                     <div class="relative w-10/12 flex flex-col h-40 items-center justify-around">
                         <!--TIMELINE-->
                         <div class="relative inset-0 w-full h-auto">

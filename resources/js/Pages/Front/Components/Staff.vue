@@ -1,9 +1,9 @@
 <template>
-    <div class="lg:max-w-7xl w-11/12 mx-auto">
+    <div class="lg:max-w-7xl w-full mx-auto">
         <section-title title="Quem Faz a IMAG" id="team"></section-title>
     </div>
-    <div class="lg:max-w-7xl w-11/12 mx-auto">
-        <div class="flex items-center flex-wrap justify-around mx-auto my-10 max-w-screen-lg w-11/12 md:w-full">
+    <div class="lg:max-w-7xl w-full mx-auto">
+        <div class="flex items-center flex-wrap justify-around mx-auto my-10 w-10/12">
             <swiper
                 :slidesPerView="3"
                 :loopFillGroupWithBlank="true"
@@ -92,9 +92,9 @@ export default {
 
 <style scoped>
 .swiper-button-prev {
-    color: #057541;
+    color: #214654;
 }
 .swiper-button-next {
-    color: #057541;
+    color: #214654;
 }
 </style>
