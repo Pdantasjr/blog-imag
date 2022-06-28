@@ -1,5 +1,5 @@
 <template>
-    <app-layout title="Novo Membro">
+    <app-layout title="Editar convênio">
         <sidebar/>
         <main-content>
             <template #header>
@@ -167,11 +167,11 @@
                     <div class="space-y-6">
                         <header class="space-y-2 items-start justify-between sm:flex sm:space-y-0 sm:space-x-4 sm:py-4">
                             <h1 class="text-2xl text-gray-700 font-bold tracking-tight md:text-3xl">
-                                Novo Membro
+                                Editar Convênio:
                             </h1>
                         </header>
                         <form class="space-y-12" @submit.prevent="submit()">
-                            <div class="grid grid-cols-1">
+                            <div class="grid gap-6 grid-cols-1">
                                 <div class="col-span-full">
                                     <div class="grid gap-6 grid-cols-1">
                                         <div class="col-span-1 ">
@@ -180,15 +180,16 @@
                                                     <!--NOME-->
                                                     <div class="col-span-2 ">
                                                         <div class="space-y-2">
-                                                            <div class="flex items-center justify-between space-x-2">
+                                                            <div
+                                                                class="flex items-center justify-between space-x-2">
                                                                 <label class="inline-flex items-center space-x-3"
                                                                        for="name">
-                                                    <span
-                                                        class="text-sm font-medium leading-4 text-gray-700">
-                                                        Nome
-                                                        <sup
-                                                            class="font-medium text-danger-700">*</sup>
-                                                    </span>
+                                                                        <span
+                                                                            class="text-sm font-medium leading-4 text-gray-700">
+                                                                            Nome
+                                                                            <sup
+                                                                                class="font-medium text-danger-700">*</sup>
+                                                                        </span>
                                                                 </label>
                                                             </div>
                                                             <div class="flex items-center space-x-1 group">
@@ -203,171 +204,47 @@
                                                         </div>
                                                     </div>
                                                     <!--/NOME-->
-                                                    <!--AVATAR-->
+                                                    <!--BRAND-->
                                                     <div class="col-span-1">
                                                         <div class="space-y-2">
                                                             <div class="flex items-center justify-between space-x-1">
                                                                 <label class="inline-flex items-center space-x-3"
-                                                                       for="avatar">
+                                                                       for="brand">
                                                     <span
                                                         class="text-sm font-medium leading-4 text-gray-700">
-                                                            Foto
+                                                            Logotipo
                                                         <sup class="font-medium text-danger-700">*</sup>
                                                     </span>
                                                                 </label>
                                                             </div>
                                                             <div class="flex items-center space-x-1 group">
                                                                 <div class="flex-1">
-                                                                    <div v-if="tempAvatar.length" class="m-2">
-                                                                        <img :src="tempAvatar"
-                                                                             class="w-32 bg-cover bg-center h-auto rounded-full"
-                                                                             alt="Foto">
+                                                                    <div class="m-2">
+                                                                        <img :src="agreementImage" class="w-56 bg-cover bg-center h-auto rounded" alt="Foto de {{ form.name }}">
                                                                     </div>
                                                                     <input type="file"
-                                                                           name="avatar"
-                                                                           @input="form.avatar = $event.target.files[0]"
-                                                                           @change="changeImage"
+                                                                           name="brand"
+                                                                           @input="form.brand = $event.target.files[0]"
                                                                            class="block w-full h-10 transition duration-75 focus:border-primary-600 focus:ring-1 focus:ring-inset focus:ring-primary-600 border-gray-300">
-                                                                    <div v-if="errors.avatar" v-text="errors.avatar"
+                                                                    <div v-if="errors.brand" v-text="errors.brand"
                                                                          class="text-xs text-red-500 mt-1"></div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <!--/AVATAR-->
-                                                    <!--OFFICE-->
-                                                    <div class="col-span-2 ">
-                                                        <div class="space-y-2">
-                                                            <div class="flex items-center justify-between space-x-2">
-                                                                <label class="inline-flex items-center space-x-3"
-                                                                       for="office">
-                                                    <span
-                                                        class="text-sm font-medium leading-4 text-gray-700">
-                                                            Cargo
-                                                        <sup
-                                                            class="font-medium text-danger-700">*</sup>
-                                                    </span>
-                                                                </label>
-                                                            </div>
-                                                            <div class="flex items-center space-x-1 group">
-                                                                <div class="flex-1">
-                                                                    <input type="text" id="office" name="office"
-                                                                           v-model="form.office"
-                                                                           class="block w-full h-10 transition duration-75 rounded-lg shadow-sm focus:border-primary-600 focus:ring-1 focus:ring-inset focus:ring-primary-600 border-gray-300">
-                                                                    <div v-if="errors.office" v-text="errors.office"
-                                                                         class="text-xs text-red-500 mt-1"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!--/OFFICE-->
-                                                    <!--CRM-->
-                                                    <div class="col-span-2 ">
-                                                        <div class="space-y-2">
-                                                            <div class="flex items-center justify-between space-x-2">
-                                                                <label class="inline-flex items-center space-x-3"
-                                                                       for="crm">
-                                                    <span
-                                                        class="text-sm font-medium leading-4 text-gray-700">
-                                                        CRM
-                                                        <sup
-                                                            class="font-medium text-danger-700">*</sup>
-                                                    </span>
-                                                                </label>
-                                                            </div>
-                                                            <div class="flex items-center space-x-1 group">
-                                                                <div class="flex-1">
-                                                                    <input type="number" id="crm" name="crm"
-                                                                           v-model="form.crm"
-                                                                           class="block w-full h-10 transition duration-75 rounded-lg shadow-sm focus:border-primary-600 focus:ring-1 focus:ring-inset focus:ring-primary-600 border-gray-300">
-                                                                    <div v-if="errors.crm" v-text="errors.crm"
-                                                                         class="text-xs text-red-500 mt-1"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!--/CRM-->
-                                                    <!--E-MAIL-->
-                                                    <div class="col-span-2 ">
-                                                        <div class="space-y-2">
-                                                            <div class="flex items-center justify-between space-x-2">
-                                                                <label class="inline-flex items-center space-x-3"
-                                                                       for="email">
-                                                    <span
-                                                        class="text-sm font-medium leading-4 text-gray-700">
-                                                         E-mail
-                                                        <sup
-                                                            class="font-medium text-danger-700">*</sup>
-                                                    </span>
-                                                                </label>
-                                                            </div>
-                                                            <div class="flex items-center space-x-1 group">
-                                                                <div class="flex-1">
-                                                                    <input type="email" id="email" name="email"
-                                                                           v-model="form.email"
-                                                                           class="block w-full h-10 transition duration-75 rounded-lg shadow-sm focus:border-primary-600 focus:ring-1 focus:ring-inset focus:ring-primary-600 border-gray-300">
-                                                                    <div v-if="errors.email" v-text="errors.email"
-                                                                         class="text-xs text-red-500 mt-1"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!--/E-MAIL-->
-                                                    <!--ABOUT-->
-                                                    <div class="col-span-2 ">
-                                                        <div class="space-y-2">
-                                                            <div class="flex items-center justify-between space-x-2">
-                                                                <label class="inline-flex items-center space-x-3"
-                                                                       for="about">
-                                                    <span
-                                                        class="text-sm font-medium leading-4 text-gray-700">
-                                                        Sobre
-                                                        <sup
-                                                            class="font-medium text-danger-700">*</sup>
-                                                    </span>
-                                                                </label>
-                                                            </div>
-                                                            <div class="flex items-center space-x-1 group">
-                                                                <div class="flex-1">
-                                                                    <editor
-                                                                        id="about"
-                                                                        v-model="form.about"
-                                                                        name="about"
-                                                                        api-key="xyagt2r6l572tfpdsrvpuwy41hqljl9v76skafjnrpsr3243"
-                                                                        :init="{
-                                                                             height: 500,
-                                                                             menubar: false,
-                                                                             language: 'pt_BR',
-                                                                             plugins: [
-                                                                               'advlist autolink lists link image charmap print preview anchor',
-                                                                               'searchreplace visualblocks code fullscreen',
-                                                                               'insertdatetime media table paste code help wordcount',
-                                                                               'fullscreen'
-                                                                             ],
-                                                                             toolbar:
-                                                                               'undo redo | fontselect fontsizeselect formatselect  | bold italic backcolor | forecolor backcolor removeformat |\
-                                                                               alignleft aligncenter alignright alignjustify | \
-                                                                               bullist numlist outdent indent | removeformat | fullscreen code preview save print | help'
-                                                                           }"
-                                                                    />
-                                                                    <div v-if="errors.about" v-text="errors.about"
-                                                                         class="text-xs text-red-500 mt-1"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <!--/ABOUT-->
+                                                    <!--/BRAND-->
                                                     <!--BOTÕES-->
                                                     <div class="col-span-2 ">
-                                                        <div class="flex flex-wrap items-center gap-4 justify-start">
-                                                            <Link :href="route('staff.index')"
+                                                        <div
+                                                            class="flex flex-wrap items-center gap-4 justify-start">
+                                                            <Link :href="route('agreement.index')"
                                                                   class="inline-flex items-center justify-center font-medium tracking-tight rounded-lg focus:outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset bg-gray-400 hover:bg-primary-500 focus:bg-primary-700 focus:ring-offset-primary-700 h-9 px-4 text-white shadow focus:ring-white">
                                                                 <span>Voltar</span>
                                                             </Link>
                                                             <button type="submit"
                                                                     :disabled="form.processing"
                                                                     class="inline-flex items-center justify-center font-medium tracking-tight rounded-lg focus:outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset bg-primary hover:bg-primary-500 focus:bg-primary-700 focus:ring-offset-primary-700 h-9 px-4 text-white shadow focus:ring-white">
-                                                                <span>Cadastrar</span>
+                                                                <span>Atualizar</span>
                                                             </button>
                                                         </div>
                                                     </div>
@@ -399,10 +276,11 @@ import Editor from '@tinymce/tinymce-vue';
 
 
 export default defineComponent({
-    name: "Staff Create",
+    name: "Post Edit",
     props: {
         errors: Object,
-        member_avatar: String,
+        agreement: Object,
+        agreementImage: String,
     },
     components: {
         AppLayout,
@@ -414,36 +292,25 @@ export default defineComponent({
         JetDropdownLink,
         JetNavLink,
         Editor,
-
     },
     data() {
         return {
             form: this.$inertia.form({
-                name: null,
-                avatar: null,
-                office: null,
-                crm: null,
-                email: null,
-                about: null,
+                _method: 'PUT',
+                name: this.agreement.name,
+                brand: this.agreementImage,
             }),
-            tempAvatar: '',
         }
     },
     methods: {
         submit() {
-            this.$inertia.post(route('staff.store'), this.form, {
-                forceFormData: true
+            this.$inertia.post(route('agreement.update', [this.agreement.id]), this.form, {
+                preserveScroll: true,
             });
         },
-        changeImage(e) {
-            const file = e.target.files[0];
-            let reader = new FileReader();
-
-            reader.onload = (e) => {
-                this.tempAvatar = e.target.result
-            }
-            reader.readAsDataURL(file);
-        },
-    },
+        selectFile($event) {
+            this.form.brand = $event.target.files[0]
+        }
+    }
 })
 </script>

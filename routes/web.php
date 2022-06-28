@@ -6,10 +6,12 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DiagnosticMethodController;
 use App\Http\Controllers\ExamsController;
 use App\Http\Controllers\StaffController;
+use App\Http\Controllers\AgreementController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/', [FrontController::class, 'index'])->name('front.index');
+Route::get('/logout', [FrontController::class, 'index'])->name('front.index');
 
 Route::get('/blog', [FrontController::class, 'blog'])->name('front.blog');
 Route::get('/artigo/{slug}', [FrontController::class, 'article'])->name('front.post');
@@ -24,8 +26,4 @@ Route::resource('category', CategoryController::class)->middleware(['auth:sanctu
 Route::resource('diagnostic', DiagnosticMethodController::class)->middleware(['auth:sanctum', 'verified']);
 Route::resource('exams', ExamsController::class)->middleware(['auth:sanctum', 'verified']);
 Route::resource('staff', StaffController::class)->middleware(['auth:sanctum', 'verified']);
-
-
-Route::get('/logout', function () {
-    return Inertia::render('Front/Index');
-});
+Route::resource('agreement', AgreementController::class)->middleware(['auth:sanctum', 'verified']);
