@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Agreement;
 use App\Models\Blog;
 use App\Models\Staff;
 use App\Models\DiagnosticMethod;
@@ -16,6 +17,7 @@ class FrontController extends Controller
             'defaultUrl' => env('APP_URL'),
             'methods' => DiagnosticMethod::all(),
             'staff' => Staff::all(),
+            'agreements' => Agreement::all(),
             'methodImage' => asset('storage/'),
         ]);
     }

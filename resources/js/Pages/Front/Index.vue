@@ -8,7 +8,7 @@
         <CTAareas :variant="'blue'" />
         <Institutional :urlDefault="this.urlDefault" />
         <Academy :urlDefault="this.urlDefault" />
-        <Agreement :urlDefault="this.urlDefault" />
+        <Agreement :urlDefault="this.urlDefault" :agreements="this.agreements" />
         <Locations :urlDefault="this.urlDefault" />
         <Staff :urlDefault="this.urlDefault" :staff="this.staff" />
         <BackToTop />
@@ -40,6 +40,7 @@ export default defineComponent({
         defaultUrl: String,
         methods: Object,
         staff: Object,
+        agreements: Object,
         methodImage: String,
     },
     components: {

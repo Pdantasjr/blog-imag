@@ -219,7 +219,7 @@
                                                 <div class="px-4 py-3 flex items-center justify-center">
                                                     <img :src="this.agreementImage+'/'+agreement.brand"
                                                          :alt="agreement.name"
-                                                         class="w-24 h-auto rounded p-1 mx-2 bg-gray-50">
+                                                         class="w-auto h-14 rounded p-1 mx-2 bg-gray-50">
                                                 </div>
                                             </td>
                                             <td>

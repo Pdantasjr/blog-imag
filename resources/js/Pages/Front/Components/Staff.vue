@@ -3,7 +3,7 @@
         <section-title title="Quem Faz a IMAG" id="team"></section-title>
     </div>
     <div class="lg:max-w-7xl w-full mx-auto">
-        <div class="flex items-center flex-wrap justify-around mx-auto my-10 w-10/12">
+        <div v-if="staff.length" class="flex items-center flex-wrap justify-around mx-auto my-10 w-10/12">
             <swiper
                 :slidesPerView="3"
                 :loopFillGroupWithBlank="true"
@@ -39,7 +39,7 @@
             >
 
                 <swiper-slide v-for="member in this.staff">
-                    <Link :href="route('front.member', [member.slug])" class="py-6 mt-2 bg-white shadow-lg rounded-lg border hover:border-primary/50 flex flex-col items-center justify-around transition transform hover:-translate-y-1 duration-300 ease-in-out">
+                    <Link :href="route('front.member', [member.slug])" class="w-auto py-6 mt-2 bg-white shadow-lg rounded-lg border hover:border-primary/50 flex flex-col items-center justify-around transition transform hover:-translate-y-1 duration-300 ease-in-out">
                         <div  class="bg-white rounded-full">
                             <img class="w-44 rounded-full h-44 border hover:border hover:border-primary/50 hover:shadow-lg bg-center object-fit transition transform hover:scale-105 duration-300 ease-in-out" :src="this.urlDefault +'/'+ member.avatar" :alt="'Foto de '+member.name">
                         </div>
@@ -52,6 +52,9 @@
                 </swiper-slide>
 
             </swiper>
+        </div>
+        <div v-else>
+            <p class="text-primary/50 p-4 text-center border border-primary rounded">Logo você conhecerá nosso, time. Estamos cadastrando.</p>
         </div>
     </div>
 </template>

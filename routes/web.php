@@ -27,3 +27,8 @@ Route::resource('diagnostic', DiagnosticMethodController::class)->middleware(['a
 Route::resource('exams', ExamsController::class)->middleware(['auth:sanctum', 'verified']);
 Route::resource('staff', StaffController::class)->middleware(['auth:sanctum', 'verified']);
 Route::resource('agreement', AgreementController::class)->middleware(['auth:sanctum', 'verified']);
+
+
+//Route::get('/logout', function () {
+//    return Inertia::render('Front/Index');
+//});
