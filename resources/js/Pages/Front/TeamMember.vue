@@ -1,13 +1,43 @@
 <template>
-    <div class="flex flex-col justify-center overflow-y-hidden">
-        <CTAareas variant="top" />
+    <Head :title="member.name"/>
+    <CTAareas variant="top"/>
+    <Header/>
+    <div class="w-screen h-[200px] mt-24 bg-no-repeat object-cover -z-10 inset-x-0 bottom-0"
+         :style="{'background-image': 'url('+ url +'/staff/bg-member.svg)'}"></div>
+    <div class="w-full h-auto">
+        <div class="sm:max-w-7xl w-11/12 mx-auto">
+            <Link :href="route('front.index')" class="flex flex-row items-center justify-start mt-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24"
+                     stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+                </svg>
+                <span class="text-gray-400 text-sm mx-2">Voltar</span>
+            </Link>
+            <div class="flex my-10">
+                <div class="flex">
+                    <div>
+                        <img class="w-80 h-80 rounded shadow-lg" :src="url +'/'+ member.avatar" :alt="member.name">
+                    </div>
+                    <div class="flex flex-col mx-10">
+                        <h1 class="text-primary text-4xl">{{ member.name }}</h1>
+                        <h3 class="text-gray-500 text-lg font-light">{{ member.office }}</h3>
+                        <span class="text-gray-400 text-sm font-light">CRM: {{ member.crm }}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex">
+                <span v-html="member.about"></span>
+            </div>
+        </div>
     </div>
+    <BackToTop/>
+    <Footer/>
 </template>
 
 <script>
 import {defineComponent} from 'vue'
 
-import {Link} from '@inertiajs/inertia-vue3';
+import {Link, Head} from '@inertiajs/inertia-vue3';
 import CTAareas from "./Components/CTAareas";
 import Header from "./Components/Header"
 import BackToTop from "./Components/BackToTop";
@@ -16,18 +46,26 @@ import Footer from "./Components/Footer"
 export default defineComponent({
     name: "TeamMember",
     props: {
-        member: Object
+        member: Object,
+        url: String,
     },
     components: {
         Link,
+        Head,
         CTAareas,
         Header,
         BackToTop,
         Footer,
     },
+    methods: {
+        backToTheTop: function () {
+            return window.scrollTo(0, 0)
+        },
+    },
+    mounted: function () {
+        this.$nextTick(function () {
+            this.backToTheTop()
+        })
+    },
 })
 </script>
-
-<style scoped>
-
-</style>

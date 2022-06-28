@@ -41,6 +41,16 @@ export default defineComponent({
         return {
             title: this.post.title,
         }
-    }
+    },
+    methods: {
+        backToTheTop: function () {
+            return window.scrollTo(0, 0)
+        },
+    },
+    mounted: function () {
+        this.$nextTick(function () {
+            this.backToTheTop()
+        })
+    },
 })
 </script>

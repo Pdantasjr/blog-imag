@@ -90,10 +90,16 @@ export default defineComponent({
         posts: Object,
         url: String,
         lastPost: Object,
-    }
+    },
+    methods: {
+        backToTheTop: function () {
+            return window.scrollTo(0, 0)
+        },
+    },
+    mounted: function () {
+        this.$nextTick(function () {
+            this.backToTheTop()
+        })
+    },
 })
 </script>
-
-<style scoped>
-
-</style>

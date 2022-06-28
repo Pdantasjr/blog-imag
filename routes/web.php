@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/', [FrontController::class, 'index'])->name('front.index');
-Route::get('/logout', [FrontController::class, 'index'])->name('front.index');
+//Route::get('/logout', [FrontController::class, 'index'])->name('front.index');
 
 Route::get('/blog', [FrontController::class, 'blog'])->name('front.blog');
 Route::get('/artigo/{slug}', [FrontController::class, 'article'])->name('front.post');

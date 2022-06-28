@@ -56,7 +56,9 @@ class FrontController extends Controller
 
     public function teamMember($slug)
     {
-        dd($slug);
-        return Inertia::render('Front/TeamMember');
+        return Inertia::render('Front/TeamMember', [
+            'member' => Staff::where('slug', $slug)->first(),
+            'url' => url('storage/'),
+        ]);
     }
 }
