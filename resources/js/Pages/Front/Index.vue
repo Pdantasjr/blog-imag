@@ -1,18 +1,18 @@
 <template>
     <div class="flex flex-col justify-center overflow-y-hidden">
         <CTAareas :variant="'top'" />
-        <Header/>
-        <Carousel />
+<!--        <Header/>-->
+<!--        <Carousel />-->
         <SearchForm :defaultUrl="this.defaultUrl" />
         <OurExams :methodImage="this.methodImage" :methods="this.methods" :defaultUrl="this.defaultUrl" />
-        <CTAareas :variant="'blue'" />
-        <Institutional :urlDefault="this.urlDefault" />
-        <Academy :urlDefault="this.urlDefault" />
-        <Agreement :urlDefault="this.urlDefault" :agreements="this.agreements" />
-        <Locations :urlDefault="this.urlDefault" />
-        <Staff :urlDefault="this.urlDefault" :staff="this.staff" />
-        <BackToTop />
-        <Footer />
+<!--        <CTAareas :variant="'blue'" />-->
+<!--        <Institutional :urlDefault="this.urlDefault" />-->
+<!--        <Academy :urlDefault="this.urlDefault" />-->
+<!--        <Agreement :urlDefault="this.urlDefault" :agreements="this.agreements" />-->
+<!--        <Locations :urlDefault="this.urlDefault" />-->
+<!--        <Staff :urlDefault="this.urlDefault" :staff="this.staff" />-->
+<!--        <BackToTop />-->
+<!--        <Footer />-->
     </div>
 </template>
 

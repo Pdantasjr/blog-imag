@@ -18,10 +18,16 @@
                     <div>
                         <img class="w-80 h-80 rounded shadow-lg" :src="url +'/'+ member.avatar" :alt="member.name">
                     </div>
-                    <div class="flex flex-col mx-10">
-                        <h1 class="text-primary text-4xl">{{ member.name }}</h1>
-                        <h3 class="text-gray-500 text-lg font-light">{{ member.office }}</h3>
-                        <span class="text-gray-400 text-sm font-light">CRM: {{ member.crm }}</span>
+                    <div class="flex flex-col justify-between mx-10">
+                        <div>
+                            <h1 class="text-primary text-4xl">{{ member.name }}</h1>
+                            <h3 class="text-gray-500 text-lg font-light">{{ member.office }}</h3>
+                            <span class="text-gray-400 text-sm font-light">CRM: {{ member.crm }}</span>
+                        </div>
+                        <div>
+                            <h1 class="text-primary text-2xl">Horário de atendimento</h1>
+                            <h3 class="text-gray-500 text-lg font-light">{{ member.serviceTime }}</h3>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -75,6 +75,7 @@ class StaffController extends Controller
         $member->office = $request->office;
         $member->crm = $request->crm;
         $member->email = $request->email;
+        $member->serviceTime = $request->input('serviceTime');
         $member->about = $request->about;
         $member->save();
 
@@ -135,6 +136,7 @@ class StaffController extends Controller
         $staff->avatar = $avatar;
         $staff->about = $request->input('about');
         $staff->email = $request->input('email');
+        $staff->serviceTime = $request->input('serviceTime');
         $staff->about = $request->input('about');
 
         $staff->update();

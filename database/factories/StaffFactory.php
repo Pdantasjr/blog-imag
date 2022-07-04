@@ -22,6 +22,7 @@ class StaffFactory extends Factory
             'office' => $this->faker->jobTitle,
             'crm' => $this->faker->numberBetween('11111', '99999'),
             'email' => $this->faker->email,
+            'serviceTime' => $this->faker->time('H:i:s', 'now'),
             'about' => $this->faker->text(250),
         ];
     }

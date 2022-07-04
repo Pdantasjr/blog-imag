@@ -7,7 +7,7 @@
         <div class="h-auto col-span-2 lg:col-span-1 self-center py-4 lg:py-0">
             <h1 class="text-center lg:text-left text-primary text-4xl md:text-5xl sm:text-6xl mb-3 uppercase font-extrabold">
                 Nosso Blog</h1>
-            <p class="text-neutral lg:text-left text-center text-lg sm:text-2xl font-light">Informação com qualidade, direto
+            <p class="text-primary lg:text-left text-center text-lg sm:text-2xl font-light">Informação com qualidade, direto
                 de nosso time para você.</p>
         </div>
             <div class="h-auto col-span-2 sm:col-span-2 rounded-lg bg-white shadow-md border border-gray-100 hover:cursor-pointer hover:shadow-2xl transition duration-200">
@@ -18,8 +18,8 @@
                     </div>
                     <div class="flex flex-col p-2">
                         <h2 class="text-primary font-bold text-lg py-2">{{ lastPost.title }}</h2>
-                        <h3 class="text-neutral py-2 text-sm font-light">{{ lastPost.subtitle }}</h3>
-                        <span class="text-neutral text-xs font-light">Postado em {{
+                        <h3 class="text-secondary py-2 text-sm font-light">{{ lastPost.subtitle }}</h3>
+                        <span class="text-gray-400 text-xs font-light">Postado em {{
                                 new Intl.DateTimeFormat('pt-BR', {
                                     day: 'numeric',
                                     month: 'numeric',
@@ -45,8 +45,8 @@
                     </div>
                     <div class="flex flex-col p-2">
                         <h2 class="text-primary font-bold text-lg py-2">{{ post.title }}</h2>
-                        <h3 class="text-neutral py-2 text-sm font-light">{{ post.subtitle }}</h3>
-                        <span class="text-neutral text-xs font-light">Postado em {{
+                        <h3 class="text-secondary py-2 text-sm font-light">{{ post.subtitle }}</h3>
+                        <span class="text-gray-400 text-xs font-light">Postado em {{
                                 new Intl.DateTimeFormat('pt-BR', {
                                     day: 'numeric',
                                     month: 'numeric',
@@ -65,7 +65,7 @@
         </div>
     </div>
     <div v-else>
-        <p class="text-neutral text-center text-ms my-10 font-light">Ainda estamos produzindo o melhor conteúdo relacionado à saúde.</p>
+        <p class="text-primary text-center text-ms my-10 font-light">Ainda estamos produzindo o melhor conteúdo relacionado à saúde.</p>
     </div>
     <Footer/>
 </template>

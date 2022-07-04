@@ -3,7 +3,7 @@
         <div class="lg:max-w-7xl w-11/12 mx-auto">
             <section-title title="Nossos Exames" id="nossosExames"></section-title>
         </div>
-        <div class="w-screen bg-gradient-to-r from-primary to-secondary">
+        <div class="w-full bg-gradient-to-r from-primary to-secondary">
             <div v-if="methods.length"
                  class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4 lg:max-w-7xl w-11/12 mx-auto py-6 sm:py-10">
                 <div v-for="method in methods" :key="method.id"
@@ -21,7 +21,7 @@
                     </div>
                 </div>
             </div>
-            <div v-else class="m-2 w-full h-32 flex items-center justify-center">
+            <div v-else class="w-full h-32 flex items-center justify-center">
                 <p class="text-white font-light text-center">Estamos cadastrando nossos exames. ;)</p>
             </div>
         </div>
@@ -29,8 +29,7 @@
 
     <div v-if="this.modal.isOpen">
         <div class="w-screen fixed top-0 left-0 h-full w-full overflow-y-auto z-40 bg-black/50 backdrop-blur-sm">
-            <div
-                class="bg-gray-50 flex flex-col items-stretch my-10 mx-auto border border-gray-300 rounded-lg lg:w-6/12 w-10/12 max-w-7xl max-h-3/6 h-auto">
+            <div class="bg-gray-50 flex flex-col items-stretch my-10 mx-auto border border-gray-300 rounded-lg w-10/12 max-w-5xl h-4/6  overflow-auto">
                 <transition-group name="slide-fade">
                     <!--LOADIND-->
                     <did class="relative w-full h-auto">
@@ -52,10 +51,9 @@
                 </transition-group>
                 <transition-group tag="div" name="slide-fade">
                     <!--EXAMS LIST-->
-                    <div v-if="!this.modal.loading" class="w-full h-auto" v-for="m in method.method" :key="m.id">
+                    <div v-if="!this.modal.loading" class="w-full h-auto flex flex-col justify-between" v-for="m in method.method" :key="m.id">
                         <!--TITLE-->
-                        <div v-if="method.isOpen"
-                             class="w-full h-auto border-b border-primary/25 shadow-lg shadow-primary/40">
+                        <div v-if="method.isOpen" class="w-full h-16 sticky top-0 z-20 bg-white border-b border-primary/25 shadow-lg shadow-primary/40">
                             <div class="flex flex-row items-center justify-between">
                                 <img class="w-12 h-12 m-2 p-1 bg-primary rounded"
                                      :src="this.methodImage+'/'+m.image"
@@ -70,7 +68,7 @@
                             </div>
                         </div>
                         <!--MODAL CONTENT-->
-                        <div v-if="method.isOpen" class="w-full flex-1 h-auto overflow-y-auto py-1">
+                        <div v-if="method.isOpen" class="w-full flex-1 h-auto overflow-auto py-1">
                             <ul>
                                 <li v-for="exam in m.exams"
                                     class="px-4 w-full my-1 transition-all duration-200 ease-in-out">
@@ -104,30 +102,30 @@
                         </div>
                         <!--MODAL QUESTIONS CONTENT-->
                         <div v-if="this.exam.isOpen" class="w-full h-auto overflow-y-auto p-2 my-2">
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+                            <div class="grid grid-cols-1 h-full flex-1 md:grid-cols-3 gap-2">
                                 <div
                                     @click="questionResponse('O que é / para que serve?', img.oquee, exam.detail.what_is)"
-                                    class="px-4 w-full h-full flex md:flex-col items-center rounded hover:bg-secondary/30 hover:cursor-pointer transition-all duration-300 ease-in-out">
+                                    class="px-4 w-full h-32 flex md:flex-col items-center rounded hover:bg-secondary/30 hover:cursor-pointer transition-all duration-200 ease-in-out">
                                     <img class="h-16 w-16 m-2" :src="img.oquee" alt="">
                                     <span
                                         class="flex-1 text-primary md:text-center my-2">O que é / para que serve?</span>
                                 </div>
                                 <div
                                     @click="questionResponse('Como é realizado?', img.how_it_is_done, exam.detail.how_it_is_done)"
-                                    class="px-4 w-full h-full flex md:flex-col items-center rounded hover:bg-secondary/30 hover:cursor-pointer transition-all duration-300 ease-in-out">
+                                    class="px-4 w-full h-32 flex md:flex-col items-center rounded hover:bg-secondary/30 hover:cursor-pointer transition-all duration-200 ease-in-out">
                                     <img class="h-16 w-16 m-2" :src="img.how_it_is_done" alt="">
                                     <span
                                         class="flex-1 text-primary md:text-center my-2">Como é realizado?</span>
                                 </div>
                                 <div
                                     @click="questionResponse('Duração média', img.average_duration, exam.detail.average_duration)"
-                                    class="px-4 w-full h-full flex md:flex-col items-center rounded hover:bg-secondary/30 hover:cursor-pointer transition-all duration-300 ease-in-out">
+                                    class="px-4 w-full h-32 flex md:flex-col items-center rounded hover:bg-secondary/30 hover:cursor-pointer transition-all duration-200 ease-in-out">
                                     <img class="h-16 w-16 m-2" :src="img.average_duration" alt="">
                                     <span class="flex-1 text-primary md:text-center my-2">Duração média:</span>
                                 </div>
                                 <div
                                     @click="questionResponse('Contraindicações | Restrições relativas', img.contraindications_or_relative_restrictions, exam.detail.contraindications_or_relative_restrictions)"
-                                    class="px-4 w-full h-full flex md:flex-col items-center rounded hover:bg-secondary/30 hover:cursor-pointer transition-all duration-300 ease-in-out">
+                                    class="px-4 w-full h-32 flex md:flex-col items-center rounded hover:bg-secondary/30 hover:cursor-pointer transition-all duration-200 ease-in-out">
                                     <img class="h-16 w-16 m-2"
                                          :src="img.contraindications_or_relative_restrictions"
                                          alt="">
@@ -135,20 +133,20 @@
                                 </div>
                                 <div
                                     @click="questionResponse('Orientações para a realização | Preparo', img.service_guidelines, exam.detail.service_guidelines)"
-                                    class="px-4 w-full h-full flex md:flex-col items-center rounded hover:bg-secondary/30 hover:cursor-pointer transition-all duration-300 ease-in-out">
+                                    class="px-4 w-full h-32 flex md:flex-col items-center rounded hover:bg-secondary/30 hover:cursor-pointer transition-all duration-200 ease-in-out">
                                     <img class="h-16 w-16 m-2" :src="img.service_guidelines" alt="">
                                     <span class="flex-1 text-primary md:text-center my-2">Orientações para a realização | Preparo</span>
                                 </div>
                                 <div
                                     @click="questionResponse('Prazo de entrega', img.deadline, exam.detail.deadline)"
-                                    class="px-4 w-full h-full flex md:flex-col items-center rounded hover:bg-secondary/30 hover:cursor-pointer transition-all duration-300 ease-in-out">
+                                    class="px-4 w-full h-32 flex md:flex-col items-center rounded hover:bg-secondary/30 hover:cursor-pointer transition-all duration-200 ease-in-out">
                                     <img class="h-16 w-16 m-2" :src="img.deadline" alt="">
                                     <span
                                         class="flex-1 text-primary md:text-center my-2">Prazo de entrega:</span>
                                 </div>
                                 <div
                                     @click="questionResponse('Orientações para o atendimento', img.achievement_orientation_or_preparation, exam.detail.achievement_orientation_or_preparation)"
-                                    class="px-4 w-full h-full flex md:flex-col items-center rounded hover:bg-secondary/30 hover:cursor-pointer transition-all duration-300 ease-in-out">
+                                    class="px-4 w-full h-32 flex md:flex-col items-center rounded hover:bg-secondary/30 hover:cursor-pointer transition-all duration-200 ease-in-out">
                                     <img class="h-16 w-16 m-2" :src="img.achievement_orientation_or_preparation"
                                          alt="">
                                     <span
@@ -160,7 +158,7 @@
                 </transition-group>
                 <transition-group tag="div" name="slide-fade">
                     <!--QUESTIONS RESPONSE-->
-                    <div v-if="!this.modal.loading" class="w-full h-auto">
+                    <div class="w-full h-auto">
                         <div v-if="this.rps.isOpen"
                              class="w-full h-auto border-b border-primary/25 shadow-lg shadow-primary/40 flex items-center justify-between">
                             <svg @click="returnToQuestions()" xmlns="http://www.w3.org/2000/svg"
@@ -175,7 +173,7 @@
                             </div>
                         </div>
                         <!--MODAL QUESTIONS CONTENT-->
-                        <div v-if="this.rps.isOpen" class="w-full h-auto overflow-y-auto p-2 my-2">
+                        <div v-if="this.rps.isOpen" class="w-full flex-1 h-auto overflow-y-auto p-2 my-2">
                             <div class="flex items-center justify-center">
                                 <img class="w-14 h-14 m-4" :src="this.rps.icon" :alt="this.rps.title">
                                 <h1 class="text-primary text-2xl font-bold py-2 text-center">{{
@@ -191,8 +189,8 @@
                     </div>
                 </transition-group>
                 <!--FOOTER-->
-                <div class="w-full h-auto border-t border-primary/25 flex justify-end">
-                    <button @click="closeModal()"
+                <div class="w-full bg-white border-t border-primary/25 flex justify-end sticky bottom-0">
+                    <button v-if="!this.modal.loading" @click="closeModal()"
                             class="bg-primary w-32 h-8 rounded-full z-50 m-4 text-white font-light border border-white drop-shadow-md hover:drop-shadow-lg transition transform hover:scale-105 duration-100 ease-in-out">
                         Fechar
                     </button>

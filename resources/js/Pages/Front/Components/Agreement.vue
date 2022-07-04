@@ -10,7 +10,7 @@
                 <div class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 my-6 sm:my-10">
                     <div v-for="(agreement, i) in agreements" :key="agreement.id">
                         <div v-if="i < 8">
-                            <div class="w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-white/50 bg-opacity-10 backdrop-blur-[2px] rounded-md drop-shadow-lg hover:scale-105 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-200 ease-in-out">
+                            <div class="w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-white bg-opacity-10 backdrop-blur-[2px] rounded-md drop-shadow-lg hover:scale-105 border border-gray-200 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-200 ease-in-out">
                                 <img class="p-4 w-auto h-full" :src="urlDefault +'/'+ agreement.brand" :alt="agreement.name">
                             </div>
                         </div>
@@ -18,7 +18,7 @@
                         <Transition name="slide-fade">
                             <div v-show="showMore">
                                 <div v-show="i > 7">
-                                    <div class="w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-white/50 bg-opacity-10 backdrop-blur-[2px] rounded-md drop-shadow-lg hover:scale-105 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-200 ease-in-out">
+                                    <div class="w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-white/50 bg-opacity-10 backdrop-blur-[2px] rounded-md drop-shadow-lg hover:scale-105 border border-gray-200 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-200 ease-in-out">
                                         <img class="p-4 w-auto h-full" :src="urlDefault +'/'+ agreement.brand" :alt="agreement.name">
                                     </div>
                                 </div>

@@ -46,11 +46,10 @@
                         <div class="flex flex-col items-center justify-center">
                             <h3 class="font-black text-primary text-lg pt-2 text-center">{{ member.name }}</h3>
                             <p class="text-gray-400 text-sm font-light text-center">{{ member.office }}</p>
-                            <p class="text-gray-400 text-sm font-light text-center">{{ member.crm }}</p>
+                            <p class="text-gray-400 text-sm font-light text-center">CRM: {{ member.crm }}</p>
                         </div>
                     </Link>
                 </swiper-slide>
-
             </swiper>
         </div>
         <div v-else>
