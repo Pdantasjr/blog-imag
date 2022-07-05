@@ -20,7 +20,8 @@ class ExamsController extends Controller
     public function index()
     {
         return Inertia::render('Exams/Index', [
-            'exams' => Exams::with('method')->get(),
+            'exams' => Exams::with('method')
+                ->paginate(10),
             'methodImage' => asset('storage/'),
         ]);
     }
@@ -203,24 +204,6 @@ class ExamsController extends Controller
         return Redirect::route('exams.index')->with(['toast' => ['message' => "Exame excluído com sucesso!"]]);
     }
 
-    public function exams(Request $request)
-    {
-//        return response()->json([
-//            Exams::query()
-//            ->with('method')
-//            ->where('name', 'LIKE', "%{$request->term}%")
-//            ->orWhere('synonym', 'LIKE', "%{$request->term}%")
-//            ->get()
-//        ], '200');
-
-        return response()->json([
-            Exams::query()
-            ->with('method')
-            ->where('name', 'LIKE', "%{$request->term}%")
-            ->orWhere('synonym', 'LIKE', "%{$request->term}%")
-            ->get(['id', 'name', 'slug','method'], 'method')
-        ], '200');
-    }
 
     public function examDetail(Request $request)
     {
@@ -235,7 +218,6 @@ class ExamsController extends Controller
     {
         $methods = DiagnosticMethod::where('slug', 'LIKE', "%{$request->slug}%")->with('exams')->get();
         return response()->json($methods);
-
     }
 
     private function setSlug($examName) {

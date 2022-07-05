@@ -252,7 +252,7 @@
                                 </div>
                                 <div class="p-2 border-t">
                                     <nav class="flex items-center justify-between">
-                                        <div class="hidden flex-1 items-center lg:grid grid-cols-3">
+                                        <div class="hidden flex-1 items-center lg:grid grid-cols-1">
                                             <div class="flex items-center">
                                                 <div class="pl-2 text-sm font-medium">
                                                     <Pagination class="mt-6" :links="posts.links" />

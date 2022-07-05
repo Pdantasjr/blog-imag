@@ -48,7 +48,7 @@ class UserFactory extends Factory
     }
 
     /**
-     * Indicate that the user should have a personal staff.
+     * Indicate that the user should have a personal Staff.
      *
      * @return $this
      */

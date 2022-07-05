@@ -24,7 +24,7 @@
     <img v-else-if="name === 'pb-w'" class="w-12 h-12 sm:w-16 sm:h-16" src="../Images/ComponentIcons/pb.svg" alt="ícone para Punções e Biópsias">
     <img v-else-if="name === 'el-w'" class="w-12 h-12 sm:w-16 sm:h-16" src="../Images/ComponentIcons/el.svg" alt="ícone para Exames Laboratoriais">
     <img v-else-if="name === 'list-b'" class="w-12 h-12" src="../Images/ComponentIcons/list_checked.svg" alt="ícone para vantagens de escolher IMAG">
-    <img v-else-if="name === 'staff-b'" class="w-12 h-12" src="../Images/ComponentIcons/team.svg" alt="ícone para vantagens de escolher IMAG">
+    <img v-else-if="name === 'Staff-b'" class="w-12 h-12" src="../Images/ComponentIcons/team.svg" alt="ícone para vantagens de escolher IMAG">
     <img v-else-if="name === 'conv-b'" class="w-12 h-12" src="../Images/ComponentIcons/convenio.svg" alt="ícone para vantagens de escolher IMAG">
     <img v-else-if="name === 'check-b'" class="w-12 h-12" src="../Images/ComponentIcons/check.svg" alt="ícone para vantagens de escolher IMAG">
     <img v-else-if="name === 'medical-b'" class="w-12 h-12" src="../Images/ComponentIcons/medical_center.svg" alt="ícone para vantagens de escolher IMAG">

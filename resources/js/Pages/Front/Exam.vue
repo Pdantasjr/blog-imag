@@ -1,5 +1,5 @@
 <template>
-    <Head :title="member.name"/>
+    <Head :title="exam.name"/>
     <CTAareas variant="top"/>
     <Header/>
     <div class="w-screen h-[200px] mt-24 bg-no-repeat object-cover -z-10 inset-x-0 bottom-0"
@@ -13,27 +13,20 @@
                 </svg>
                 <span class="text-gray-400 text-sm mx-2">Voltar</span>
             </Link>
-            <div class="flex my-10">
-                <div class="flex">
-                    <div>
-                        <img class="w-80 h-80 rounded shadow-lg" :src="url +'/'+ member.avatar" :alt="member.name">
+            <h1 class="text-primary text-4xl text-center w-full">{{ exam.name }}</h1>
+
+            <div class="flex flex-col justify-between p-10 ">
+                <div class="w-full h-auto border border-primary rounded-lg flex ">
+                    <div class="w-56 h-auto border border-red-600">
+                        <img class="w-32 h-32" :src="url+'/examsDetails/oquee.svg'" alt="O que é / para que serve">
+                        <h3 class="text-primary text-center">O que é / para que serve?</h3>
                     </div>
-                    <div class="flex flex-col justify-between mx-10">
-                        <div>
-                            <h1 class="text-primary text-4xl">{{ member.name }}</h1>
-                            <h3 class="text-gray-500 text-lg font-light">{{ member.office }}</h3>
-                            <span class="text-gray-400 text-sm font-light">CRM: {{ member.crm }}</span>
-                        </div>
-                        <div>
-                            <h1 class="text-primary text-2xl">Horário de atendimento</h1>
-                            <h3 class="text-gray-500 text-lg font-light">{{ member.serviceTime }}</h3>
-                        </div>
+                    <div>
+                        <p class="text-primary font-light text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci, aspernatur ex explicabo maiores molestiae nam nemo nisi odio optio possimus qui quia, quo reprehenderit rerum soluta suscipit ut voluptatibus?</p>
                     </div>
                 </div>
             </div>
-            <div class="flex">
-                <span v-html="member.about"></span>
-            </div>
+
         </div>
     </div>
     <BackToTop/>
@@ -50,9 +43,9 @@ import BackToTop from "./Components/BackToTop";
 import Footer from "./Components/Footer"
 
 export default defineComponent({
-    name: "TeamMember",
+    name: "Exam",
     props: {
-        member: Object,
+        exam: Object,
         url: String,
     },
     components: {

@@ -9,7 +9,7 @@ use Laravel\Jetstream\Contracts\UpdatesTeamNames;
 class UpdateTeamName implements UpdatesTeamNames
 {
     /**
-     * Validate and update the given staff's name.
+     * Validate and update the given Staff's name.
      *
      * @param  mixed  $user
      * @param  mixed  $team

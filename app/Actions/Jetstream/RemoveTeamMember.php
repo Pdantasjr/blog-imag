@@ -11,7 +11,7 @@ use Laravel\Jetstream\Events\TeamMemberRemoved;
 class RemoveTeamMember implements RemovesTeamMembers
 {
     /**
-     * Remove the staff member from the given staff.
+     * Remove the Staff member from the given Staff.
      *
      * @param  mixed  $user
      * @param  mixed  $team
@@ -30,7 +30,7 @@ class RemoveTeamMember implements RemovesTeamMembers
     }
 
     /**
-     * Authorize that the user can remove the staff member.
+     * Authorize that the user can remove the Staff member.
      *
      * @param  mixed  $user
      * @param  mixed  $team
@@ -46,7 +46,7 @@ class RemoveTeamMember implements RemovesTeamMembers
     }
 
     /**
-     * Ensure that the currently authenticated user does not own the staff.
+     * Ensure that the currently authenticated user does not own the Staff.
      *
      * @param  mixed  $teamMember
      * @param  mixed  $team
@@ -56,7 +56,7 @@ class RemoveTeamMember implements RemovesTeamMembers
     {
         if ($teamMember->id === $team->owner->id) {
             throw ValidationException::withMessages([
-                'staff' => [__('You may not leave a staff that you created.')],
+                'Staff' => [__('You may not leave a Staff that you created.')],
             ])->errorBag('removeTeamMember');
         }
     }

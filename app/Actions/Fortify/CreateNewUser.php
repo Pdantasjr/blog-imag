@@ -41,7 +41,7 @@ class CreateNewUser implements CreatesNewUsers
     }
 
     /**
-     * Create a personal staff for the user.
+     * Create a personal Staff for the user.
      *
      * @param  \App\Models\User  $user
      * @return void

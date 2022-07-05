@@ -13,7 +13,7 @@ use Laravel\Jetstream\Rules\Role;
 class AddTeamMember implements AddsTeamMembers
 {
     /**
-     * Add a new staff member to the given staff.
+     * Add a new Staff member to the given Staff.
      *
      * @param  mixed  $user
      * @param  mixed  $team
@@ -59,7 +59,7 @@ class AddTeamMember implements AddsTeamMembers
     }
 
     /**
-     * Get the validation rules for adding a staff member.
+     * Get the validation rules for adding a Staff member.
      *
      * @return array
      */
@@ -74,7 +74,7 @@ class AddTeamMember implements AddsTeamMembers
     }
 
     /**
-     * Ensure that the user is not already on the staff.
+     * Ensure that the user is not already on the Staff.
      *
      * @param  mixed  $team
      * @param  string  $email
@@ -86,7 +86,7 @@ class AddTeamMember implements AddsTeamMembers
             $validator->errors()->addIf(
                 $team->hasUserWithEmail($email),
                 'email',
-                __('This user already belongs to the staff.')
+                __('This user already belongs to the Staff.')
             );
         };
     }

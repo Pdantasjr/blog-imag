@@ -37,7 +37,7 @@ class InviteTeamMemberTest extends TestCase
             'role' => 'admin',
         ]);
 
-        $response = $this->delete('/staff-invitations/'.$invitation->id);
+        $response = $this->delete('/Staff-invitations/'.$invitation->id);
 
         $this->assertCount(0, $user->currentTeam->fresh()->teamInvitations);
     }

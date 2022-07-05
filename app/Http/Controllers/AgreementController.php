@@ -21,7 +21,7 @@ class AgreementController extends Controller
     public function index()
     {
         return Inertia::render('Agreement/Index', [
-            'agreements' => DB::table('agreements')->orderBy('created_at', 'DESC')->get(),
+            'agreements' => DB::table('agreements')->orderBy('created_at', 'DESC')->paginate(10),
             'agreementImage' => asset('storage/'),
         ]);
     }
@@ -61,7 +61,7 @@ class AgreementController extends Controller
         $agreement = New Agreement();
         $slug = $this->setSlug($request->name);
 
-        $brandDefault = 'Agreements/default/agreement_default.svg';
+        $brandDefault = 'Agreements/default/dev_agreement_default.svg';
 
         $agreement->name = $request->name;
         $agreement->slug = $slug;
@@ -104,7 +104,7 @@ class AgreementController extends Controller
         Validator::validate($request->all(), $rules, $message);
 
         $brand = $agreement->brand;
-        $brandDefault = 'Agreements/default/agreement_default.svg';
+        $brandDefault = 'Agreements/default/dev_agreement_default.svg';
 
         if($request->hasFile('brand')) {
             $brand != $brandDefault ? Storage::delete('public/'.$agreement->brand) : null;

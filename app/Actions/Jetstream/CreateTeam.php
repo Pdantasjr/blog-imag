@@ -11,7 +11,7 @@ use Laravel\Jetstream\Jetstream;
 class CreateTeam implements CreatesTeams
 {
     /**
-     * Validate and create a new staff for the given user.
+     * Validate and create a new Staff for the given user.
      *
      * @param  mixed  $user
      * @param  array  $input

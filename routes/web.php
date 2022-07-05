@@ -16,6 +16,7 @@ Route::get('/', [FrontController::class, 'index'])->name('front.index');
 Route::get('/blog', [FrontController::class, 'blog'])->name('front.blog');
 Route::get('/artigo/{slug}', [FrontController::class, 'article'])->name('front.post');
 Route::get('/medico/{slug}', [FrontController::class, 'teamMember'])->name('front.member');
+Route::get('/exame/{slug}', [FrontController::class, 'exam'])->name('front.exam');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia::render('Dashboard');

@@ -178,7 +178,7 @@
                                 </Link>
                             </div>
                         </header>
-                        <div v-if="exams.length">
+                        <div v-if="exams.data.length">
                             <div class="border border-gray-300 shadow-sm bg-white rounded-xl">
                                 <div class="overflow-y-auto relative">
                                     <table class="w-full text-left divide-y table-auto">
@@ -203,7 +203,7 @@
                                         </tr>
                                         </thead>
 
-                                        <tbody v-for="exam in exams" :key="exam.id" class="divide-y whitespace-nowrap">
+                                        <tbody v-for="exam in exams.data" :key="exam.id" class="divide-y whitespace-nowrap">
                                         <tr>
                                             <td>
                                                 <div class="px-4 py-3 flex items-center justify-center ">
@@ -249,6 +249,19 @@
                                         </tr>
                                         </tbody>
                                     </table>
+                                </div>
+                                <div class="p-2 border-t">
+                                    <nav class="flex items-center justify-between">
+                                        <div class="hidden flex-1 items-center lg:grid grid-cols-1">
+                                            <div class="flex items-center">
+                                                <div class="pl-2 text-sm font-medium">
+                                                    <Pagination class="mt-6" :links="exams.links" />
+                                                </div>
+                                            </div>
+                                            <div class="flex items-center justify-end">
+                                            </div>
+                                        </div>
+                                    </nav>
                                 </div>
                             </div>
                         </div>

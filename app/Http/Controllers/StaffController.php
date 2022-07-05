@@ -34,7 +34,7 @@ class StaffController extends Controller
     public function create()
     {
         return Inertia::render('Staff/Create', [
-            "member_avatar" => asset('storage/staff/default/avatar_default.svg')
+            "member_avatar" => asset('storage/Staff/default/avatar_default.svg')
         ]);
     }
 
@@ -67,11 +67,11 @@ class StaffController extends Controller
         $member = New Staff();
         $slug = $this->setSlug($request->name);
 
-        $avatarDefault = 'staff/default/avatar_default.svg';
+        $avatarDefault = 'Staff/default/avatar_default.svg';
 
         $member->name = $request->name;
         $member->slug = $slug;
-        $member->avatar = $request->file('avatar') ?  $request->file('avatar')->store('staff/'.$slug, 'public') : $avatarDefault;
+        $member->avatar = $request->file('avatar') ?  $request->file('avatar')->store('Staff/'.$slug, 'public') : $avatarDefault;
         $member->office = $request->office;
         $member->crm = $request->crm;
         $member->email = $request->email;
@@ -124,11 +124,11 @@ class StaffController extends Controller
         Validator::validate($request->all(), $rules, $message);
 
         $avatar = $staff->avatar;
-        $avatarDefault = 'staff/default/avatar_default.svg';
+        $avatarDefault = 'Staff/default/avatar_default.svg';
 
         if($request->hasFile('avatar')) {
             $avatar != $avatarDefault ? Storage::delete('public/'.$staff->avatar) : null;
-            $avatar = $request->file('avatar')->store('staff/'.$staff->slug, 'public');
+            $avatar = $request->file('avatar')->store('Staff/'.$staff->slug, 'public');
         }
 
         $staff->name = $request->input('name');
@@ -152,7 +152,7 @@ class StaffController extends Controller
      */
     public function destroy(Staff $staff)
     {
-        Storage::deleteDirectory('public/staff/'.$staff->slug);
+        Storage::deleteDirectory('public/Staff/'.$staff->slug);
         $staff->delete();
         return Redirect::route('staff.index')->with(['toast' => ['message' => "Membro excluído com sucesso!"]]);
     }

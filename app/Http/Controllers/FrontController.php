@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Agreement;
 use App\Models\Blog;
+use App\Models\Exams;
 use App\Models\Staff;
 use App\Models\DiagnosticMethod;
 use Inertia\Inertia;
@@ -59,6 +60,13 @@ class FrontController extends Controller
         return Inertia::render('Front/TeamMember', [
             'member' => Staff::where('slug', $slug)->first(),
             'url' => url('storage/'),
+        ]);
+    }
+
+    public function exam($slug) {
+        return Inertia::render('Front/Exam', [
+            'exam' => Exams::where('slug', $slug)->first(),
+            'url' => url('storage/')
         ]);
     }
 }

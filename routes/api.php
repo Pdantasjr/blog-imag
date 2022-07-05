@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\ExamsController;
-use Illuminate\Http\Request;
+use \App\Http\Controllers\ApiExamsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,6 +19,10 @@ use Illuminate\Support\Facades\Route;
 //    return $request->user();
 //});
 
-Route::get('/exams', [ExamsController::class, 'exams'])->name('api.exams');
+//Route::get('/exams', [ExamsController::class, 'exams'])->name('api.exams');
 Route::get('/methods', [ExamsController::class, 'methods'])->name('api.exam');
 Route::get('/exam', [ExamsController::class, 'examDetail'])->name('api.examDetail');
+
+
+
+Route::apiResource('/exams', ApiExamsController::class);

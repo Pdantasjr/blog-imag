@@ -327,7 +327,7 @@
                                                             </div>
                                                             <div class="flex items-center space-x-1 group">
                                                                 <div class="flex-1">
-                                                                    <input type="time" id="serviceTime" name="serviceTime"
+                                                                    <input type="text" id="serviceTime" name="serviceTime"
                                                                            v-model="form.serviceTime"
                                                                            class="block w-full h-10 transition duration-75 rounded-lg shadow-sm focus:border-primary-600 focus:ring-1 focus:ring-inset focus:ring-primary-600 border-gray-300">
                                                                     <div v-if="errors.serviceTime" v-text="errors.serviceTime"

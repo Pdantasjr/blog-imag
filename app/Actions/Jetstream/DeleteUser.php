@@ -9,7 +9,7 @@ use Laravel\Jetstream\Contracts\DeletesUsers;
 class DeleteUser implements DeletesUsers
 {
     /**
-     * The staff deleter implementation.
+     * The Staff deleter implementation.
      *
      * @var \Laravel\Jetstream\Contracts\DeletesTeams
      */
@@ -43,7 +43,7 @@ class DeleteUser implements DeletesUsers
     }
 
     /**
-     * Delete the teams and staff associations attached to the user.
+     * Delete the teams and Staff associations attached to the user.
      *
      * @param  mixed  $user
      * @return void

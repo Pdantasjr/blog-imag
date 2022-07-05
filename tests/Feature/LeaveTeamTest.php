@@ -31,7 +31,7 @@ class LeaveTeamTest extends TestCase
 
         $response = $this->delete('/teams/'.$user->currentTeam->id.'/members/'.$user->id);
 
-        $response->assertSessionHasErrorsIn('removeTeamMember', ['staff']);
+        $response->assertSessionHasErrorsIn('removeTeamMember', ['Staff']);
 
         $this->assertNotNull($user->currentTeam->fresh());
     }

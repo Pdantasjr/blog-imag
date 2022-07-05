@@ -405,7 +405,7 @@ export default defineComponent({
     },
     methods: {
         switchToTeam(team) {
-            this.$inertia.put(route('current-staff.update'), {
+            this.$inertia.put(route('current-Staff.update'), {
                 'team_id': team.id
             }, {
                 preserveState: false

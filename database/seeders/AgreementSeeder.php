@@ -14,6 +14,6 @@ class AgreementSeeder extends Seeder
      */
     public function run()
     {
-        Agreement::factory()->count(10)->create();
+        Agreement::factory()->count(15)->create();
     }
 }

@@ -7,7 +7,7 @@ use Laravel\Jetstream\Contracts\DeletesTeams;
 class DeleteTeam implements DeletesTeams
 {
     /**
-     * Delete the given staff.
+     * Delete the given Staff.
      *
      * @param  mixed  $team
      * @return void
