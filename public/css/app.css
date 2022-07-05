@@ -1292,6 +1292,9 @@ select {
 .h-4\/6 {
   height: 66.666667%;
 }
+.h-96 {
+  height: 24rem;
+}
 .max-h-fit {
   max-height: -webkit-fit-content;
   max-height: -moz-fit-content;

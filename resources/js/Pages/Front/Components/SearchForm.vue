@@ -21,32 +21,20 @@
                     </svg>
                     <span class="text-primary font-light text-center my-6 ml-2">Pesquisando...</span>
                 </div>
-                <ul v-if="this.form.searchInput.length" id="listResult"
+                <ul v-if="form.searchInput.length" id="listResult"
                     class="flex flex-col items-center bg-white w-11/12 h-auto max-h-72 py-2 rounded-lg mt-2 drop-shadow-xl border-2 border-primary overflow-y-auto transition-all duration-200 ease-in-out">
-
-                    <InfiniteList :data="exams" :width="'100%'" :height="500" :itemSize="80" v-slot="{ item, index }">
-                        <li class="px-4 py-2 text-gray-800 w-full transition-all duration-200 ease-in-out">
-                            <Link :href="defaultUrl+'/'+item.slug"
+                        <li v-for="exam in exams" :key="exam.id" class="px-4 py-2 text-gray-800 w-full transition-all duration-200 ease-in-out">
+                            <Link :href="defaultUrl+'/'+exam.slug"
                                   class="block shadow-sm w-full h-auto border-l-2 border-primary bg-gray-300 hover:bg-neutral hover:cursor-pointer hover:font-extrabold hover:text-primary hover:drop-shadow-md p-2 rounded transition transform hover:-translate-y-2 duration-200 ease-in-out">
-                                {{ item.name }} <br>
-                                <span class="text-sm text-gray-400 font-light">Método do exame: {{
-                                        item.method.name
-                                    }}</span>
+                                {{ exam.name }} <br>
+                                <span class="text-sm text-gray-400 font-light">Método do exame: {{ exam.method.name }}</span>
                             </Link>
                         </li>
-                    </InfiniteList>
-
-
-                    <!--                    <button v-if="this.exams.next_page_url != null" @click.prevent="viewMore(exams.next_page_url)"-->
-                    <!--                            class="w-10/12 shadow-sm bg-gray-300 hover:cursor-pointer font-light hover:text-white hover:bg-secondary hover:drop-shadow-md py-1 rounded transition-all duration-200 ease-in-out">-->
-                    <!--                        Ver mais-->
-                    <!--                    </button>-->
                 </ul>
             </div>
         </form>
     </div>
 </template>
-
 <script>
 import {Link} from "@inertiajs/inertia-vue3";
 import InfiniteList from 'vue3-infinite-list';
@@ -80,30 +68,13 @@ export default {
                     axios.get(endPoint, {params: {term: this.form.searchInput}})
                         .then(res => {
                             this.loading = false
-                            this.exams = res.data
-                            console.log(this.exams)
+                            this.exams = res.data[0]
                         })
                 } else {
                     this.exams = this.form.searchInput
                 }
-            }, 500)
+            }, 300)
         },
-
-        /*viewMore(n) {*/
-        /*    console.log('ver mais', n)*/
-        /*    this.loading = true*/
-        /*    setTimeout(() => {*/
-        /*        axios.get(n)*/
-        //             .then(res => {
-        //                 const divResult = document.getElementById('listResult')
-        //
-        //                 this.loading = false
-        //                 this.exams = res.data
-        //                 divResult.scrollTop = 0
-        //             })
-        //     }, 500)
-        // }
-
     }
 }
 </script>

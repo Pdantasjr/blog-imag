@@ -18,7 +18,7 @@ class AgreementFactory extends Factory
         return [
             'name' => $name,
             'slug' => Str::slug($name),
-            'brand' => 'Agreements/default/agreement_default.svg',
+            'brand' => 'Agreements/default/dev_agreement_default.svg',
         ];
     }
 }

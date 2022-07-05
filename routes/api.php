@@ -15,9 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+//Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//    return $request->user();
+//});
 
 Route::get('/exams', [ExamsController::class, 'exams'])->name('api.exams');
 Route::get('/methods', [ExamsController::class, 'methods'])->name('api.exam');

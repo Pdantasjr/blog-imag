@@ -16,7 +16,7 @@ class ExamsFactory extends Factory
     {
         $name = $this->faker->jobTitle;
         return [
-            'diagnostics_id' => rand('1', '8'),
+            'diagnostics_id' => rand(1, 8),
             'name' => $name,
             'slug' => Str::slug($name),
             'synonym' => $this->faker->name,

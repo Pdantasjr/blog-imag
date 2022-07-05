@@ -205,12 +205,20 @@ class ExamsController extends Controller
 
     public function exams(Request $request)
     {
+//        return response()->json([
+//            Exams::query()
+//            ->with('method')
+//            ->where('name', 'LIKE', "%{$request->term}%")
+//            ->orWhere('synonym', 'LIKE', "%{$request->term}%")
+//            ->get()
+//        ], '200');
+
         return response()->json([
             Exams::query()
             ->with('method')
             ->where('name', 'LIKE', "%{$request->term}%")
             ->orWhere('synonym', 'LIKE', "%{$request->term}%")
-            ->get()
+            ->get(['id', 'name', 'slug','method'], 'method')
         ], '200');
     }
 

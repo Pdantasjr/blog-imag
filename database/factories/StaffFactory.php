@@ -18,7 +18,7 @@ class StaffFactory extends Factory
         return [
             'name' => $name,
             'slug' => Str::slug($name),
-            'avatar' => 'staff/default/avatar_default.svg',
+            'avatar' => 'Staff/default/dev_avatar_default.svg',
             'office' => $this->faker->jobTitle,
             'crm' => $this->faker->numberBetween('11111', '99999'),
             'email' => $this->faker->email,
