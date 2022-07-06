@@ -28,10 +28,9 @@
     </div>
 
     <div v-if="this.modal.isOpen">
-        <div class="w-screen fixed top-0 left-0 h-full w-full overflow-y-auto z-40 bg-black/50 backdrop-blur-sm">
-            <div
-                class="bg-gray-50 flex flex-col items-stretch my-10 mx-auto border border-gray-300 rounded-lg w-10/12 max-w-5xl h-4/6  overflow-auto">
-                <transition-group name="slide-fade">
+        <div class="w-screen fixed top-0 left-0 h-full w-full z-40 bg-black/50 backdrop-blur-sm">
+            <div class="bg-gray-50 relative flex flex-col justify-between items-stretch my-10 mx-auto border border-gray-300 rounded-lg w-10/12 max-w-5xl h-auto overflow-y-hidden">
+                <Transition name="fade" mode="out-in">
                     <!--LOADIND-->
                     <did class="relative w-full h-auto">
                         <div v-if="this.modal.loading"
@@ -49,11 +48,12 @@
                             <span class="text-lg text-primary text-center my-6 ml-2">Carregando...</span>
                         </div>
                     </did>
-                </transition-group>
-                <transition-group tag="div" name="slide-fade">
+                </Transition>
+
+                <!--                MODAL 1-->
+                <Transition-group name="fade" mode="out-in">
                     <!--EXAMS LIST-->
-                    <div v-if="!this.modal.loading" class="w-full h-auto flex flex-col justify-between"
-                         v-for="m in method.method" :key="m.id">
+                    <div v-if="!this.modal.loading" class="w-full h-auto" v-for="m in method.method" :key="m.id">
                         <!--TITLE-->
                         <div v-if="method.isOpen"
                              class="w-full h-16 sticky top-0 z-20 bg-white border-b border-primary/25 shadow-lg shadow-primary/40">
@@ -71,14 +71,14 @@
                             </div>
                         </div>
                         <!--MODAL CONTENT-->
-                        <div v-if="method.isOpen" class="w-full flex-1 h-auto overflow-auto py-1">
+                        <div v-if="method.isOpen" class="w-full overflow-y-auto h-96 py-1">
                             <ul>
                                 <li v-for="exam in m.exams"
                                     class="px-4 w-full my-1 transition-all duration-200 ease-in-out">
                                     <div @click="examDatails(exam.slug)"
-                                         class="flex w-full items-center justify-between h-12 border-l-2 border-primary font-light hover:shadow-lg hover:cursor-pointer hover:text-primary hover:translate-x-2 hover:font-bold hover:bg-secondary/30 p-2 transition-all duration-100 ease-in-out">
+                                         class="flex w-full items-center justify-between h-12 border-l-2 border-primary rounded-l font-light hover:shadow-lg hover:cursor-pointer hover:text-primary hover:translate-x-2 hover:font-bold hover:bg-secondary/30 p-2 transition-all duration-100 ease-in-out">
                                         <span>{{ exam.name }}</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary"
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary"
                                              fill="none"
                                              viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
@@ -88,13 +88,14 @@
                             </ul>
                         </div>
                     </div>
-                </transition-group>
-                <transition-group tag="div" name="slide-fade">
+                </Transition-group>
+
+                <!--                MODAL 2-->
+                <Transition-group name="fade" mode="out-in">
                     <!--EXAMS QUESTIONS-->
-                    <div v-if="!this.modal.loading" class="w-full h-auto flex flex-col justify-between">
+                    <div v-if="!this.modal.loading" class="w-full h-auto">
                         <!--TITLE-->
-                        <div v-if="this.exam.isOpen"
-                             class="w-full h-auto border-b sticky top-0 z-20 bg-white border-primary/25 shadow-lg shadow-primary/40 flex items-center justify-between">
+                        <div v-if="this.exam.isOpen" class="w-full h-auto border-b sticky top-0 z-20 bg-white border-primary/25 shadow-lg shadow-primary/40 flex items-center justify-between">
                             <svg @click="returnToExamsList()" xmlns="http://www.w3.org/2000/svg"
                                  class="h-8 w-8 m-4 text-primary hover:cursor-pointer" fill="none"
                                  viewBox="0 0 24 24"
@@ -158,12 +159,13 @@
                             </div>
                         </div>
                     </div>
-                </transition-group>
-                <transition-group tag="div" name="slide-fade">
+                </Transition-group>
+
+                <!--                MODAL 3-->
+                    <Transition-group name="fade" mode="out-in">
                     <!--QUESTIONS RESPONSE-->
-                    <div class="w-full h-auto flex flex-col justify-between">
-                        <div v-if="this.rps.isOpen"
-                             class="w-full h-auto border-b sticky top-0 z-20 bg-white border-primary/25 shadow-lg shadow-primary/40 flex items-center justify-between">
+                    <div class="w-full h-auto flex flex-col">
+                        <div v-if="this.rps.isOpen" class="w-full h-auto border-b sticky top-0 z-20 bg-white border-primary/25 shadow-lg shadow-primary/40 flex items-center justify-between">
                             <svg @click="returnToQuestions()" xmlns="http://www.w3.org/2000/svg"
                                  class="h-8 w-8 m-4 text-primary hover:cursor-pointer" fill="none"
                                  viewBox="0 0 24 24"
@@ -191,9 +193,9 @@
                             </div>
                         </div>
                     </div>
-                </transition-group>
+                    </Transition-group>
                 <!--FOOTER-->
-                <div class="w-full border-t bg-white border-primary/25 flex justify-end sticky bottom-0">
+                <div class="w-full border-t bg-white border-primary/25 flex justify-end relative bottom-0 fixed">
                     <button v-if="!this.modal.loading" @click="closeModal()"
                             class="bg-primary w-32 h-8 rounded-full z-50 m-4 text-white font-light border border-white drop-shadow-md hover:drop-shadow-lg transition transform hover:scale-105 duration-100 ease-in-out">
                         Fechar
@@ -326,20 +328,13 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.slide-fade-enter-active {
-    transition: all .2s ease-in-out;
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 1s ease;
 }
 
-.slide-fade-leave-active {
-    transition: all .2s ease-in-out;
-}
-
-.slide-fade-enter-from,
-.slide-fade-leave-to {
+.fade-enter-from,
+.fade-leave-to {
     opacity: 0;
-}
-
-.slide-move {
-    transition: transform 1s;
 }
 </style>

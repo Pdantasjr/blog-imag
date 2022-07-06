@@ -37779,10 +37779,10 @@ var _hoisted_13 = {
   key: 0
 };
 var _hoisted_14 = {
-  "class": "w-screen fixed top-0 left-0 h-full w-full overflow-y-auto z-40 bg-black/50 backdrop-blur-sm"
+  "class": "w-screen fixed top-0 left-0 h-full w-full z-40 bg-black/50 backdrop-blur-sm"
 };
 var _hoisted_15 = {
-  "class": "bg-gray-50 flex flex-col items-stretch my-10 mx-auto border border-gray-300 rounded-lg w-10/12 max-w-5xl h-4/6 overflow-auto"
+  "class": "bg-gray-50 relative flex flex-col justify-between items-stretch my-10 mx-auto border border-gray-300 rounded-lg w-10/12 max-w-5xl h-auto overflow-y-hidden"
 };
 var _hoisted_16 = {
   key: 0,
@@ -37840,7 +37840,7 @@ var _hoisted_24 = /*#__PURE__*/_withScopeId(function () {
 var _hoisted_25 = [_hoisted_24];
 var _hoisted_26 = {
   key: 1,
-  "class": "w-full flex-1 h-auto overflow-auto py-1"
+  "class": "w-full overflow-y-auto h-96 py-1"
 };
 var _hoisted_27 = {
   "class": "px-4 w-full my-1 transition-all duration-200 ease-in-out"
@@ -37850,7 +37850,7 @@ var _hoisted_28 = ["onClick"];
 var _hoisted_29 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
-    "class": "h-6 w-6 text-primary",
+    "class": "h-8 w-8 text-primary",
     fill: "none",
     viewBox: "0 0 24 24",
     stroke: "currentColor",
@@ -37866,7 +37866,7 @@ var _hoisted_29 = /*#__PURE__*/_withScopeId(function () {
 
 var _hoisted_30 = {
   key: 0,
-  "class": "w-full h-auto flex flex-col justify-between"
+  "class": "w-full h-auto"
 };
 var _hoisted_31 = {
   key: 0,
@@ -37965,7 +37965,7 @@ var _hoisted_50 = /*#__PURE__*/_withScopeId(function () {
 });
 
 var _hoisted_51 = {
-  "class": "w-full h-auto flex flex-col justify-between"
+  "class": "w-full h-auto flex flex-col"
 };
 var _hoisted_52 = {
   key: 0,
@@ -38008,7 +38008,7 @@ var _hoisted_63 = {
   "class": "text-primary font-light p-2 text-justify"
 };
 var _hoisted_64 = {
-  "class": "w-full border-t bg-white border-primary/25 flex justify-end sticky bottom-0"
+  "class": "w-full border-t bg-white border-primary/25 flex justify-end relative bottom-0 fixed"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _this = this;
@@ -38016,6 +38016,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_section_title = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("section-title");
 
   var _component_did = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("did");
+
+  var _component_Transition_group = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Transition-group");
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_section_title, {
     title: "Nossos Exames",
@@ -38040,11 +38042,12 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     , _hoisted_5);
   }), 128
   /* KEYED_FRAGMENT */
-  ))])) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_10, _hoisted_12))])]), this.modal.isOpen ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(vue__WEBPACK_IMPORTED_MODULE_0__.TransitionGroup, {
-    name: "slide-fade"
+  ))])) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_10, _hoisted_12))])]), this.modal.isOpen ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(vue__WEBPACK_IMPORTED_MODULE_0__.Transition, {
+    name: "fade",
+    mode: "out-in"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("LOADIND"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_did, {
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_did, {
         "class": "relative w-full h-auto"
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
@@ -38058,16 +38061,16 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
     /* STABLE */
 
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(vue__WEBPACK_IMPORTED_MODULE_0__.TransitionGroup, {
-    tag: "div",
-    name: "slide-fade"
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                MODAL 1"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Transition_group, {
+    name: "fade",
+    mode: "out-in"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("EXAMS LIST"), !_this.modal.loading ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         key: 0
       }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(_ctx.method.method, function (m) {
         return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
-          "class": "w-full h-auto flex flex-col justify-between",
+          "class": "w-full h-auto",
           key: m.id
         }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("TITLE"), _ctx.method.isOpen ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
           "class": "w-12 h-12 m-2 p-1 bg-primary rounded",
@@ -38092,7 +38095,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
             onClick: function onClick($event) {
               return _ctx.examDatails(exam.slug);
             },
-            "class": "flex w-full items-center justify-between h-12 border-l-2 border-primary font-light hover:shadow-lg hover:cursor-pointer hover:text-primary hover:translate-x-2 hover:font-bold hover:bg-secondary/30 p-2 transition-all duration-100 ease-in-out"
+            "class": "flex w-full items-center justify-between h-12 border-l-2 border-primary rounded-l font-light hover:shadow-lg hover:cursor-pointer hover:text-primary hover:translate-x-2 hover:font-bold hover:bg-secondary/30 p-2 transition-all duration-100 ease-in-out"
           }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(exam.name), 1
           /* TEXT */
           ), _hoisted_29], 8
@@ -38108,9 +38111,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
     /* STABLE */
 
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(vue__WEBPACK_IMPORTED_MODULE_0__.TransitionGroup, {
-    tag: "div",
-    name: "slide-fade"
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                MODAL 2"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Transition_group, {
+    name: "fade",
+    mode: "out-in"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("EXAMS QUESTIONS"), !_this.modal.loading ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_30, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("TITLE"), _this.exam.isOpen ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_31, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
@@ -38207,9 +38210,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
     /* STABLE */
 
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(vue__WEBPACK_IMPORTED_MODULE_0__.TransitionGroup, {
-    tag: "div",
-    name: "slide-fade"
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                MODAL 3"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Transition_group, {
+    name: "fade",
+    mode: "out-in"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("QUESTIONS RESPONSE"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_51, [_this.rps.isOpen ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_52, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
@@ -38962,11 +38965,23 @@ var _hoisted_1 = {
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_CTAareas = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("CTAareas");
 
+  var _component_Header = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Header");
+
   var _component_Carousel = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Carousel");
 
   var _component_SearchForm = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("SearchForm");
 
   var _component_OurExams = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("OurExams");
+
+  var _component_Institutional = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Institutional");
+
+  var _component_Academy = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Academy");
+
+  var _component_Agreement = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Agreement");
+
+  var _component_Locations = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Locations");
+
+  var _component_Staff = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Staff");
 
   var _component_BackToTop = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("BackToTop");
 
@@ -38974,7 +38989,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_CTAareas, {
     variant: 'top'
-  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("        <Header/>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Carousel), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_SearchForm, {
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Header), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Carousel), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_SearchForm, {
     defaultUrl: this.defaultUrl
   }, null, 8
   /* PROPS */
@@ -38984,7 +38999,31 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     defaultUrl: this.defaultUrl
   }, null, 8
   /* PROPS */
-  , ["methodImage", "methods", "defaultUrl"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("        <CTAareas :variant=\"'blue'\" />"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("        <Institutional :urlDefault=\"this.urlDefault\" />"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("        <Academy :urlDefault=\"this.urlDefault\" />"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("        <Agreement :urlDefault=\"this.urlDefault\" :agreements=\"this.agreements\" />"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("        <Locations :urlDefault=\"this.urlDefault\" />"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("        <Staff :urlDefault=\"this.urlDefault\" :staff=\"this.staff\" />"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_BackToTop), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)]);
+  , ["methodImage", "methods", "defaultUrl"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_CTAareas, {
+    variant: 'blue'
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Institutional, {
+    urlDefault: this.urlDefault
+  }, null, 8
+  /* PROPS */
+  , ["urlDefault"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Academy, {
+    urlDefault: this.urlDefault
+  }, null, 8
+  /* PROPS */
+  , ["urlDefault"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Agreement, {
+    urlDefault: this.urlDefault,
+    agreements: this.agreements
+  }, null, 8
+  /* PROPS */
+  , ["urlDefault", "agreements"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Locations, {
+    urlDefault: this.urlDefault
+  }, null, 8
+  /* PROPS */
+  , ["urlDefault"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Staff, {
+    urlDefault: this.urlDefault,
+    staff: this.staff
+  }, null, 8
+  /* PROPS */
+  , ["urlDefault", "staff"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_BackToTop), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Footer)]);
 }
 
 /***/ }),
@@ -46259,7 +46298,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.slide-fade-enter-active[data-v-52259762] {\n    transition: all .2s ease-in-out;\n}\n.slide-fade-leave-active[data-v-52259762] {\n    transition: all .2s ease-in-out;\n}\n.slide-fade-enter-from[data-v-52259762],\n.slide-fade-leave-to[data-v-52259762] {\n    opacity: 0;\n}\n.slide-move[data-v-52259762] {\n    transition: transform 1s;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.fade-enter-active[data-v-52259762],\n.fade-leave-active[data-v-52259762] {\n    transition: opacity 1s ease;\n}\n.fade-enter-from[data-v-52259762],\n.fade-leave-to[data-v-52259762] {\n    opacity: 0;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
