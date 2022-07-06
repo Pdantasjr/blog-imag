@@ -7,7 +7,7 @@
         <OurExams :methodImage="this.methodImage" :methods="this.methods" :defaultUrl="this.defaultUrl" />
         <CTAareas :variant="'blue'" />
         <Institutional :urlDefault="this.urlDefault" />
-        <Academy :urlDefault="this.urlDefault" />
+<!--        <Academy :urlDefault="this.urlDefault" />-->
         <Agreement :urlDefault="this.urlDefault" :agreements="this.agreements" />
         <Locations :urlDefault="this.urlDefault" />
         <Staff :urlDefault="this.urlDefault" :staff="this.staff" />

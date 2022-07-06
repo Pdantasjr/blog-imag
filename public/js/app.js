@@ -35575,11 +35575,11 @@ var _hoisted_6 = {
   key: 0
 };
 var _hoisted_7 = {
-  "class": "w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-white bg-opacity-10 backdrop-blur-[2px] rounded-md drop-shadow-lg hover:scale-105 border border-gray-200 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-200 ease-in-out"
+  "class": "w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-white bg-opacity-50 backdrop-blur-[2px] rounded-md drop-shadow-lg hover:scale-105 border border-gray-200 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-200 ease-in-out"
 };
 var _hoisted_8 = ["src", "alt"];
 var _hoisted_9 = {
-  "class": "w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-white/50 bg-opacity-10 backdrop-blur-[2px] rounded-md drop-shadow-lg hover:scale-105 border border-gray-200 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-200 ease-in-out"
+  "class": "w-full h-44 sm:h-52 lg:h-60 flex items-center justify-center bg-white bg-opacity-50 backdrop-blur-[2px] rounded-md drop-shadow-lg hover:scale-105 border border-gray-200 hover:border hover:border-gray-200 hover:drop-shadow-2xl transition transform duration-200 ease-in-out"
 };
 var _hoisted_10 = ["src", "alt"];
 var _hoisted_11 = {
@@ -38975,8 +38975,6 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   var _component_Institutional = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Institutional");
 
-  var _component_Academy = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Academy");
-
   var _component_Agreement = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Agreement");
 
   var _component_Locations = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Locations");
@@ -39005,11 +39003,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     urlDefault: this.urlDefault
   }, null, 8
   /* PROPS */
-  , ["urlDefault"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Academy, {
-    urlDefault: this.urlDefault
-  }, null, 8
-  /* PROPS */
-  , ["urlDefault"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Agreement, {
+  , ["urlDefault"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("        <Academy :urlDefault=\"this.urlDefault\" />"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Agreement, {
     urlDefault: this.urlDefault,
     agreements: this.agreements
   }, null, 8
