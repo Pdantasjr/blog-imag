@@ -387,7 +387,7 @@
                                                     <!--BOTÕES-->
                                                     <div class="col-span-2 ">
                                                         <div class="flex flex-wrap items-center gap-4 justify-start">
-                                                            <Link :href="route('Staff.index')"
+                                                            <Link :href="route('staff.index')"
                                                                   class="inline-flex items-center justify-center font-medium tracking-tight rounded-lg focus:outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset bg-gray-400 hover:bg-primary-500 focus:bg-primary-700 focus:ring-offset-primary-700 h-9 px-4 text-white shadow focus:ring-white">
                                                                 <span>Voltar</span>
                                                             </Link>
@@ -459,7 +459,7 @@ export default defineComponent({
     },
     methods: {
         submit() {
-            this.$inertia.post(route('Staff.store'), this.form, {
+            this.$inertia.post(route('staff.store'), this.form, {
                 forceFormData: true
             });
         },
