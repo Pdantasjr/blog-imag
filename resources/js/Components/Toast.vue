@@ -35,7 +35,7 @@ export default {
         toast: {
             handler() {
                 this.visible = true
-                setTimeout(() => this.visible = false, 5000)
+                setTimeout(() => this.visible = false, 8000)
             },
             deep: true,
             immediate: true,
