@@ -1,6 +1,6 @@
 <template>
     <div class="w-screen mt-24">
-        <div class="lg:max-w-7xl w-11/12 mx-auto">
+        <div id="ourExams" class="lg:max-w-7xl w-11/12 mx-auto">
             <section-title title="Nossos Exames" id="nossosExames"></section-title>
         </div>
         <div class="w-full bg-gradient-to-r from-primary to-secondary">

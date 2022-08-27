@@ -56,27 +56,27 @@
             <div class="flex flex-col mx-2">
                 <h3 class="text-stone-500 uppercase">Institucional</h3>
                 <div class="flex flex-col py-3">
-                    <Link class="text-stone-100 font-light text-sm hover:underline" href="">Missão</Link>
-                    <Link class="text-stone-100 font-light text-sm hover:underline" href="">Visão</Link>
-                    <Link class="text-stone-100 font-light text-sm hover:underline" href="">Valores</Link>
-                    <Link class="text-stone-100 font-light text-sm hover:underline" href="">Equipe Médica</Link>
-                    <Link class="text-stone-100 font-light text-sm hover:underline" href="">Tecnologia</Link>
-                    <Link class="text-stone-100 font-light text-sm hover:underline" href="">Convênios Credenciados</Link>
+                    <Link class="text-stone-100 font-light text-sm hover:underline" :href="route('front.mvv')">Missão</Link>
+                    <Link class="text-stone-100 font-light text-sm hover:underline" :href="route('front.mvv')">Visão</Link>
+                    <Link class="text-stone-100 font-light text-sm hover:underline" :href="route('front.mvv')">Valores</Link>
+                    <Link class="text-stone-100 font-light text-sm hover:underline" :href="route('front.staff')">Equipe Médica</Link>
+                    <Link class="text-stone-100 font-light text-sm hover:underline" :href="route('front.institutional')">Tecnologia</Link>
+                    <Link class="text-stone-100 font-light text-sm hover:underline" :href="route('front.agreements')">Convênios Credenciados</Link>
                 </div>
             </div>
             <!--EXAMES-->
             <div class="flex flex-col mx-2">
                 <h3 class="text-stone-500 uppercase">Exames</h3>
                 <div class="flex flex-col py-3">
-                    <Link class="text-stone-100 font-light text-sm hover:underline" href="">Ressonância Magnética</Link>
-                    <Link class="text-stone-100 font-light text-sm hover:underline" href="">Tomografia Computadorizada</Link>
-                    <Link class="text-stone-100 font-light text-sm hover:underline" href="">Densintometria Óssea</Link>
-                    <Link class="text-stone-100 font-light text-sm hover:underline" href="">Mamografia</Link>
-                    <Link class="text-stone-100 font-light text-sm hover:underline" href="">Ultrassonografia</Link>
-                    <Link class="text-stone-100 font-light text-sm hover:underline" href="">Raio-X</Link>
-                    <Link class="text-stone-100 font-light text-sm hover:underline" href="">Punções e Biópsias</Link>
-                    <Link class="text-stone-100 font-light text-sm hover:underline" href="">Exames Laboratóriais</Link>
-                    <Link class="text-stone-100 font-light text-sm hover:underline" href="">Outros Serviços</Link>
+                    <Link class="text-stone-100 font-light text-sm hover:underline" :href="route('front.ourExams')">Ressonância Magnética</Link>
+                    <Link class="text-stone-100 font-light text-sm hover:underline" :href="route('front.ourExams')">Tomografia Computadorizada</Link>
+                    <Link class="text-stone-100 font-light text-sm hover:underline" :href="route('front.ourExams')">Densintometria Óssea</Link>
+                    <Link class="text-stone-100 font-light text-sm hover:underline" :href="route('front.ourExams')">Mamografia</Link>
+                    <Link class="text-stone-100 font-light text-sm hover:underline" :href="route('front.ourExams')">Ultrassonografia</Link>
+                    <Link class="text-stone-100 font-light text-sm hover:underline" :href="route('front.ourExams')">Raio-X</Link>
+                    <Link class="text-stone-100 font-light text-sm hover:underline" :href="route('front.ourExams')">Punções e Biópsias</Link>
+                    <Link class="text-stone-100 font-light text-sm hover:underline" :href="route('front.ourExams')">Exames Laboratóriais</Link>
+                    <Link class="text-stone-100 font-light text-sm hover:underline" :href="route('front.ourExams')">Outros Serviços</Link>
                 </div>
             </div>
             <!--CONTATO-->
@@ -93,15 +93,15 @@
                     </Link>
                 </div>
                 <div class="flex py-3">
-                    <Link href="https://www.instagram.com/imagdiagnostico" target="_blank">
+                    <a href="https://www.instagram.com/imagdiagnostico" target="_blank">
                         <icons name="instagramFooter" class="w-10"/>
-                    </Link>
-                    <Link href="https://www.facebook.com/imagdiagnostico" target="_blank">
+                    </a>
+                    <a href="https://www.facebook.com/imagdiagnostico" target="_blank">
                         <icons name="facebookFooter" class="w-10"/>
-                    </Link>
-                    <Link href="https://www.linkedin.com/company/imag-diagnostico" target="_blank">
+                    </a>
+                    <a href="https://www.linkedin.com/company/imag-diagnostico" target="_blank">
                         <icons name="linkedinFooter" class="w-10"/>
-                    </Link>
+                    </a>
                 </div>
             </div>
         </div>

@@ -1,6 +1,6 @@
 <template>
     <!--    INSTITUTIONAL-->
-    <div class="w-screen mt-4 bg-neutral">
+    <div id="institutional" class="w-screen mt-4 bg-neutral">
         <div class="lg:max-w-7xl w-11/12 mx-auto">
             <section-title title="Institucional" id="institucional"></section-title>
         </div>
@@ -103,7 +103,7 @@
             </div>
         </div>
         <!--MISSION VISION AND VALUES-->
-        <div class="w-full h-auto py-10 bg-gradient-to-r from-primary to-secondary">
+        <div id="mvv" class="w-full h-auto py-10 bg-gradient-to-r from-primary to-secondary">
             <div class="lg:max-w-7xl w-11/12 mx-auto">
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                     <div class=" my-4 flex sm:flex-col lg:flex-row items-center justify-start">

@@ -1,6 +1,6 @@
 <template>
     <div class="w-screen h-auto">
-        <div class="lg:max-w-7xl w-11/12 mx-auto">
+        <div id="agreements" class="lg:max-w-7xl w-11/12 mx-auto">
             <section-title title="Convênios Credenciados" id="agreements"></section-title>
         </div>
         <div class="w-full h-auto relative">

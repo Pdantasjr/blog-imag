@@ -1,5 +1,5 @@
 <template>
-    <div class="lg:max-w-7xl w-full mx-auto">
+    <div id="staff" class="lg:max-w-7xl w-full mx-auto">
         <section-title title="Quem Faz a IMAG" id="team"></section-title>
     </div>
     <div class="lg:max-w-7xl w-full mx-auto">
