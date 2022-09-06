@@ -40,8 +40,8 @@
 
                 <swiper-slide v-for="member in this.staff">
                     <Link :href="route('front.member', [member.slug])" class="w-auto py-6 mt-2 bg-white shadow-lg rounded-lg border hover:border-primary/50 flex flex-col items-center justify-around transition transform hover:-translate-y-1 duration-300 ease-in-out">
-                        <div  class="bg-white rounded-full">
-                            <img class="w-44 rounded-full h-44 border hover:border hover:border-primary/50 hover:shadow-lg bg-center object-fit transition transform hover:scale-105 duration-300 ease-in-out" :src="this.urlDefault +'/'+ member.avatar" :alt="'Foto de '+member.name">
+                        <div class="rounded-full">
+                            <div class="w-44 rounded-full h-44 hover:border hover:shadow-lg bg-cover bg-top transition-all transform hover:-translate-y-2 duration-200 ease-in-out" :style="{'background-image':'url('+this.urlDefault +'/'+ member.avatar+')'}" ></div>
                         </div>
                         <div class="flex flex-col items-center justify-center">
                             <h3 class="font-black text-primary text-lg pt-2 text-center">{{ member.name }}</h3>

@@ -15,8 +15,8 @@
             </Link>
             <div class="flex my-10">
                 <div class="flex">
-                    <div>
-                        <img class="w-80 h-80 rounded shadow-lg" :src="url +'/'+ member.avatar" :alt="member.name">
+                    <div class="rounded-full">
+                        <div class="w-80 rounded h-80 hover:border hover:shadow-lg bg-cover bg-top transition-all transform hover:-translate-y-2 duration-200 ease-in-out" :style="{'background-image':'url('+url +'/'+ member.avatar+')'}" ></div>
                     </div>
                     <div class="flex flex-col justify-between mx-10">
                         <div>
