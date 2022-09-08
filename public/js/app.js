@@ -37463,7 +37463,7 @@ var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   "class": "flex items-center flex-col flex-1"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
   src: _Images_Locations_location_pin_png__WEBPACK_IMPORTED_MODULE_1__["default"],
-  "class": "m-4 w-40",
+  "class": "hidden lg:block m-4 w-40",
   alt: "Ícone representando as localizações das unidades de atendimento"
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", {
   "class": "text-primary font-black text-2xl sm:text-5xl tracking-wider uppercase text-center my-6 sm:my-10"

@@ -4,7 +4,7 @@
 <!--             :style="{'background-image': 'url('+ urlDefault +'/Locations/background_location.svg)'}"></div>-->
         <div class="lg:max-w-7xl h-auto w-11/12 mx-auto flex flex-col lg:flex-row items-center sm:justify-around">
             <div class="flex items-center flex-col flex-1">
-                <img src="../Images/Locations/location_pin.png" class="m-4 w-40" alt="Ícone representando as localizações das unidades de atendimento">
+                <img src="../Images/Locations/location_pin.png" class="hidden lg:block m-4 w-40" alt="Ícone representando as localizações das unidades de atendimento">
                 <h1 class="text-primary font-black text-2xl sm:text-5xl tracking-wider uppercase text-center my-6 sm:my-10">Unidades de atendimento.</h1>
             </div>
             <div class="flex flex-col justify-center items-center">
