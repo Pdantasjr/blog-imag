@@ -13,20 +13,20 @@
                 </svg>
                 <span class="text-gray-400 text-sm mx-2">Voltar</span>
             </Link>
-            <div class="flex my-10">
-                <div class="flex">
+            <div class="flex my-10 w-full">
+                <div class="flex flex-col sm:flex-row justify-center">
                     <div class="rounded-full">
-                        <div class="w-80 rounded h-80 hover:border hover:shadow-lg bg-cover bg-top transition-all transform hover:-translate-y-2 duration-200 ease-in-out" :style="{'background-image':'url('+url +'/'+ member.avatar+')'}" ></div>
+                        <div class="w-48 h-48 md:w-80 rounded md:h-80 hover:border hover:shadow-lg bg-cover bg-top transition-all transform hover:-translate-y-2 duration-200 ease-in-out" :style="{'background-image':'url('+url +'/'+ member.avatar+')'}" ></div>
                     </div>
-                    <div class="flex flex-col justify-between mx-10">
-                        <div>
-                            <h1 class="text-primary text-4xl">{{ member.name }}</h1>
-                            <h3 class="text-gray-500 text-lg font-light">{{ member.office }}</h3>
-                            <span class="text-gray-400 text-sm font-light">CRM: {{ member.crm }}</span>
+                    <div class="flex flex-col justify-center sm:justify-between mx-auto">
+                        <div class="flex flex-col">
+                            <h1 class="text-primary text-center sm:text-left text-4xl">{{ member.name }}</h1>
+                            <h3 class="text-gray-500 text-lg text-center sm:text-left font-light">{{ member.office }}</h3>
+                            <span class="text-gray-400 text-sm text-center sm:text-left font-light">CRM: {{ member.crm }}</span>
                         </div>
                         <div>
-                            <h1 class="text-primary text-2xl">Horário de atendimento</h1>
-                            <h3 class="text-gray-500 text-lg font-light">{{ member.serviceTime }}</h3>
+                            <h1 class="text-primary text-2xl text-center sm:text-left">Horário de atendimento</h1>
+                            <h3 class="text-gray-500 text-lg font-light text-center sm:text-left">{{ member.serviceTime }}</h3>
                         </div>
                     </div>
                 </div>
