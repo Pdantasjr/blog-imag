@@ -35569,7 +35569,7 @@ var _hoisted_4 = {
   "class": "lg:max-w-7xl w-11/12 mx-auto"
 };
 var _hoisted_5 = {
-  "class": "grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 my-6 sm:my-10"
+  "class": "grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 my-6 sm:my-10"
 };
 var _hoisted_6 = {
   key: 0
