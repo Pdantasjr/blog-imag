@@ -132,8 +132,9 @@ class StaffController extends Controller
         }
 
         $staff->name = $request->input('name');
-        $staff->office = $request->input('office');
         $staff->avatar = $avatar;
+        $staff->office = $request->input('office');
+        $staff->crm = $request->input('crm');
         $staff->about = $request->input('about');
         $staff->email = $request->input('email');
         $staff->serviceTime = $request->input('serviceTime');
