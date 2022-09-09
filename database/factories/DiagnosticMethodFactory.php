@@ -18,7 +18,7 @@ class DiagnosticMethodFactory extends Factory
         return [
             'name' => $name,
             'slug' => Str::slug($name),
-            'image' => "Method/default/dev_method_tests.svg",
+            'image' => env('IMAGE_DIAGNOSTIC_DEFAULT'),
         ];
     }
 }

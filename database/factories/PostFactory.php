@@ -22,7 +22,7 @@ class PostFactory extends Factory
             'post_content' => $this->faker->text,
             'author' => 1,
             'category' => 1,
-            'post_cover' => "posts/default/post_cover_default.svg",
+            'post_cover' => env('IMAGE_COVER_POST_DEFAULT'),
         ];
     }
 }
