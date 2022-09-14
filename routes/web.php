@@ -16,7 +16,6 @@ Route::get('#institutional', [FrontController::class, 'index'])->name('front.ins
 Route::get('#mvv', [FrontController::class, 'index'])->name('front.mvv');
 Route::get('#agreements', [FrontController::class, 'index'])->name('front.agreements');
 Route::get('#staff', [FrontController::class, 'index'])->name('front.staff');
-//Route::get('/logout', [FrontController::class, 'index'])->name('front.index');
 
 Route::get('/blog', [FrontController::class, 'blog'])->name('front.blog');
 Route::get('/artigo/{slug}', [FrontController::class, 'article'])->name('front.post');

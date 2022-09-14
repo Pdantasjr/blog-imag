@@ -143,7 +143,7 @@ return [
     ],
 
     'redirects' => [
-        'logout' => '/blog',
+        'logout' => '/',
     ],
 
 ];
