@@ -2,7 +2,7 @@
     <Head :title="title " />
     <Header />
     <div class="min-w-screen lg:max-w-7xl mx-auto">
-        <img class="w-full mt-[100px] h-auto bg-cover bg-center object-cover mx-auto" :src="post.post_cover" alt="Cover">
+        <img class="w-full h-[200px] mt-24 bg-no-repeat object-cover mx-auto" :src="post.post_cover" alt="Cover">
     </div>
     <div class="w-11/12 sm:max-w-7xl mx-auto">
         <h1 class="text-center font-medium text-primary text-4xl md:text-5xl my-20 sm:my16 px-4">{{ post.title }}</h1>

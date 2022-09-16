@@ -3,7 +3,7 @@
     <CTAareas :variant="'top'" />
     <Header/>
     <div v-if="posts.length" class="mt-24">
-        <div class="p-4 my-10 sm:my-24 max-w-5xl grid gap-4 md:gap-6 sm:grid-cols-2 lg:grid-cols-3 mx-auto">
+        <div class="p-4 my-24 max-w-5xl grid gap-4 md:gap-6 sm:grid-cols-2 lg:grid-cols-3 mx-auto">
         <div class="h-auto col-span-2 lg:col-span-1 self-center py-4 lg:py-0">
             <h1 class="text-center lg:text-left text-primary text-4xl md:text-5xl sm:text-6xl mb-3 uppercase font-extrabold">
                 Nosso Blog</h1>

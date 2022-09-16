@@ -66,6 +66,9 @@
         <!-- AdOpt -->
         <meta name="adopt-website-id" content="a5a67294-1dde-424e-abfc-62197de2ab8c" />
         <script src="//tag.goadopt.io/injector.js?website_code=a5a67294-1dde-424e-abfc-62197de2ab8c" class="adopt-injector"></script>
+
+        <!-- WhatsApp -->
+        <script src='https://llwhatsapp.blob.core.windows.net/whatschat-scripts/whatschat-63da84ae791a47e5913cdfe43f5d9a19.js'></script>
     </head>
     <style>
         html {
@@ -79,13 +82,13 @@
 {{--            <script src="http://localhost:3000/browser-sync/browser-sync-client.js"></script>--}}
 {{--        @endenv--}}
 
-        <script>
-            const chat = {id:"ED5B3A9B-E589-4C07-BC83-455C93B5FBE4",position:"bottom left", margins: "100 16"};
-            const chatScript = document.createElement("script");
-            chatScript.setAttribute("src", "https://chatsales-app.leadlovers.com/scripts/widget.js");
-            document.addEventListener("DOMContentLoaded", function () {
-                document.body.appendChild(chatScript);
-            });
-        </script>
+{{--        <script>--}}
+{{--            const chat = {id:"ED5B3A9B-E589-4C07-BC83-455C93B5FBE4",position:"bottom left", margins: "100 16"};--}}
+{{--            const chatScript = document.createElement("script");--}}
+{{--            chatScript.setAttribute("src", "https://chatsales-app.leadlovers.com/scripts/widget.js");--}}
+{{--            document.addEventListener("DOMContentLoaded", function () {--}}
+{{--                document.body.appendChild(chatScript);--}}
+{{--            });--}}
+{{--        </script>--}}
     </body>
 </html>

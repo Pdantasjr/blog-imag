@@ -12,6 +12,7 @@
         <Locations :urlDefault="this.urlDefault" />
         <Staff :urlDefault="this.urlDefault" :staff="this.staff" />
         <BackToTop />
+<!--        <WhatsAppButton />-->
         <Footer />
     </div>
 </template>
@@ -26,11 +27,12 @@ import SearchForm from "./Components/SearchForm";
 import OurExams from "./Components/OurExams";
 import CTAareas from "./Components/CTAareas";
 import Institutional from "./Components/Institutional"
-import Academy from "./Components/Academy";
+// import Academy from "./Components/Academy";
 import Locations from "./Components/Locations";
 import Agreement from "./Components/Agreement";
 import Staff from "./Components/Staff";
 import BackToTop from "./Components/BackToTop";
+// import WhatsAppButton from "./Components/WhatsAppButton";
 import Footer from "./Components/Footer"
 
 export default defineComponent({
@@ -51,11 +53,12 @@ export default defineComponent({
         OurExams,
         CTAareas,
         Institutional,
-        Academy,
+        // Academy,
         Agreement,
         Locations,
         Staff,
         BackToTop,
+        // WhatsAppButton,
         Footer
     }
 })
