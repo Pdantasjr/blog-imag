@@ -267,7 +267,6 @@ export default defineComponent({
                     .then(res => {
                         this.method.method = res.data
                         this.modal.loading = false
-                        console.log(res)
 
                     })
             }, 300)
