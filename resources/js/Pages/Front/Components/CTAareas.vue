@@ -2,10 +2,8 @@
     <div v-if="this.modal.isOpen">
         <div class="w-screen fixed top-0 left-0 h-full w-full z-40 bg-black/50 backdrop-blur-sm">
             <div class="bg-gray-50 relative flex my-10 mx-auto border border-gray-300 rounded-lg w-10/12 max-w-5xl h-4/6 overflow-y-hidden">
-
-                    <!--LOADIND-->
-
-                    <div class="relative w-full h-auto">
+                <div class="relative flex flex-col w-full h-auto">
+                        <!--LOADIND-->
                         <div v-if="this.modal.loading"
                              class="flex items-center justify-center absolute inset-0 w-full h-auto bg-gray-50 rounded-lg">
                             <svg class="w-5 h-5 mr-1 text-gray-100 animate-spin fill-primary" viewBox="0 0 100 101"
@@ -21,18 +19,36 @@
                             <span class="text-lg text-primary text-center my-6 ml-2">Carregando...</span>
                         </div>
 
-                        <div v-if="!this.modal.loading" class="flex w-full h-full items-center justify-around">
-                            <Link @click.prevent.stop="btnAgendamento" href="#" class="flex flex-col items-center justify-center w-4/12 h-80 p-4 rounded-2xl border border-gray-300 shadow-md cursor-pointer hover:scale-105 hover:shadow-lg transition transform duration-200 ease-in-out ">
-                                <img class="w-44 h-auto m-4" src="../Images/pacientArea/agendamento.svg" alt="Agendamento">
-                                <h3 class="text-primary text-2xl text-center font-bold">Agendamento</h3>
-                            </Link>
-                            <Link @click.prevent.stop="btnResultado" href="#" class="flex flex-col items-center justify-center w-4/12 h-80 p-4 rounded-2xl border border-gray-300 shadow-md cursor-pointer hover:scale-105 hover:shadow-lg transition transform duration-200 ease-in-out ">
-                                <img class="w-44 h-auto m-4" src="../Images/pacientArea/entrega-do-exame.svg" alt="Resultado">
-                                <h3 class="text-primary text-2xl text-center font-bold">Resultado</h3>
-                            </Link>
+                        <!--TITLE-->
+                        <div class="w-full h-auto border-b sticky top-0 z-20 bg-white border-primary/25 shadow-lg shadow-primary/40 flex items-center justify-between">
+                            <h1 class="text-primary m-4">Área do Paciente</h1>
+                            <svg @click="closeModal" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="cursor-pointer m-4 w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
                         </div>
-                    </div>
+                        <!--CONTENT-->
+                        <div v-if="!this.modal.loading" class="flex flex-col md:flex-row flex-1 w-full h-auto px-8 items-center justify-around">
 
+                            <Link @click.prevent.stop="btnAgendamento" href="#" class="flex flex-row md:flex-col items-center justify-center w-full md:w-4/12 h-44 md:h-80 rounded-2xl border border-gray-300 shadow-md cursor-pointer hover:scale-105 hover:shadow-lg transition transform duration-200 ease-in-out ">
+                                <img class="w-24 md:w-72 h-auto m-4" src="../Images/pacientArea/agendamento.png" alt="Agendamento">
+                                <h3 class="text-primary text-lg md:text-2xl text-center font-bold">Agendamento</h3>
+                            </Link>
+
+                            <Link @click.prevent.stop="btnResultado" href="#" class="flex flex-row md:flex-col items-center justify-center w-full md:w-4/12 h-44 md:h-80 rounded-2xl border border-gray-300 shadow-md cursor-pointer hover:scale-105 hover:shadow-lg transition transform duration-200 ease-in-out ">
+                                <img class="w-24 md:w-44 h-auto m-4" src="../Images/pacientArea/resultado.png" alt="Resultado">
+                                <h3 class="text-primary text-lg md:text-2xl text-center font-bold">Resultado</h3>
+                            </Link>
+
+                        </div>
+                        <!--FOOTER-->
+                        <div class="w-full h-auto border-t bg-white border-primary/25 flex justify-end relative bottom-0">
+                            <button @click="closeModal"
+                                    class="bg-primary w-32 h-8 rounded-full z-50 m-4 text-white font-light border border-white drop-shadow-md hover:drop-shadow-lg transition transform hover:scale-105 duration-100 ease-in-out">
+                                Fechar
+                            </button>
+                        </div>
+
+                    </div>
             </div>
         </div>
     </div>
