@@ -32,7 +32,7 @@
             <div class="bg-gray-50 relative flex flex-col justify-between items-stretch my-10 mx-auto border border-gray-300 rounded-lg w-10/12 max-w-5xl h-auto overflow-y-hidden">
                 <Transition name="fade" mode="out-in">
                     <!--LOADIND-->
-                    <did class="relative w-full h-auto">
+                    <div class="relative w-full h-auto">
                         <div v-if="this.modal.loading"
                              class="flex items-center justify-center absolute inset-0 w-full h-44 bg-white rounded-lg">
                             <svg class="w-5 h-5 mr-1 text-gray-100 animate-spin fill-primary" viewBox="0 0 100 101"
@@ -47,7 +47,7 @@
                             </svg>
                             <span class="text-lg text-primary text-center my-6 ml-2">Carregando...</span>
                         </div>
-                    </did>
+                    </div>
                 </Transition>
 
                 <!--                MODAL 1-->
