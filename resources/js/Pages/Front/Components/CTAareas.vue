@@ -27,16 +27,16 @@
                             </svg>
                         </div>
                         <!--CONTENT-->
-                        <div v-if="!this.modal.loading" class="flex flex-col md:flex-row flex-1 w-full h-auto px-8 items-center justify-around">
+                        <div v-if="!this.modal.loading" class="flex flex-col md:flex-row flex-1 w-full h-auto px-4 items-center justify-around">
 
-                            <Link @click.prevent.stop="btnAgendamento" href="#" class="flex flex-row md:flex-col items-center justify-center w-full md:w-4/12 h-44 md:h-80 rounded-2xl border border-gray-300 shadow-md cursor-pointer hover:scale-105 hover:shadow-lg transition transform duration-200 ease-in-out ">
-                                <img class="w-24 md:w-72 h-auto m-4" src="../Images/pacientArea/agendamento.png" alt="Agendamento">
-                                <h3 class="text-primary text-lg md:text-2xl text-center font-bold">Agendamento</h3>
+                            <Link @click.prevent.stop="btnAgendamento" href="#" class="flex flex-row md:flex-col items-center justify-center w-full md:w-4/12 h-24 md:h-72 md:h-80 rounded-2xl border border-gray-300 shadow-md cursor-pointer hover:scale-105 hover:shadow-lg transition transform duration-200 ease-in-out ">
+                                <img class="w-auto h-16 md:h-32 m-2" src="../Images/pacientArea/agendamento.png" alt="Agendamento">
+                                <h3 class="text-primary md:text-2xl text-center font-bold flex-1 md:flex-none">Agendamento</h3>
                             </Link>
 
-                            <Link @click.prevent.stop="btnResultado" href="#" class="flex flex-row md:flex-col items-center justify-center w-full md:w-4/12 h-44 md:h-80 rounded-2xl border border-gray-300 shadow-md cursor-pointer hover:scale-105 hover:shadow-lg transition transform duration-200 ease-in-out ">
-                                <img class="w-24 md:w-44 h-auto m-4" src="../Images/pacientArea/resultado.png" alt="Resultado">
-                                <h3 class="text-primary text-lg md:text-2xl text-center font-bold">Resultado</h3>
+                            <Link @click.prevent.stop="btnResultado" href="#" class="flex flex-row md:flex-col items-center justify-center w-full md:w-4/12 h-24 md:h-72 md:h-80 rounded-2xl border border-gray-300 shadow-md cursor-pointer hover:scale-105 hover:shadow-lg transition transform duration-200 ease-in-out ">
+                                <img class="w-auto h-16 md:h-32 m-2" src="../Images/pacientArea/resultado.png" alt="Resultado">
+                                <h3 class="text-primary md:text-2xl text-center font-bold flex-1 md:flex-none">Resultado</h3>
                             </Link>
 
                         </div>
