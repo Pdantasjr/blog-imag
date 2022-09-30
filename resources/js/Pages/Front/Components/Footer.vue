@@ -111,7 +111,7 @@
         <p class="text-stone-300 font-light text-xs">© 2022 IMAG - Medicina Diagnóstica - Todos os Direitos Reservados
             | &nbsp; </p>
         <div class="flex">
-            <Link class="text-stone-300 font-light text-xs hover:underline" href=""> Política de privacidade</Link>
+            <Link class="text-stone-300 font-light text-xs hover:underline" :href="route('front.privacyPolicy')"> Política de privacidade</Link>
             <p class="text-stone-300 font-light text-xs"> &nbsp; Desenvolvido por &nbsp; </p>
             <Link class="text-stone-300 font-light text-xs hover:underline" href="https://www.solutionstec.com.br"
                   target="_blank">SolutionsTec

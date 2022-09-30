@@ -31,11 +31,11 @@
                                 <Icons name="whatsapp" class="text-primary min-w-fit" />
                             </Link>
                         </div>
-                        <div class="flex ml-12 justify-around items-center hover:cursor-pointer">
-                            <Link>
-                                <Icons name="search" class="text-primary w-8 h-8 min-w-fit"/>
-                            </Link>
-                        </div>
+<!--                        <div class="flex ml-12 justify-around items-center hover:cursor-pointer">-->
+<!--                            <Link>-->
+<!--                                <Icons name="search" class="text-primary w-8 h-8 min-w-fit"/>-->
+<!--                            </Link>-->
+<!--                        </div>-->
                         <div class="flex items-center ml-12 hover:cursor-pointer md:hidden">
                             <button @click="toggle" class="flex flex-col items-center hover:cursor-pointer">
                                 <span class="line1 transform origin-top-center transition duration-150"></span>

@@ -69,4 +69,9 @@ class FrontController extends Controller
             'url' => url('storage/')
         ]);
     }
+
+    public function privacyPolicy()
+    {
+        return Inertia::render('PrivacyPolicy');
+    }
 }
