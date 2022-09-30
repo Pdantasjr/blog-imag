@@ -27,7 +27,7 @@
                             <Link :href="link.phone">
                                 <Icons name="phone" class="text-primary min-w-fit"/>
                             </Link>
-                            <Link href="#" @click="WhatsAppLink" target="_blank">
+                            <Link @click="WhatsAppLink" target="_blank">
                                 <Icons name="whatsapp" class="text-primary min-w-fit" />
                             </Link>
                         </div>
