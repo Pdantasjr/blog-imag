@@ -9,7 +9,7 @@
             </div>
             <div class="flex flex-col justify-center items-center">
                 <div class="flex bg-gray-100 rounded-lg w-full sm:w-10/12 h-auto my-2 sm:-translate-x-10 shadow-md">
-                    <img class="w-32 h-32 rounded-lg object-cover bg-center" src="../Images/Locations/location-cover.jpg">
+                    <img class="w-32 h-32 rounded-lg object-cover bg-center" src="../Images/Locations/location-cover.jpg" alt="Imagem representando a unidade de atendimento">
                     <div class="flex-1 flex flex-col m-2">
                             <address class="not-italic font-bold text-primary text-lg font-normal">Vitória Park Shopping</address>
                             <p class="text-[8pt] text-gray-400">Avenida Henrique de Holanda, 3000
@@ -27,7 +27,7 @@
                     </div>
                 </div>
                 <div class="flex bg-gray-100 rounded-lg w-full sm:w-10/12 h-auto my-2 sm:translate-x-10 shadow-md">
-                    <img class="w-32 h-32 rounded-lg object-cover bg-center" src="../Images/Locations/location-cover.jpg">
+                    <img class="w-32 h-32 rounded-lg object-cover bg-center" src="../Images/Locations/location-cover.jpg" alt="Imagem representando a unidade de atendimento">
                     <div class="flex-1 flex flex-col m-2">
                         <address class="not-italic font-bold text-primary text-lg font-normal">Shopping Carpina</address>
                         <p class="text-[8pt] text-gray-400">Avenida Henrique de Holanda, 3000

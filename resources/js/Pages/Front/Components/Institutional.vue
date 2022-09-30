@@ -24,8 +24,7 @@
         <div class="w-full h-auto flex flex-row my-4">
             <div v-for="(img, index) in imgs" :key="index" class="pic w-full"
                  @click.prevent.stop="() => showImg(index)">
-                <img
-                    class="h-64 sm:h-96 w-auto cursor-pointer object-cover hover:scale-105 transition transform duration-300 ease-in-out"
+                <img alt="Imagem de pessoa fazendo exame" class="h-64 sm:h-96 w-auto cursor-pointer object-cover hover:scale-105 transition transform duration-300 ease-in-out"
                     :src="typeof img === 'string' ? img : img.src"/>
             </div>
             <vue-easy-lightbox
