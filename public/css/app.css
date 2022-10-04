@@ -2582,6 +2582,9 @@ select {
 .text-primary\/25 {
   color: rgb(33 70 84 / 0.25);
 }
+.text-primary\/50 {
+  color: rgb(33 70 84 / 0.5);
+}
 .text-gray-100 {
   --tw-text-opacity: 1;
   color: rgb(243 244 246 / var(--tw-text-opacity));
@@ -2605,9 +2608,6 @@ select {
 .text-background {
   --tw-text-opacity: 1;
   color: rgb(248 250 252 / var(--tw-text-opacity));
-}
-.text-primary\/50 {
-  color: rgb(33 70 84 / 0.5);
 }
 .underline {
   -webkit-text-decoration-line: underline;
