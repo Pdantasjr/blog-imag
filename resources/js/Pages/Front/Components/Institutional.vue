@@ -108,7 +108,7 @@
                     <div class=" my-4 flex sm:flex-col lg:flex-row items-center justify-start">
                         <div class="w-40 h-28 sm:w-44 flex flex-col items-center justify-center">
                             <Icons name="target-w"/>
-                            <h3 class="uppercase tracking-wide text-white font-bold text-2xl">Missão</h3>
+                            <h1 class="uppercase tracking-wide text-white font-bold text-2xl">Missão</h1>
                         </div>
                         <div class="w-[2px] h-full bg-white/50 sm:hidden block"></div>
                         <div class="flex items-center w-11/12 sm:w-56 lg:w-64 h-full">
@@ -121,7 +121,7 @@
                     <div class=" my-4 flex sm:flex-col lg:flex-row items-center justify-start">
                         <div class="w-40 h-28 sm:w-44 flex flex-col items-center justify-center">
                             <Icons name="graph-w"/>
-                            <h3 class="uppercase tracking-wide text-white font-bold text-2xl">Visão</h3>
+                            <h1 class="uppercase tracking-wide text-white font-bold text-2xl">Visão</h1>
                         </div>
                         <div class="w-[2px] h-full bg-white/50 sm:hidden block"></div>
                         <div class="flex items-center w-11/12 sm:w-56 lg:w-64 h-full">
@@ -133,7 +133,7 @@
                     <div class=" my-4 flex sm:flex-col lg:flex-row items-center justify-start">
                         <div class="w-40 h-28 sm:w-44 flex flex-col items-center justify-center">
                             <Icons name="star-w"/>
-                            <h3 class="uppercase tracking-wide text-white font-bold text-2xl">Valores</h3>
+                            <h1 class="uppercase tracking-wide text-white font-bold text-2xl">Valores</h1>
                         </div>
                         <div class="w-[2px] h-full bg-white/50 sm:hidden block"></div>
                         <div class="flex items-center w-11/12 sm:w-56 lg:w-64 h-full">
