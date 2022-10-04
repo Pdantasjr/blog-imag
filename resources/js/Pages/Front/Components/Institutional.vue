@@ -41,63 +41,63 @@
                     <div>
                         <Icons name="list-b"/>
                     </div>
-                    <h3 class="mx-4 flex-1 text-primary font-light text-[1rem] sm:text-lg">Personalização da jornada
+                    <p class="mx-4 flex-1 text-primary font-light text-[1rem] sm:text-lg">Personalização da jornada
                         como você nunca
-                        viu.</h3>
+                        viu.</p>
                 </div>
                 <div class="flex flex-row flex-initial items-center">
                     <div>
                         <Icons name="medical-b"/>
                     </div>
-                    <h3 class="mx-4 flex-1 text-primary font-light text-[1rem] sm:text-lg">Centro de Medicina
+                    <p class="mx-4 flex-1 text-primary font-light text-[1rem] sm:text-lg">Centro de Medicina
                         Diagnóstica mais completo
-                        da região.</h3>
+                        da região.</p>
                 </div>
                 <div class="flex flex-row flex-initial items-center">
                     <div>
-                        <Icons name="staff-b"/>
+                        <Icons name="Staff-b"/>
                     </div>
-                    <h3 class="mx-4 flex-1 text-primary font-light text-[1rem] sm:text-lg">Equipe Médica especializada
+                    <p class="mx-4 flex-1 text-primary font-light text-[1rem] sm:text-lg">Equipe Médica especializada
                         nacional e
-                        internacionalmente.</h3>
+                        internacionalmente.</p>
                 </div>
                 <div class="flex flex-row flex-initial items-center">
                     <div>
                         <Icons name="pin-b"/>
                     </div>
-                    <h3 class="mx-4 flex-1 text-primary font-light text-[1rem] sm:text-lg">Localização privilegiada, com
+                    <p class="mx-4 flex-1 text-primary font-light text-[1rem] sm:text-lg">Localização privilegiada, com
                         segurança,
-                        comodidade e conforto.</h3>
+                        comodidade e conforto.</p>
                 </div>
                 <div class="flex flex-row flex-initial items-center">
                     <div>
                         <Icons name="conv-b"/>
                     </div>
-                    <h3 class="mx-4 flex-1 text-primary font-light text-[1rem] sm:text-lg">Amplo portfólio de
-                        convênios.</h3>
+                    <p class="mx-4 flex-1 text-primary font-light text-[1rem] sm:text-lg">Amplo portfólio de
+                        convênios.</p>
                 </div>
                 <div class="flex flex-row flex-initial items-center">
                     <div>
                         <Icons name="hour-b"/>
                     </div>
-                    <h3 class="mx-4 flex-1 text-primary font-light text-[1rem] sm:text-lg">Sempre disponível para você:
+                    <p class="mx-4 flex-1 text-primary font-light text-[1rem] sm:text-lg">Sempre disponível para você:
                         de domingo a
-                        domingo.</h3>
+                        domingo.</p>
                 </div>
                 <div class="flex flex-row flex-initial items-center">
                     <div>
                         <Icons name="check-b"/>
                     </div>
-                    <h3 class="mx-4 flex-1 text-primary font-light text-[1rem] sm:text-lg">Melhores prazos de entrega
+                    <p class="mx-4 flex-1 text-primary font-light text-[1rem] sm:text-lg">Melhores prazos de entrega
                         dos
-                        resultados.</h3>
+                        resultados.</p>
                 </div>
                 <div class="flex flex-row flex-initial items-center">
                     <div>
                         <Icons name="online-b"/>
                     </div>
-                    <h3 class="mx-4 flex-1 text-primary font-light text-[1rem] sm:text-lg">Agendamento e resultados
-                        online.</h3>
+                    <p class="mx-4 flex-1 text-primary font-light text-[1rem] sm:text-lg">Agendamento e resultados
+                        online.</p>
                 </div>
             </div>
         </div>

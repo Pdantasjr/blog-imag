@@ -37,7 +37,7 @@
 <!--                            </Link>-->
 <!--                        </div>-->
                         <div class="flex items-center ml-12 hover:cursor-pointer md:hidden">
-                            <button @click="toggle" class="flex flex-col items-center hover:cursor-pointer">
+                            <button aria-label="abrir menu lateral" @click="toggle" class="flex flex-col items-center hover:cursor-pointer">
                                 <span class="line1 transform origin-top-center transition duration-150"></span>
                                 <span class="line2 transform origin-top-center transition duration-150"></span>
                             </button>

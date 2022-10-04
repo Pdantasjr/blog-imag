@@ -12,7 +12,7 @@
                     <img class="w-32 h-32 rounded-lg object-cover bg-center" src="../Images/Locations/location-cover.jpg" alt="Imagem representando a unidade de atendimento">
                     <div class="flex-1 flex flex-col m-2">
                             <address class="not-italic font-bold text-primary text-lg font-normal">Vitória Park Shopping</address>
-                            <p class="text-[8pt] text-gray-400">Avenida Henrique de Holanda, 3000
+                            <p class="text-[8pt] text-gray-600">Avenida Henrique de Holanda, 3000
                                 Lojas 1025 - 1027 / Redenção -
                                 Vitória de Santo Antão - PE
                                 CEP.: 55612-901</p>
@@ -30,10 +30,7 @@
                     <img class="w-32 h-32 rounded-lg object-cover bg-center" src="../Images/Locations/location-cover.jpg" alt="Imagem representando a unidade de atendimento">
                     <div class="flex-1 flex flex-col m-2">
                         <address class="not-italic font-bold text-primary text-lg font-normal">Shopping Carpina</address>
-                        <p class="text-[8pt] text-gray-400">Avenida Henrique de Holanda, 3000
-                            Lojas 1025 - 1027 / Redenção -
-                            Vitória de Santo Antão - PE
-                            CEP.: 55612-901</p>
+                        <p class="text-[8pt] text-gray-600">PE-041, KM 02 - Bairro Novo, Carpina - PE, 55819-900</p>
                         <div class="flex justify-end w-full">
                             <Link class="flex justify-around items-center bg-gradient-to-br from-secondary to-primary w-28 sm:w-32 h-auto rounded-full my-2 xs:mx-4 p-1" target="_blank" href="https://www.google.com/maps/place/IMAG/@-7.8356876,-35.2260186,15z/data=!4m5!3m4!1s0x0:0x622adc7aa10055bd!8m2!3d-7.8356876!4d-35.2260186">
                                 <span class="text-white text-[8pt] sm:text-sm">Como chegar</span>
