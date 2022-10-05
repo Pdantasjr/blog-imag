@@ -44,7 +44,7 @@
                             <div class="w-44 rounded-full h-44 hover:border hover:shadow-lg bg-cover bg-top transition-all transform hover:-translate-y-2 duration-200 ease-in-out" :style="{'background-image':'url('+this.urlDefault +'/'+ member.avatar+')'}" ></div>
                         </div>
                         <div class="flex flex-col items-center justify-center">
-                            <h3 class="font-black text-primary text-lg pt-2 text-center">{{ member.name }}</h3>
+                            <h1 class="font-black text-primary text-lg pt-2 text-center">{{ member.name }}</h1>
                             <p class="text-gray-600 text-sm font-light text-center">{{ member.office }}</p>
                             <p class="text-gray-600 text-sm font-light text-center">CRM: {{ member.crm }}</p>
                         </div>
