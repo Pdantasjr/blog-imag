@@ -77,18 +77,5 @@
     </style>
     <body class="font-sans antialiased">
         @inertia
-
-{{--        @env ('local')--}}
-{{--            <script src="http://localhost:3000/browser-sync/browser-sync-client.js"></script>--}}
-{{--        @endenv--}}
-
-{{--        <script>--}}
-{{--            const chat = {id:"ED5B3A9B-E589-4C07-BC83-455C93B5FBE4",position:"bottom left", margins: "100 16"};--}}
-{{--            const chatScript = document.createElement("script");--}}
-{{--            chatScript.setAttribute("src", "https://chatsales-app.leadlovers.com/scripts/widget.js");--}}
-{{--            document.addEventListener("DOMContentLoaded", function () {--}}
-{{--                document.body.appendChild(chatScript);--}}
-{{--            });--}}
-{{--        </script>--}}
     </body>
 </html>

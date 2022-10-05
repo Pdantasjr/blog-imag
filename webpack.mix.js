@@ -5,12 +5,12 @@ mix.js('resources/js/app.js', 'public/js').vue()
         require('postcss-import'),
         require('tailwindcss')
     ])
-    // .browserSync({
-    //     proxy:'localhost',
-    //     open: true,
-    //     notify: false,
-    // })
-    .webpackConfig(require('./webpack.config'))
+    // .webpackConfig(require('./webpack.config'))
+mix.webpackConfig({
+    stats: {
+        children: true,
+    },
+})
 if (mix.inProduction()) {
     mix.version();
 }
