@@ -25,4 +25,4 @@ Route::get('/exam', [ExamsController::class, 'examDetail'])->name('api.examDetai
 
 
 
-Route::apiResource('/exams', ApiExamsController::class);
+Route::apiResource('/exams', ApiExamsController::class)->names('api.exams');

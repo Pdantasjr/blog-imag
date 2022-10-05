@@ -20,7 +20,7 @@ Route::get('#staff', [FrontController::class, 'index'])->name('front.staff');
 Route::get('/blog', [FrontController::class, 'blog'])->name('front.blog');
 Route::get('/artigo/{slug}', [FrontController::class, 'article'])->name('front.post');
 Route::get('/medico/{slug}', [FrontController::class, 'teamMember'])->name('front.member');
-Route::get('/exame/{slug}', [FrontController::class, 'exam'])->name('front.exam');
+Route::get('/exame/{slug}', [FrontController::class, 'exame'])->name('front.exame');
 Route::get('/politica-de-privacidade', [FrontController::class, 'privacyPolicy'])->name('front.privacyPolicy');
 
 

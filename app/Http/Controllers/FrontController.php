@@ -63,7 +63,7 @@ class FrontController extends Controller
         ]);
     }
 
-    public function exam($slug) {
+    public function exame($slug) {
         return Inertia::render('Front/Exam', [
             'exam' => Exams::where('slug', $slug)->first(),
             'url' => url('storage/')
