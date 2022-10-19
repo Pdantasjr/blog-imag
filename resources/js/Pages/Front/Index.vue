@@ -12,7 +12,7 @@
         <Locations :urlDefault="this.urlDefault" />
         <Staff :urlDefault="this.urlDefault" :staff="this.staff" />
         <BackToTop />
-<!--        <WhatsAppButton />-->
+        <WhatsAppButton />
         <Footer />
     </div>
 </template>
@@ -32,7 +32,7 @@ import Locations from "./Components/Locations";
 import Agreement from "./Components/Agreement";
 import Staff from "./Components/Staff";
 import BackToTop from "./Components/BackToTop";
-// import WhatsAppButton from "./Components/WhatsAppButton";
+import WhatsAppButton from "./Components/WhatsAppButton";
 import Footer from "./Components/Footer"
 
 export default defineComponent({
@@ -58,7 +58,7 @@ export default defineComponent({
         Locations,
         Staff,
         BackToTop,
-        // WhatsAppButton,
+        WhatsAppButton,
         Footer
     }
 })

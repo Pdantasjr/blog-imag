@@ -68,7 +68,7 @@
         <script src="//tag.goadopt.io/injector.js?website_code=a5a67294-1dde-424e-abfc-62197de2ab8c" class="adopt-injector"></script>
 
         <!-- WhatsApp -->
-        <script src='https://llwhatsapp.blob.core.windows.net/whatschat-scripts/whatschat-89c98c6fc5b64e51ae8fa43e94972327.js'></script>
+{{--        <script src='https://llwhatsapp.blob.core.windows.net/whatschat-scripts/whatschat-89c98c6fc5b64e51ae8fa43e94972327.js'></script>--}}
     </head>
     <style>
         html {

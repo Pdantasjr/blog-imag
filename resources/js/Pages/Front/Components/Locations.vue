@@ -18,7 +18,7 @@
                                 CEP.: 55612-901</p>
                         <div class="flex justify-end w-full">
                             <Link class="flex justify-around items-center bg-gradient-to-br from-secondary to-primary w-28 sm:w-32 h-auto rounded-full my-2 xs:mx-4 p-1" target="_blank" href="https://www.google.com/maps/place/Vitoria+Park+Shopping/@-8.116014,-35.270796,14z/data=!4m5!3m4!1s0x0:0x8d383df62c98babd!8m2!3d-8.1160142!4d-35.2707964?hl=pt-BR">
-                                <span class="text-white text-[8pt] sm:text-sm">Como chegar</span>
+                                <span  @click="mapLink('https://goo.gl/maps/m6WrdpfNmTHThpUW6')"  class="text-white text-[8pt] sm:text-sm">Como chegar</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                                 </svg>
@@ -33,7 +33,7 @@
                         <p class="text-[8pt] text-gray-600">PE-041, KM 02 - Bairro Novo, Carpina - PE, 55819-900</p>
                         <div class="flex justify-end w-full">
                             <Link class="flex justify-around items-center bg-gradient-to-br from-secondary to-primary w-28 sm:w-32 h-auto rounded-full my-2 xs:mx-4 p-1" target="_blank" href="https://www.google.com/maps/place/IMAG/@-7.8356876,-35.2260186,15z/data=!4m5!3m4!1s0x0:0x622adc7aa10055bd!8m2!3d-7.8356876!4d-35.2260186">
-                                <span class="text-white text-[8pt] sm:text-sm">Como chegar</span>
+                                <span @click="mapLink('https://goo.gl/maps/4ao5BBkEFwVkwDd48')" class="text-white text-[8pt] sm:text-sm">Como chegar</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                                 </svg>
@@ -54,10 +54,14 @@ export default {
     props: { urlDefault: String },
     components: {
         Link
+    },
+    methods: {
+        mapLink(link) {
+            return window.open(
+                link,
+                '_blank'
+            )
+        }
     }
 }
 </script>
-
-<style scoped>
-
-</style>
