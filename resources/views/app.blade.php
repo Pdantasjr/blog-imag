@@ -27,28 +27,12 @@
 
         <!-- Scripts -->
         @routes
+        <script src="{{ mix('js/manifest.js') }}" defer></script>
+        <script src="{{ mix('js/vendor.js') }}" defer></script>
         <script src="{{ mix('js/app.js') }}" defer></script>
 
         <!--facebook-->
         <meta name="facebook-domain-verification" content="zghkuymywarstryl7eb3cmcewcno7c" />
-
-        <!-- Google Tag Manager -->
-{{--        <script>--}}
-{{--            (function(w, d, s, l, i) {--}}
-{{--                w[l] = w[l] || [];--}}
-{{--                w[l].push({--}}
-{{--                    'gtm.start': new Date().getTime(),--}}
-{{--                    event: 'gtm.js'--}}
-{{--                });--}}
-{{--                var f = d.getElementsByTagName(s)[0],--}}
-{{--                    j = d.createElement(s),--}}
-{{--                    dl = l != 'dataLayer' ? '&l=' + l : '';--}}
-{{--                j.async = true;--}}
-{{--                j.src =--}}
-{{--                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl;--}}
-{{--                f.parentNode.insertBefore(j, f);--}}
-{{--            })(window, document, 'script', 'dataLayer', 'GTM-NXMDS57');--}}
-{{--        </script>--}}
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-PD4XF7X92F"></script>
