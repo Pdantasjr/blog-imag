@@ -311,13 +311,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _SectionTitle_vue_vue_type_template_id_a71751e6__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SectionTitle.vue?vue&type=template&id=a71751e6 */ "./resources/js/Pages/Front/Components/SectionTitle.vue?vue&type=template&id=a71751e6");
 /* harmony import */ var _SectionTitle_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SectionTitle.vue?vue&type=script&lang=js */ "./resources/js/Pages/Front/Components/SectionTitle.vue?vue&type=script&lang=js");
-/* harmony import */ var _home_paulo_dev_blog_imag_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var _var_www_html_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_home_paulo_dev_blog_imag_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_SectionTitle_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_SectionTitle_vue_vue_type_template_id_a71751e6__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Pages/Front/Components/SectionTitle.vue"]])
+const __exports__ = /*#__PURE__*/(0,_var_www_html_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_SectionTitle_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_SectionTitle_vue_vue_type_template_id_a71751e6__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Pages/Front/Components/SectionTitle.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -339,7 +339,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Staff_vue_vue_type_template_id_06b83836_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Staff.vue?vue&type=template&id=06b83836&scoped=true */ "./resources/js/Pages/Front/Components/Staff.vue?vue&type=template&id=06b83836&scoped=true");
 /* harmony import */ var _Staff_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Staff.vue?vue&type=script&lang=js */ "./resources/js/Pages/Front/Components/Staff.vue?vue&type=script&lang=js");
 /* harmony import */ var _Staff_vue_vue_type_style_index_0_id_06b83836_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Staff.vue?vue&type=style&index=0&id=06b83836&scoped=true&lang=css */ "./resources/js/Pages/Front/Components/Staff.vue?vue&type=style&index=0&id=06b83836&scoped=true&lang=css");
-/* harmony import */ var _home_paulo_dev_blog_imag_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var _var_www_html_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
@@ -347,7 +347,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,_home_paulo_dev_blog_imag_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_Staff_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Staff_vue_vue_type_template_id_06b83836_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render],['__scopeId',"data-v-06b83836"],['__file',"resources/js/Pages/Front/Components/Staff.vue"]])
+const __exports__ = /*#__PURE__*/(0,_var_www_html_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_Staff_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Staff_vue_vue_type_template_id_06b83836_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render],['__scopeId',"data-v-06b83836"],['__file',"resources/js/Pages/Front/Components/Staff.vue"]])
 /* hot reload */
 if (false) {}
 

@@ -69,7 +69,7 @@ var _hoisted_4 = {
   "class": "flex flex-col justify-center items-center"
 };
 var _hoisted_5 = {
-  "class": "flex bg-gray-100 rounded-lg w-full sm:w-10/12 h-auto my-2 sm:-translate-x-10 shadow-md"
+  "class": "flex bg-gray-100 rounded-lg w-full sm:w-10/12 h-auto my-2 sm:-translate-x-20 shadow-md"
 };
 
 var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
@@ -116,7 +116,7 @@ var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 );
 
 var _hoisted_12 = {
-  "class": "flex bg-gray-100 rounded-lg w-full sm:w-10/12 h-auto my-2 sm:translate-x-10 shadow-md"
+  "class": "flex bg-gray-100 rounded-lg w-full sm:w-10/12 h-auto my-2 sm:-translate-x-10 shadow-md"
 };
 
 var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
@@ -148,6 +148,53 @@ var _hoisted_17 = {
 };
 
 var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  "class": "h-4 w-4 text-white",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  stroke: "currentColor",
+  "stroke-width": "2"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
+  "stroke-linecap": "round",
+  "stroke-linejoin": "round",
+  d: "M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+})], -1
+/* HOISTED */
+);
+
+var _hoisted_19 = {
+  "class": "flex bg-gray-100 rounded-lg w-full sm:w-10/12 h-auto my-2 shadow-md"
+};
+
+var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+  "class": "w-32 h-32 rounded-lg object-cover bg-center",
+  src: _Images_Locations_location_cover_jpg__WEBPACK_IMPORTED_MODULE_2__["default"],
+  alt: "Imagem representando a unidade de atendimento"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_21 = {
+  "class": "flex-1 flex flex-col m-2"
+};
+
+var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("address", {
+  "class": "not-italic font-bold text-primary text-lg font-normal"
+}, "Shopping Igarassu", -1
+/* HOISTED */
+);
+
+var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  "class": "text-[8pt] text-gray-600"
+}, "PE-035, 482 - Centro, Igarassu - PE, 53610-050", -1
+/* HOISTED */
+);
+
+var _hoisted_24 = {
+  "class": "flex justify-end w-full"
+};
+
+var _hoisted_25 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
   xmlns: "http://www.w3.org/2000/svg",
   "class": "h-4 w-4 text-white",
   fill: "none",
@@ -197,6 +244,22 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     _: 1
     /* STABLE */
 
+  })])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_19, [_hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_21, [_hoisted_22, _hoisted_23, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_24, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
+    "class": "flex justify-around items-center bg-gradient-to-br from-secondary to-primary w-28 sm:w-32 h-auto rounded-full my-2 xs:mx-4 p-1",
+    target: "_blank",
+    href: "https://www.google.com/maps/place/IMAG/@-7.8356876,-35.2260186,15z/data=!4m5!3m4!1s0x0:0x622adc7aa10055bd!8m2!3d-7.8356876!4d-35.2260186"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+        onClick: _cache[2] || (_cache[2] = function ($event) {
+          return $options.mapLink('https://goo.gl/maps/9Ssks5QcoiT169SPA');
+        }),
+        "class": "text-white text-[8pt] sm:text-sm"
+      }, "Como chegar"), _hoisted_25];
+    }),
+    _: 1
+    /* STABLE */
+
   })])])])])])]);
 }
 
@@ -242,13 +305,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _Locations_vue_vue_type_template_id_4a63ceb4__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Locations.vue?vue&type=template&id=4a63ceb4 */ "./resources/js/Pages/Front/Components/Locations.vue?vue&type=template&id=4a63ceb4");
 /* harmony import */ var _Locations_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Locations.vue?vue&type=script&lang=js */ "./resources/js/Pages/Front/Components/Locations.vue?vue&type=script&lang=js");
-/* harmony import */ var _home_paulo_dev_blog_imag_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var _var_www_html_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_home_paulo_dev_blog_imag_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Locations_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Locations_vue_vue_type_template_id_4a63ceb4__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Pages/Front/Components/Locations.vue"]])
+const __exports__ = /*#__PURE__*/(0,_var_www_html_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Locations_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Locations_vue_vue_type_template_id_4a63ceb4__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Pages/Front/Components/Locations.vue"]])
 /* hot reload */
 if (false) {}
 
