@@ -23,14 +23,14 @@
                     <!--/NAV-->
                     <!--RIGHT-->
                     <div class="flex">
-                        <div class="md:flex space-x-4 justify-around items-center hover:cursor-pointer hidden">
-                            <Link :href="link.phone">
-                                <Icons name="phone" class="text-primary min-w-fit"/>
-                            </Link>
-                            <Link @click="WhatsAppLink" target="_blank">
-                                <Icons name="whatsapp" class="text-primary min-w-fit" />
-                            </Link>
-                        </div>
+<!--                        <div class="md:flex space-x-4 justify-around items-center hover:cursor-pointer hidden">-->
+<!--                            <Link :href="link.phone">-->
+<!--                                <Icons name="phone" class="text-primary min-w-fit"/>-->
+<!--                            </Link>-->
+<!--                            <Link @click="WhatsAppLink" target="_blank">-->
+<!--                                <Icons name="whatsapp" class="text-primary min-w-fit" />-->
+<!--                            </Link>-->
+<!--                        </div>-->
 <!--                        <div class="flex ml-12 justify-around items-center hover:cursor-pointer">-->
 <!--                            <Link>-->
 <!--                                <Icons name="search" class="text-primary w-8 h-8 min-w-fit"/>-->
