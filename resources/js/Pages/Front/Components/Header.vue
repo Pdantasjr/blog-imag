@@ -19,6 +19,7 @@
                         <Link :href="route('front.agreements')" class="relative font-light hover:font-bold text-center flex justify-center items-center lg:w-[115px] sm:h-[103px] whitespace-nowrap text-primary transition-all duration-300 ease-in-out links_a">Convênios</Link>
                         <Link :href="route('front.staff')" class="relative font-light hover:font-bold text-center flex justify-center items-center lg:w-[115px] sm:h-[103px] whitespace-nowrap text-primary transition-all duration-300 ease-in-out links_a">Equipe Médica</Link>
                         <Link :href="route('front.blog')" class="relative font-light hover:font-bold text-center flex justify-center items-center lg:w-[115px] sm:h-[103px] whitespace-nowrap text-primary transition-all duration-300 ease-in-out links_a">Blog</Link>
+                        <Link :href="route('front.faq')" class="relative font-light hover:font-bold text-center flex justify-center items-center lg:w-[115px] sm:h-[103px] whitespace-nowrap text-primary transition-all duration-300 ease-in-out links_a">FAQ</Link>
                     </nav>
                     <!--/NAV-->
                     <!--RIGHT-->

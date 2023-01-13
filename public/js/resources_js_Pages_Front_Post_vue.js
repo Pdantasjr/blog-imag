@@ -1089,14 +1089,16 @@ var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNo
 
 var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Blog");
 
-var _hoisted_13 = {
+var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("FAQ");
+
+var _hoisted_14 = {
   "class": "flex"
 };
-var _hoisted_14 = {
+var _hoisted_15 = {
   "class": "flex items-center ml-12 hover:cursor-pointer md:hidden"
 };
 
-var _hoisted_15 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_16 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
     "class": "line1 transform origin-top-center transition duration-150"
   }, null, -1
@@ -1104,7 +1106,7 @@ var _hoisted_15 = /*#__PURE__*/_withScopeId(function () {
   );
 });
 
-var _hoisted_16 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_17 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
     "class": "line2 transform origin-top-center transition duration-150"
   }, null, -1
@@ -1112,25 +1114,25 @@ var _hoisted_16 = /*#__PURE__*/_withScopeId(function () {
   );
 });
 
-var _hoisted_17 = [_hoisted_15, _hoisted_16];
-var _hoisted_18 = {
+var _hoisted_18 = [_hoisted_16, _hoisted_17];
+var _hoisted_19 = {
   "class": "z-20 sidebar bg-primary text-blue-100 w-64 overflow-y-auto space-y-6 py-7 px-2 fixed inset-y-0 right-0 transform translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out md:hidden"
 };
-var _hoisted_19 = {
+var _hoisted_20 = {
   "class": "flex flex-col mt-14"
 };
 
-var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Home");
+var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Home");
 
-var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Nossos Exames");
+var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Nossos Exames");
 
-var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Institucional");
+var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Institucional");
 
-var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Convênios");
+var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Convênios");
 
-var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Equipe Médica");
+var _hoisted_25 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Equipe Médica");
 
-var _hoisted_25 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Blog");
+var _hoisted_26 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Blog");
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Link");
@@ -1218,27 +1220,27 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
   }, 8
   /* PROPS */
-  , ["href"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("/NAV"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("RIGHT"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                        <div class=\"md:flex space-x-4 justify-around items-center hover:cursor-pointer hidden\">"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                            <Link :href=\"link.phone\">"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                                <Icons name=\"phone\" class=\"text-primary min-w-fit\"/>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                            </Link>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                            <Link @click=\"WhatsAppLink\" target=\"_blank\">"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                                <Icons name=\"whatsapp\" class=\"text-primary min-w-fit\" />"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                            </Link>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                        </div>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                        <div class=\"flex ml-12 justify-around items-center hover:cursor-pointer\">"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                            <Link>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                                <Icons name=\"search\" class=\"text-primary w-8 h-8 min-w-fit\"/>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                            </Link>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                        </div>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
-    "aria-label": "abrir menu lateral",
-    onClick: _cache[0] || (_cache[0] = function () {
-      return $options.toggle && $options.toggle.apply($options, arguments);
-    }),
-    "class": "flex flex-col items-center hover:cursor-pointer"
-  }, _hoisted_17)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("/RIGHT")])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("SIDEBAR"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_18, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("nav", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
-    "class": "w-auto text-center py-4 text-white font-light rounded hover:border-b-2 hover:border-white hover:font-bold hover:-translate-y-2 hover:shadow-lg hover:bg-white/25 transition ease-in-out duration-300 space-y-8 mt-24",
-    href: _ctx.route('front.index')
+  , ["href"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
+    href: _ctx.route('front.faq'),
+    "class": "relative font-light hover:font-bold text-center flex justify-center items-center lg:w-[115px] sm:h-[103px] whitespace-nowrap text-primary transition-all duration-300 ease-in-out links_a"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_20];
+      return [_hoisted_13];
     }),
     _: 1
     /* STABLE */
 
   }, 8
   /* PROPS */
-  , ["href"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
-    "class": "w-auto text-center py-4 text-white font-light rounded hover:border-b-2 hover:border-white hover:font-bold hover:-translate-y-2 hover:shadow-lg hover:bg-white/25 transition ease-in-out duration-300 space-y-8",
-    href: _ctx.route('front.ourExams')
+  , ["href"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("/NAV"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("RIGHT"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                        <div class=\"md:flex space-x-4 justify-around items-center hover:cursor-pointer hidden\">"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                            <Link :href=\"link.phone\">"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                                <Icons name=\"phone\" class=\"text-primary min-w-fit\"/>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                            </Link>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                            <Link @click=\"WhatsAppLink\" target=\"_blank\">"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                                <Icons name=\"whatsapp\" class=\"text-primary min-w-fit\" />"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                            </Link>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                        </div>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                        <div class=\"flex ml-12 justify-around items-center hover:cursor-pointer\">"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                            <Link>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                                <Icons name=\"search\" class=\"text-primary w-8 h-8 min-w-fit\"/>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                            </Link>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("                        </div>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_15, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    "aria-label": "abrir menu lateral",
+    onClick: _cache[0] || (_cache[0] = function () {
+      return $options.toggle && $options.toggle.apply($options, arguments);
+    }),
+    "class": "flex flex-col items-center hover:cursor-pointer"
+  }, _hoisted_18)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("/RIGHT")])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("SIDEBAR"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("nav", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
+    "class": "w-auto text-center py-4 text-white font-light rounded hover:border-b-2 hover:border-white hover:font-bold hover:-translate-y-2 hover:shadow-lg hover:bg-white/25 transition ease-in-out duration-300 space-y-8 mt-24",
+    href: _ctx.route('front.index')
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_21];
@@ -1250,7 +1252,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* PROPS */
   , ["href"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
     "class": "w-auto text-center py-4 text-white font-light rounded hover:border-b-2 hover:border-white hover:font-bold hover:-translate-y-2 hover:shadow-lg hover:bg-white/25 transition ease-in-out duration-300 space-y-8",
-    href: _ctx.route('front.institutional')
+    href: _ctx.route('front.ourExams')
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_22];
@@ -1262,7 +1264,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* PROPS */
   , ["href"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
     "class": "w-auto text-center py-4 text-white font-light rounded hover:border-b-2 hover:border-white hover:font-bold hover:-translate-y-2 hover:shadow-lg hover:bg-white/25 transition ease-in-out duration-300 space-y-8",
-    href: _ctx.route('front.agreements')
+    href: _ctx.route('front.institutional')
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_23];
@@ -1274,7 +1276,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* PROPS */
   , ["href"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
     "class": "w-auto text-center py-4 text-white font-light rounded hover:border-b-2 hover:border-white hover:font-bold hover:-translate-y-2 hover:shadow-lg hover:bg-white/25 transition ease-in-out duration-300 space-y-8",
-    href: _ctx.route('front.staff')
+    href: _ctx.route('front.agreements')
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_24];
@@ -1286,10 +1288,22 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* PROPS */
   , ["href"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
     "class": "w-auto text-center py-4 text-white font-light rounded hover:border-b-2 hover:border-white hover:font-bold hover:-translate-y-2 hover:shadow-lg hover:bg-white/25 transition ease-in-out duration-300 space-y-8",
-    href: _ctx.route('front.blog')
+    href: _ctx.route('front.staff')
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_25];
+    }),
+    _: 1
+    /* STABLE */
+
+  }, 8
+  /* PROPS */
+  , ["href"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
+    "class": "w-auto text-center py-4 text-white font-light rounded hover:border-b-2 hover:border-white hover:font-bold hover:-translate-y-2 hover:shadow-lg hover:bg-white/25 transition ease-in-out duration-300 space-y-8",
+    href: _ctx.route('front.blog')
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_26];
     }),
     _: 1
     /* STABLE */

@@ -70,6 +70,10 @@ class FrontController extends Controller
         ]);
     }
 
+    public function faq() {
+        return Inertia::render('Front/Faq');
+    }
+
     public function privacyPolicy()
     {
         return Inertia::render('PrivacyPolicy');
