@@ -22,7 +22,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      active: false
+      active: true
     };
   }
 }));
@@ -47,67 +47,38 @@ var _withScopeId = function _withScopeId(n) {
 };
 
 var _hoisted_1 = {
-  "class": "w-full h-auto bg-primary rounded-2xl block transition-all duration-200 ease-in-out"
-};
-var _hoisted_2 = {
-  key: 0,
-  "class": "h-auto mx-6 border-t border block relative"
+  "class": "w-full h-auto bg-primary"
 };
 
-var _hoisted_3 = /*#__PURE__*/_withScopeId(function () {
-  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
-    "class": "text-blue-800 my-2 font-semibold"
-  }, "Descrição", -1
-  /* HOISTED */
-  );
-});
-
-var _hoisted_4 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_2 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
-    "class": "text-blue-800 my-2"
-  }, "asdsadas", -1
+    "class": "text-white font-light text-sm px-6 pb-4"
+  }, " Para Pessoa Física, o processo de abertura de conta na XP Investimentos é online. Acesse aqui para se cadastrar. Inicialmente, não há a necessidade de envio de documentos comprovatórios. No entanto, documentos complementares podem ser solicitados de acordo com as particularidades de cada cliente. Ao final do processo de cadastro, você será informado que os seus dados foram enviados para análise. Caso seja necessário o envio de algum documento, entraremos em contato no endereço de e-mail cadastrado. Se os seus dados forem totalmente validados de forma eletrônica, você receberá por e-mail, em algumas horas, as informações de acesso à sua conta XP. Já para Pessoa Jurídica, o processo deve ocorrer por intermédio de um Assessor de Investimentos. Caso tenha interesse, acesse o site da XP Empresas, selecione “Quero abrir uma conta” e preencha o questionário para que um de nossos assessores entre em contato com você e possa apresentar soluções especializadas de acordo com a particularidade do seu negócio.", -1
   /* HOISTED */
   );
 });
 
-var _hoisted_5 = /*#__PURE__*/_withScopeId(function () {
-  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "flex justify-between my-8"
-  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
-    "class": "my-2 font-semibold"
-  }, "Categoria"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "açslkdçlsk")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "ml-6"
-  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
-    "class": "my-2 font-semibold"
-  }, "Prazo"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, " asdasd ")])], -1
-  /* HOISTED */
-  );
-});
-
-var _hoisted_6 = [_hoisted_3, _hoisted_4, _hoisted_5];
+var _hoisted_3 = [_hoisted_2];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [!_ctx.active ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", {
-    key: 0,
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
     onClick: _cache[0] || (_cache[0] = function ($event) {
       return _ctx.active = !_ctx.active;
     }),
-    "class": "text-lg text-blue-200 font-semibold hover:cursor-pointer flex p-4"
-  }, " Informações")) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _ctx.active ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", {
-    key: 1,
-    onClick: _cache[1] || (_cache[1] = function ($event) {
-      return _ctx.active = !_ctx.active;
-    }),
-    "class": "text-lg text-blue-200 font-semibold hover:cursor-pointer flex p-4"
-  }, " Informações")) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(vue__WEBPACK_IMPORTED_MODULE_0__.Transition, {
-    name: "slide-fade"
-  }, {
-    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [!_ctx.active ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_2, _hoisted_6)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)];
-    }),
-    _: 1
-    /* STABLE */
-
-  })]);
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["text-white font-normal hover:cursor-pointer flex p-6", {
+      'border-b': _ctx.active
+    }])
+  }, " Posso me alimentar antes de fazer uma ressonância?", 2
+  /* CLASS */
+  )]), !_ctx.active ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
+    key: 0,
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["w-full h-auto bg-primary", {
+      'border-b': !_ctx.active
+    }])
+  }, _hoisted_3, 2
+  /* CLASS */
+  )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)], 64
+  /* STABLE_FRAGMENT */
+  );
 }
 
 /***/ }),
