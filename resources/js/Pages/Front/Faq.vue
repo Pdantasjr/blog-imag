@@ -15,10 +15,8 @@
         </div>
 
         <div class="p-4 my-24 max-w-5xl mx-auto">
-            <Acoordion :category="'categotia'" :description="'descrição'" :deadline="'tempo restante'" />
-            <Acoordion :category="'categotia'" :description="'descrição'" :deadline="'tempo restante'" />
-            <Acoordion :category="'categotia'" :description="'descrição'" :deadline="'tempo restante'" />
-            <Acoordion :category="'categotia'" :description="'descrição'" :deadline="'tempo restante'" />
+            <Acoordion :question="'Alguma pergunta predefinida aqui?'" :answer="'Adqui vem alguma responta também predefinida pelo time da IMAG para responder alguma coisa'" />
+            <Acoordion :question="'Alguma pergunta predefinida aqui?'" :answer="'Adqui vem alguma responta também predefinida pelo time da IMAG para responder alguma coisa'" />
         </div>
 
 
