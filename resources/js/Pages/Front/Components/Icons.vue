@@ -34,8 +34,9 @@
     <img v-else-if="name === 'target-w'" class="w-12 h-12" src="../Images/ComponentIcons/target_icon.svg" alt="ícone para Missão Visão e Valores">
     <img v-else-if="name === 'graph-w'" class="w-12 h-12" src="../Images/ComponentIcons/graph_icon.svg" alt="ícone para Missão Visão e Valores">
     <img v-else-if="name === 'star-w'" class="w-12 h-12" src="../Images/ComponentIcons/star_icon.svg" alt="ícone para Missão Visão e Valores">
-    <img v-else-if="name === 'chevron-up'" class="w-6 h-6" src="../Images/ComponentIcons/chevron-up.svg" alt="ícone seta para cima">
-    <img v-else-if="name === 'chevron-down'" class="w-6 h-6" src="../Images/ComponentIcons/chevron-down.svg" alt="ícone seta para baixo">
+    <img v-else-if="name === 'chevron-up-w'" class="w-6 h-6" src="../Images/ComponentIcons/chevron-up.svg" alt="ícone seta para cima">
+    <img v-else-if="name === 'chevron-down-w'" class="w-6 h-6" src="../Images/ComponentIcons/chevron-down.svg" alt="ícone seta para baixo">
+    <img v-else-if="name === 'faq-w'" class="w-6 h-6" src="../Images/ComponentIcons/faq.svg" alt="ícone faq">
     <span v-else></span> 
 </template>
 

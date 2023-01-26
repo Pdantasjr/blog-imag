@@ -2,16 +2,13 @@
     <div class="w-full h-auto bg-primary">
         <span @click="active = !active" class="w-full justify-between items-center text-white font-normal hover:cursor-pointer flex p-6" :class="{ 'border-b': active }"> 
             {{ question }}
-        
-        <Icons v-show="active" name="chevron-up" />
-        <Icons v-show="!active" name="chevron-down" />
-    </span>
+            <Icons v-show="active" name="chevron-up-w" />
+            <Icons v-show="!active" name="chevron-down-w" />
+        </span>
     </div>
-    
     <div v-if="!active" class="w-full h-auto bg-primary" :class="{ 'border-b': !active }">
         <p class="text-white font-light text-sm px-6 pb-4" >{{ answer }}</p>
     </div>
-        
 </template>
 
 <script>

@@ -110,6 +110,20 @@
                         </li>
                     </ul>
                 </li>
+                <li>
+                    <div class="border-t -mr-6"></div>
+                </li>
+                <li>
+                    <p class="font-bold uppercase text-gray-600 text-xs tracking-wider">FAQ</p>
+                    <ul class="text-sm space-y-1 -mx-3 mt-2">
+                        <li>
+                            <Link class="flex items-center gap-3 px-3 py-2 rounded-lg font-medium transition hover:bg-gray-500/5 focus:bg-gray-500/5" :href="route('question.index')">
+                                <Icons name="faq-w" />
+                                <span>FAQ</span>
+                            </Link>
+                        </li>
+                    </ul>
+                </li>
             </ul>
 
         </nav>
@@ -134,6 +148,7 @@
 import {defineComponent} from 'vue'
 import {Head, Link} from '@inertiajs/inertia-vue3';
 import Logotype from '@/Jetstream/ApplicationLogo'
+import Icons from '../Pages/Front/Components/Icons';
 
 export default defineComponent({
     name: 'siderbar',
@@ -141,6 +156,7 @@ export default defineComponent({
         Logotype,
         Head,
         Link,
+        Icons,
     },
     methods: {
         switchToTeam(team) {

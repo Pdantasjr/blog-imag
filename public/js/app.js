@@ -210,6 +210,16 @@ var map = {
 		"/js/vendor",
 		"resources_js_Pages_Exams_Index_vue"
 	],
+	"./Faq/Create.vue": [
+		"./resources/js/Pages/Faq/Create.vue",
+		"/js/vendor",
+		"resources_js_Pages_Faq_Create_vue"
+	],
+	"./Faq/Index.vue": [
+		"./resources/js/Pages/Faq/Index.vue",
+		"/js/vendor",
+		"resources_js_Pages_Faq_Index_vue"
+	],
 	"./Front/Blog.vue": [
 		"./resources/js/Pages/Front/Blog.vue",
 		"/js/vendor",

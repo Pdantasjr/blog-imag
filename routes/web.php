@@ -7,6 +7,7 @@ use App\Http\Controllers\DiagnosticMethodController;
 use App\Http\Controllers\ExamsController;
 use App\Http\Controllers\StaffController;
 use App\Http\Controllers\AgreementController;
+use App\Http\Controllers\FaqController;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -36,6 +37,7 @@ Route::resource('diagnostic', DiagnosticMethodController::class)->middleware(['a
 Route::resource('exams', ExamsController::class)->middleware(['auth:sanctum', 'verified']);
 Route::resource('staff', StaffController::class)->middleware(['auth:sanctum', 'verified']);
 Route::resource('agreement', AgreementController::class)->middleware(['auth:sanctum', 'verified']);
+Route::resource('question', FaqController::class)->middleware(['auth:sanctum', 'verified']);
 
 
 //Route::get('/logout', function () {
