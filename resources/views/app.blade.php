@@ -61,6 +61,8 @@
 
         <!-- WhatsApp -->
 {{--        <script src='https://llwhatsapp.blob.core.windows.net/whatschat-scripts/whatschat-89c98c6fc5b64e51ae8fa43e94972327.js'></script>--}}
+    <!-- CRAZYEGG-->
+    <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0116/5431.js" async="async" ></script>
     </head>
     <style>
         html {
