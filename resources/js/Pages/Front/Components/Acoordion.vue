@@ -1,6 +1,6 @@
 <template>
     <div class="w-full h-auto bg-primary">
-        <span @click="active = !active" class="w-full justify-between items-center text-white font-normal hover:cursor-pointer flex p-6" :class="{ 'border-b': active }"> 
+        <span @click="active = !active" class="w-full justify-between items-center text-white text-sm md:text-lg font-normal hover:cursor-pointer flex p-4 md:p-6" :class="{ 'border-b': active }"> 
             {{ question }}
             <Icons v-show="active" name="chevron-up-w" />
             <Icons v-show="!active" name="chevron-down-w" />

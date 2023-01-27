@@ -180,13 +180,13 @@
                             </div>
                         </header>
                         <div>
-                            <div class="border border-gray-300 shadow-sm bg-white rounded-xl">
+                            <div  v-if="questions.length" class="border border-gray-300 shadow-sm bg-white rounded-xl">
                                 <div class="overflow-y-auto relative">
                                     <table class="w-full text-left divide-y table-auto">
-                                            <thead>
-                                                <tr>
+                                        <thead>
+                                            <tr>
                                                     <th class="px-4 py-2">
-                                                        <span class="flex items-center whitespace-nowrap space-x-1 rtl:space-x-reverse font-medium text-sm font-bold text-gray-600">Nome</span>
+                                                        <span class="flex items-center whitespace-nowrap space-x-1 rtl:space-x-reverse font-medium text-sm font-bold text-gray-600">Dúvida</span>
                                                     </th>
                                                     <th class="px-4 py-2">
                                                         <span class="flex items-center whitespace-nowrap space-x-1 rtl:space-x-reverse font-medium text-sm font-bold text-gray-600">Última Atualização</span>
@@ -194,29 +194,28 @@
                                                     <th class="px-4 py-2">
                                                         <span class="flex items-center whitespace-nowrap space-x-1 rtl:space-x-reverse font-medium text-sm font-bold text-gray-600">Opções</span>
                                                     </th>
-                                                </tr>
-                                            </thead>
-
-                                            <tbody class="divide-y whitespace-nowrap">
+                                            </tr>
+                                        </thead>
+                                        <tbody v-for="question in questions" :key="question.id" class="divide-y whitespace-nowrap">
                                                 <tr>
                                                     <td>
                                                         <div class="px-4 py-3">
-                                                           <span class="text-gray-600">nome</span>
+                                                           <span class="text-gray-600">{{question.question}}</span>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="px-4 py-3">
-                                                           <span class="text-gray-600"> algo</span>
+                                                           <span class="text-gray-600">{{ new Intl.DateTimeFormat('pt-BR', { day: 'numeric', month: 'long', year: 'numeric'} ).format( new Date(question.updated_at)) }} às {{ new Intl.DateTimeFormat('pt-BR', { hour: 'numeric', minute: 'numeric', second: 'numeric'} ).format( new Date(question.updated_at)) }}</span>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="px-4 py-3 flex flex-row">
-                                                            <Link class="hover:underline focus:outline-none px-2 focus:underline text-gray-500 hover:text-yellow-300 text-sm font-medium">
+                                                            <Link :href="route('question.edit', [question.id])" class="hover:underline focus:outline-none px-2 focus:underline text-gray-500 hover:text-yellow-300 text-sm font-medium">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                                                                 </svg>
                                                             </Link>
-                                                            <button @click="submit(category.id, category.name)" class="hover:underline focus:outline-none px-2 focus:underline text-gray-500 hover:text-red-600 text-sm font-medium">
+                                                            <button @click="submit(question.id, question.question)" class="hover:underline focus:outline-none px-2 focus:underline text-gray-500 hover:text-red-600 text-sm font-medium">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                                                                 </svg>
@@ -224,8 +223,8 @@
                                                         </div>
                                                     </td>
                                                 </tr>
-                                            </tbody>
-                                        </table>
+                                        </tbody>
+                                    </table>
                                 </div>
                                 <div class="p-2 border-t">
                                     <nav role="navigation" aria-label="Pagination Navigation"
@@ -233,7 +232,7 @@
                                         <div class="hidden flex-1 items-center lg:grid grid-cols-3">
                                             <div class="flex items-center">
                                                 <div class="pl-2 text-sm font-medium">
-                                                    <!-- <Pagination class="mt-6" :links="categories.links" /> -->
+                                                    <!-- <Pagination class="mt-6" :links="question.links" /> -->
                                                 </div>
                                             </div>
                                             <div class="flex items-center justify-end">
@@ -242,8 +241,8 @@
                                     </nav>
                                 </div>
                             </div>
-                            <div>
-                                <p class="text-neutral text-center text-ms font-light">Você ainda não cadastrou nenhuma categoria.</p>
+                            <div v-else>
+                                <p class="text-primary text-center text-ms font-light">Você ainda não cadastrou nenhuma dúvida.</p>
                             </div>
                         </div>
                     </div>
@@ -267,7 +266,9 @@ import Pagination from "@/Components/Pagination";
 
 export default defineComponent({
     name: "Faq",
-    props: {},
+    props: {
+        questions: Object,
+    },
     components: {
         AppLayout,
         Sidebar,

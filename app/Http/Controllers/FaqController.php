@@ -8,12 +8,24 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
 use Inertia\Inertia;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class FaqController extends Controller
 {
     public function index()
     {
-        return Inertia::render('Faq/Index');
+        // return Inertia::render('Faq/Index', [
+        //     'questions' => Faq::paginate(10)
+        //     ->through(fn ($qt) => [
+        //         'id' => $qt->id,
+        //         'question' => $qt->question,
+        //         'updated_at' => $qt->updated_at,
+        //     ])
+        // ]);
+
+        return Inertia::render('Faq/Index', [
+            'questions' => Faq::all()
+        ]);
     }
 
     public function create()
@@ -23,7 +35,6 @@ class FaqController extends Controller
 
     public function store(Request $request)
     {
-        // dd($request->all());
         $validated = $request->validate([
             'question' => 'required',
             'answer' => 'required',
@@ -42,6 +53,12 @@ class FaqController extends Controller
         $question->save();
 
         return Redirect::route('question.index')->with(['toast' => ['message' => "Dúvida cadastrada!"]]);
+    }
+
+    public function destroy($id) {
+        $question = Faq::find($id);
+        $question->delete();
+        return Redirect::route('question.index')->with(['toast' => ['message' => "Dúvida excluída com sucesso."]]);
     }
 
     private function setSlug($question) {

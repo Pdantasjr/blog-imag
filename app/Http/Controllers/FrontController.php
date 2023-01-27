@@ -7,6 +7,7 @@ use App\Models\Blog;
 use App\Models\Exams;
 use App\Models\Staff;
 use App\Models\DiagnosticMethod;
+use App\Models\Faq;
 use Inertia\Inertia;
 
 class FrontController extends Controller
@@ -71,7 +72,9 @@ class FrontController extends Controller
     }
 
     public function faq() {
-        return Inertia::render('Front/Faq');
+        return Inertia::render('Front/Faq', [
+            'questions' => Faq::all()
+        ]);
     }
 
     public function privacyPolicy()

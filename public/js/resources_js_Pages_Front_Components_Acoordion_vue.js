@@ -82,7 +82,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     onClick: _cache[0] || (_cache[0] = function ($event) {
       return _ctx.active = !_ctx.active;
     }),
-    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["w-full justify-between items-center text-white font-normal hover:cursor-pointer flex p-6", {
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["w-full justify-between items-center text-white text-sm md:text-lg font-normal hover:cursor-pointer flex p-4 md:p-6", {
       'border-b': _ctx.active
     }])
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.question) + " ", 1

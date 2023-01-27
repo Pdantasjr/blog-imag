@@ -17,7 +17,7 @@ class CreateFaqsTable extends Migration
             $table->increments('id');
             $table->string('question');
             $table->string('slug');
-            $table->string('answer');
+            $table->text('answer');
             $table->timestamps();
         });
     }
