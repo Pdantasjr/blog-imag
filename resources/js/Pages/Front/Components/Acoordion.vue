@@ -6,8 +6,8 @@
             <Icons v-show="!active" name="chevron-down-w" />
         </span>
     </div>
-    <div v-if="!active" class="w-full h-auto bg-primary" :class="{ 'border-b': !active }">
-        <p class="text-white font-light text-sm px-6 pb-4" >{{ answer }}</p>
+    <div v-if="!active" class="px-6 w-full h-auto bg-primary" :class="{ 'border-b': !active }">
+        <span v-html="answer"></span>
     </div>
 </template>
 

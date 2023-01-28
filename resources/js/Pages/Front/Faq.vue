@@ -7,7 +7,7 @@
                 <h1 class="text-center lg:text-left text-primary text-4xl md:text-5xl sm:text-6xl mb-3 uppercase font-extrabold">
                     Perguntas frequentes</h1>
         </div>
-        <div class="bg-primary mb-44">
+        <div class="bg-primary mb-44 pb-5">
 
             <div v-for="question in questions" :key="question.id" class=" max-w-5xl mx-auto">
                 <Acoordion :question="question.question" :answer="question.answer" />
