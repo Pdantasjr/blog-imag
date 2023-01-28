@@ -1,6 +1,5 @@
 <template>
-    <app-layout title="Perguntas frequentes">
-        <toast :toast="$page.props.flash.message"></toast>
+    <app-layout title="Editar dúvida">
         <sidebar/>
         <main-content>
             <template #header>
@@ -168,83 +167,96 @@
                     <div class="space-y-6">
                         <header class="space-y-2 items-start justify-between sm:flex sm:space-y-0 sm:space-x-4 sm:py-4">
                             <h1 class="text-2xl text-gray-700 font-bold tracking-tight md:text-3xl">
-                                Faq
+                                Editar Dúvida
                             </h1>
-                            <!--                            Botão-->
-                            <div class="flex flex-wrap items-center gap-4 justify-start shrink-0">
-                                <Link
-                                    class="inline-flex items-center justify-center font-medium tracking-tight rounded-lg focus:outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset bg-primary focus:ring-offset-primary-700 h-9 px-4 text-white shadow focus:ring-white"
-                                    :href="route('question.create')">
-                                    <span>Adicionar dúvida</span>
-                                </Link>
-                            </div>
                         </header>
-                        <div>
-                            <div  v-if="questions.length" class="border border-gray-300 shadow-sm bg-white rounded-xl">
-                                <div class="overflow-y-auto relative">
-                                    <table class="w-full text-left divide-y table-auto">
-                                        <thead>
-                                            <tr>
-                                                    <th class="px-4 py-2">
-                                                        <span class="flex items-center whitespace-nowrap space-x-1 rtl:space-x-reverse font-medium text-sm font-bold text-gray-600">Dúvida</span>
-                                                    </th>
-                                                    <th class="px-4 py-2">
-                                                        <span class="flex items-center whitespace-nowrap space-x-1 rtl:space-x-reverse font-medium text-sm font-bold text-gray-600">Última Atualização</span>
-                                                    </th>
-                                                    <th class="px-4 py-2">
-                                                        <span class="flex items-center whitespace-nowrap space-x-1 rtl:space-x-reverse font-medium text-sm font-bold text-gray-600">Opções</span>
-                                                    </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody v-for="question in questions" :key="question.id" class="divide-y whitespace-nowrap">
-                                                <tr>
-                                                    <td>
-                                                        <div class="px-4 py-3">
-                                                           <span class="text-gray-600">{{question.question}}</span>
+                        <form class="space-y-12" @submit.prevent="submit()">
+                            <div class="grid gap-6 grid-cols-1">
+                                <div class="col-span-full">
+                                    <div class="grid gap-6 grid-cols-1 lg:grid-cols-3">
+                                        <div class="col-span-2 ">
+                                            <div class="p-6 bg-white shadow rounded-xl">
+                                                <div class="grid gap-6 grid-cols-1 sm:grid-cols-2">
+                                                    <!--                                                    Pergunta-->
+                                                    <div class="col-span-2 ">
+                                                        <div>
+                                                            <div class="space-y-2">
+                                                                <div class="flex items-center justify-between space-x-2 rtl:space-x-reverse">
+                                                                    <label
+                                                                        class="inline-flex items-center space-x-3 rtl:space-x-reverse"
+                                                                        for="question">
+                                                                        <span class="text-sm font-medium leading-4 text-gray-700">
+                                                                            Pergunta
+                                                                            <sup class="font-medium text-danger-700">*</sup>
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="flex items-center space-x-1 group">
+                                                                    <div class="flex-1">
+                                                                        <input type="text" id="question" name="question" v-model="form.question"
+                                                                               class="block w-full h-10 transition duration-75 rounded-lg shadow-sm focus:border-primary-600 focus:ring-1 focus:ring-inset focus:ring-primary-600 border-gray-300">
+                                                                    <div v-if="errors.question" v-text="errors.question" class="text-xs text-red-500 mt-1"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="px-4 py-3">
-                                                           <span class="text-gray-600">{{ new Intl.DateTimeFormat('pt-BR', { day: 'numeric', month: 'long', year: 'numeric'} ).format( new Date(question.updated_at)) }} às {{ new Intl.DateTimeFormat('pt-BR', { hour: 'numeric', minute: 'numeric', second: 'numeric'} ).format( new Date(question.updated_at)) }}</span>
+                                                    </div>
+                                                    <!--Resposta-->
+                                                    <!-- Editor -->
+                                                    <div class="col-span-2 ">
+                                                        <div class="space-y-2">
+                                                            <div class="flex items-center justify-between space-x-2">
+                                                                <label class="inline-flex items-center space-x-3" for="answer">
+                                                                        <span class="text-sm font-medium leading-4 text-gray-700">
+                                                                            Resposta
+                                                                            <sup class="font-medium text-danger-700">*</sup>
+                                                                        </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="flex items-center space-x-1 group">
+                                                                <div class="flex-1">
+                                                                    <editor
+                                                                        v-model="form.answer"
+                                                                        name="answer"
+                                                                        api-key="xyagt2r6l572tfpdsrvpuwy41hqljl9v76skafjnrpsr3243"
+                                                                        :init="{
+                                                                             height: 500,
+                                                                             menubar: false,
+                                                                             language: 'pt_BR',
+                                                                             plugins: [
+                                                                               'advlist autolink lists link image charmap print preview anchor',
+                                                                               'searchreplace visualblocks code fullscreen',
+                                                                               'insertdatetime media table paste code help wordcount',
+                                                                               'fullscreen'
+                                                                             ],
+                                                                             toolbar:
+                                                                               'undo redo | fontselect fontsizeselect formatselect  | bold italic backcolor | forecolor backcolor removeformat |\
+                                                                               alignleft aligncenter alignright alignjustify | \
+                                                                               bullist numlist outdent indent | removeformat | fullscreen  preview save print | help'
+                                                                           }"
+                                                                    />
+                                                                    <div v-if="errors.answer" v-text="errors.answer" class="text-xs text-red-500 mt-1"></div>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="px-4 py-3 flex flex-row">
-                                                            <Link :href="route('question.edit', [question.id])" class="hover:underline focus:outline-none px-2 focus:underline text-gray-500 hover:text-yellow-300 text-sm font-medium">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-                                                                </svg>
-                                                            </Link>
-                                                            <button @click="submit(question.id, question.question)" class="hover:underline focus:outline-none px-2 focus:underline text-gray-500 hover:text-red-600 text-sm font-medium">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="p-2 border-t">
-                                    <nav role="navigation" aria-label="Pagination Navigation"
-                                         class="flex items-center justify-between">
-                                        <div class="hidden flex-1 items-center lg:grid grid-cols-3">
-                                            <div class="flex items-center">
-                                                <div class="pl-2 text-sm font-medium">
-                                                    <!-- <Pagination class="mt-6" :links="question.links" /> -->
+                                                    </div>
+
                                                 </div>
                                             </div>
-                                            <div class="flex items-center justify-end">
-                                            </div>
                                         </div>
-                                    </nav>
+                                    </div>
                                 </div>
                             </div>
-                            <div v-else>
-                                <p class="text-primary text-center text-ms font-light">Você ainda não cadastrou nenhuma dúvida.</p>
+                            <div class="flex flex-wrap items-center gap-4 justify-start">
+                                <Link :href="route('question.index')" class="inline-flex items-center justify-center font-medium tracking-tight rounded-lg focus:outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset bg-gray-400 hover:bg-primary-500 focus:bg-primary-700 focus:ring-offset-primary-700 h-9 px-4 text-white shadow focus:ring-white">
+                                    <span>Voltar</span>
+                                </Link>
+                                <button type="submit"
+                                        class="inline-flex items-center justify-center font-medium tracking-tight rounded-lg focus:outline-none focus:ring-offset-2 focus:ring-2 focus:ring-inset bg-primary hover:bg-primary focus:ring-offset-primary-700 h-9 px-4 text-white shadow focus:ring-white">
+                                    <span>Atualizar</span>
+                                </button>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </template>
@@ -253,7 +265,7 @@
 </template>
 
 <script>
-import {defineComponent} from 'vue'
+import {defineComponent, reactive} from 'vue'
 
 import AppLayout from '@/Layouts/AppLayout.vue';
 import {Head, Link} from '@inertiajs/inertia-vue3';
@@ -261,13 +273,14 @@ import Sidebar from "@/Layouts/Sidebar";
 import MainContent from "@/Layouts/MainContent";
 import JetDropdown from "@/Jetstream/Dropdown";
 import JetDropdownLink from "@/Jetstream/DropdownLink";
-import Toast from '@/Components/Toast'
-import Pagination from "@/Components/Pagination";
+import JetNavLink from "@/Jetstream/NavLink";
+
+import Editor from '@tinymce/tinymce-vue';
 
 export default defineComponent({
-    name: "Faq",
     props: {
-        questions: Object,
+        errors: Object,
+        question: Object,
     },
     components: {
         AppLayout,
@@ -277,15 +290,22 @@ export default defineComponent({
         Link,
         JetDropdown,
         JetDropdownLink,
-        Toast,
-        Pagination,
+        JetNavLink,
+        Editor,
+    },
+    data() {
+        return {
+            form: this.$inertia.form({
+                id: this.question.id,
+                question: this.question.question,
+                answer: this.question.answer,
+            }),
+        }
     },
     methods: {
-        submit(id, name) {
-            if(confirm("Você tem certeza que deseja excluir "+name+" ?")) {
-                this.$inertia.delete(route('question.destroy', [id]), this.form)
-            }
+        submit() {
+            this.$inertia.put(route('question.update', [this.question.id]), this.form);
         }
-    }
+    },
 })
 </script>
