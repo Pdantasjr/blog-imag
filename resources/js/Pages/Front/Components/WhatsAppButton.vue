@@ -8,11 +8,11 @@
 <!--        </a>-->
 <!--    </button>-->
     <Transition appear name="slide-fade">
-    <button class="flex justify-center items-center bg-[#31b344] z-30 w-auto h-14 rounded-full p-3 fixed bottom-6 right-4 shadow-md hover:shadow-lg hover:cursor-pointer transition transform hover:scale-105 duration-200 ease-in-out">
+    <button @click.prevent="WhatsAppLink" class="flex justify-center items-center bg-[#31b344] z-30 w-auto h-14 rounded-full p-3 fixed bottom-6 right-4 shadow-md hover:shadow-lg hover:cursor-pointer transition transform hover:scale-105 duration-200 ease-in-out">
 
             <p class="font-medium text-[1rem] text-white p-2">Fale no WhatsApp</p>
 
-        <a @click.prevent="WhatsAppLink" target="_blank">
+        <a target="_blank">
             <img src="../Images/whatsapp-icon-footer.svg" alt="WhatsApp" class="h-auto w-8">
         </a>
     </button>

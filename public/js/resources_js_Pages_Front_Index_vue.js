@@ -3894,37 +3894,36 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Images_whatsapp_icon_footer_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Images/whatsapp-icon-footer.svg */ "./resources/js/Pages/Front/Images/whatsapp-icon-footer.svg");
 
 
-var _hoisted_1 = {
-  "class": "flex justify-center items-center bg-[#31b344] z-30 w-auto h-14 rounded-full p-3 fixed bottom-6 right-4 shadow-md hover:shadow-lg hover:cursor-pointer transition transform hover:scale-105 duration-200 ease-in-out"
-};
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
   "class": "font-medium text-[1rem] text-white p-2"
 }, "Fale no WhatsApp", -1
 /* HOISTED */
 );
 
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  target: "_blank"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
   src: _Images_whatsapp_icon_footer_svg__WEBPACK_IMPORTED_MODULE_1__["default"],
   alt: "WhatsApp",
   "class": "h-auto w-8"
-}, null, -1
+})], -1
 /* HOISTED */
 );
 
-var _hoisted_4 = [_hoisted_3];
+var _hoisted_3 = [_hoisted_1, _hoisted_2];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("    <button class=\"flex justify-center items-center bg-[#31b344] z-30 w-auto h-14 rounded-full p-3 fixed bottom-6 right-4 shadow-md hover:shadow-lg hover:cursor-pointer transition transform hover:scale-105 duration-200 ease-in-out\">"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("        <Transition appear name=\"slide-fade\">"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("            <p class=\"font-medium text-[1rem] text-white p-2\">Fale no WhatsApp</p>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("        </Transition>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("            <a @click.prevent=\"WhatsAppLink\" target=\"_blank\">"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("            <img src=\"../Images/whatsapp-icon-footer.svg\" alt=\"WhatsApp\" class=\"h-auto w-8\">"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("        </a>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("    </button>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(vue__WEBPACK_IMPORTED_MODULE_0__.Transition, {
     appear: "",
     name: "slide-fade"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
         onClick: _cache[0] || (_cache[0] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
           return $options.WhatsAppLink && $options.WhatsAppLink.apply($options, arguments);
         }, ["prevent"])),
-        target: "_blank"
-      }, _hoisted_4)])];
+        "class": "flex justify-center items-center bg-[#31b344] z-30 w-auto h-14 rounded-full p-3 fixed bottom-6 right-4 shadow-md hover:shadow-lg hover:cursor-pointer transition transform hover:scale-105 duration-200 ease-in-out"
+      }, _hoisted_3)];
     }),
     _: 1
     /* STABLE */
