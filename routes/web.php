@@ -24,6 +24,7 @@ Route::get('/medico/{slug}', [FrontController::class, 'teamMember'])->name('fron
 Route::get('/exame/{slug}', [FrontController::class, 'exame'])->name('front.exame');
 Route::get('/faq', [FrontController::class, 'faq'])->name('front.faq');
 Route::get('/politica-de-privacidade', [FrontController::class, 'privacyPolicy'])->name('front.privacyPolicy');
+Route::get('/lp', [FrontController::class, 'landingPage'])->name('front.landingPage');
 
 
 

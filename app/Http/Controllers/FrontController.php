@@ -81,4 +81,8 @@ class FrontController extends Controller
     {
         return Inertia::render('PrivacyPolicy');
     }
+
+    public function landingPage() {
+        return Inertia::render('Front/LP_imag');
+    }
 }
