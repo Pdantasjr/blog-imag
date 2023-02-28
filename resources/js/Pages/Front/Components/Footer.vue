@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-primary w-screen py-3">
+    <div class="bg-primary w-full py-3">
         <CTAareas :variant="'footer'"/>
         <!--LOGOTIPO-->
         <div class="w-40 h-auto my-4 mx-auto">

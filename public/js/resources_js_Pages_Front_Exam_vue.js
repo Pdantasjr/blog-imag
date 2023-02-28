@@ -619,7 +619,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "bg-primary w-screen py-3"
+  "class": "bg-primary w-full py-3"
 };
 var _hoisted_2 = {
   "class": "w-40 h-auto my-4 mx-auto"
